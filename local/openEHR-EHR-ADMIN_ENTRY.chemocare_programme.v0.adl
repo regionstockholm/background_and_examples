@@ -1,0 +1,108 @@
+archetype (adl_version=1.4; uid=0b816314-4250-4937-afaf-4ed60cc3323d)
+	openEHR-EHR-ADMIN_ENTRY.chemocare_programme.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-09-24">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"9cce6a81f046c39379f6c9dbe2169600">
+		["build_uid"] = <"f6283295-607a-350e-8175-5e826b3fe173">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- Chemocare programme
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Intention
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Id
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Treatment start
+						value matches {
+							DV_DATE matches {*}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Treatment close
+						value matches {
+							DV_DATE matches {*}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Outcome
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Status
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Chemocare programme">
+					description = <"Chemocare programme">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Intention">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Id">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Treatment start">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Treatment close">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Outcome">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Status">
+					description = <"">
+				>
+			>
+		>
+	>
