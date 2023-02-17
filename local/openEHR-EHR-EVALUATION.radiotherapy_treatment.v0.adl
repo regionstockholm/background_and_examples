@@ -1,0 +1,173 @@
+archetype (adl_version=1.4; uid=6d9e2c05-f9a6-4714-85b7-c2ff4403b510)
+	openEHR-EHR-EVALUATION.radiotherapy_treatment.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2021-03-04">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"3c87196f2b82a171a78b079a1907b030">
+		["build_uid"] = <"0172824f-aeaf-3e56-b93d-a904c0c42122">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Radiotherapy treatment summary
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0007] occurrences matches {0..*} matches {    -- Modalities
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0045] occurrences matches {0..*} matches {    -- Body site
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.anatomical_location\.v1/}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Intent
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..*} matches {    -- Techniques
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Prescribed fractions
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Delivered fractions
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Prescribed dose per target volume
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Delivered dose per target volume
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Start datetime
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0046] occurrences matches {0..*} matches {    -- Phase summary
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.radiotherapy_phase_summary\.v0/}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0002] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					allow_archetype CLUSTER[at0033] occurrences matches {0..*} matches {    -- Receiver
+						include
+							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0034] occurrences matches {0..*} matches {    -- Requester
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Radiotherapy treatment summary">
+					description = <"Radiotherapy treatment">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0006"] = <
+					text = <"Intent">
+					description = <"curative, palliative, radical etc">
+				>
+				["at0007"] = <
+					text = <"Modalities">
+					description = <" external beam, brachytherapy, etc- lists all modalities from phases as a list">
+				>
+				["at0008"] = <
+					text = <"Techniques">
+					description = <"conformal, modulated, LDR, HDR, etc- again a list from all phases">
+					comment = <"LDR /HDR relate to brachytherapy, conformal modulated relate to external beam">
+				>
+				["at0009"] = <
+					text = <"Prescribed fractions">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Delivered fractions">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Delivered dose per target volume">
+					description = <"">
+				>
+				["Gy"] = <
+					text = <"Gy">
+					description = <"Gray">
+				>
+				["at0022"] = <
+					text = <"Prescribed dose per target volume">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Receiver">
+					description = <"org who did the work">
+				>
+				["at0034"] = <
+					text = <"Requester">
+					description = <"org who asked for the work">
+				>
+				["at0036"] = <
+					text = <"Start datetime">
+					description = <"first treatment date for the diagnosis">
+				>
+				["at0045"] = <
+					text = <"Body site">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Phase summary">
+					description = <"">
+				>
+			>
+		>
+	>
