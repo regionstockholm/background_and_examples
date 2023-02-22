@@ -1,0 +1,66 @@
+archetype (adl_version=1.4; uid=839ab12c-eb0b-310a-86a4-bd4931c45211)
+	openEHR-EHR-SECTION.referral_details.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["references"] = <"">
+		["MD5-CAM-1.0.1"] = <"79BC3A18982D404054EB9174D3E896AC">
+		["build_uid"] = <"93d859e9-b040-35ca-a3b7-f803dd7e2e44">
+	>
+
+definition
+	SECTION[at0000] matches {    -- Request details
+		items cardinality matches {0..*; unordered} matches {
+			allow_archetype INSTRUCTION[at0001] occurrences matches {0..*} matches {    -- Request
+				include
+					archetype_id/value matches {/openEHR-EHR-INSTRUCTION\.request(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+			allow_archetype ENTRY[at0002] occurrences matches {0..*} matches {    -- Associated information
+				include
+					archetype_id/value matches {/.*/}
+			}
+			allow_archetype ACTION[at0003] occurrences matches {0..*} matches {    -- Request handling
+				include
+					archetype_id/value matches {/openEHR-EHR-ACTION\.request_handling(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Request details">
+					description = <"To record a request and associated clinical information.">
+				>
+				["at0001"] = <
+					text = <"Request">
+					description = <"The core request.">
+				>
+				["at0002"] = <
+					text = <"Associated information">
+					description = <"Additional information to accompany the request.">
+				>
+				["at0003"] = <
+					text = <"Request handling">
+					description = <"*">
+				>
+			>
+		>
+	>
