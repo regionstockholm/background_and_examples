@@ -1,0 +1,118 @@
+archetype (adl_version=1.4; uid=09452fff-ec6c-353f-9319-2d14b73c5e44)
+	openEHR-EHR-ADMIN_ENTRY.personal_demographics.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["references"] = <"">
+		["MD5-CAM-1.0.1"] = <"79A1240EA5CC014CEF259FF6919C6019">
+		["build_uid"] = <"d0d9417b-f8c0-3c47-8f3d-71f7ace483d6">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- Personal Demographics
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Tree
+				items cardinality matches {0..*; unordered} matches {
+					CLUSTER[at0002] occurrences matches {0..1} matches {    -- Basic details
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0007] occurrences matches {0..1} matches {    -- Date of birth
+								value matches {
+									DV_DATE_TIME matches {*}
+								}
+							}
+							ELEMENT[at0008] occurrences matches {0..1} matches {    -- Sex
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0009,    -- Male
+											at0010]    -- Female
+										}
+									}
+								}
+							}
+							ELEMENT[at0011] occurrences matches {0..1} matches {    -- Age
+								value matches {
+									DV_DURATION matches {
+										value matches {|>=PT0S|}
+									}
+								}
+							}
+						}
+					}
+					CLUSTER[at0005] occurrences matches {0..1} matches {    -- Extended details
+						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0012] occurrences matches {0..1} matches {    -- Ethnicity
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Personal Demographics">
+					description = <"To record simple demographic details.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Basic details">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Extended details">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Date of birth">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Sex">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Male">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Female">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Age">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Ethnicity">
+					description = <"*">
+				>
+			>
+		>
+	>
