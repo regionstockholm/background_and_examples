@@ -1,0 +1,164 @@
+archetype (adl_version=1.4; uid=0053e295-8e2c-3ea5-85b3-e596b2597e4f)
+	openEHR-EHR-COMPOSITION.report.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+				["name"] = <"Jasmin Buck">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"29/03/2010">
+		["name"] = <"Dr Ian McNicoll">
+		["organisation"] = <"Ocean Informatics, United Kingdom">
+		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+	>
+	lifecycle_state = <"AuthorDraft">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			purpose = <"Ein allgemeiner Befund, der die Dokumentation der anfordernden Person und der Empfänger ermöglicht. Enthaltene Kategorien erlauben die Dokumentation weiterer Informationen.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"A generic report which provides the features to allow recording of who requested the report and to whom it has been sent. Participation classes allow further information to be recorded">
+		>
+	>
+	other_details = <
+		["references"] = <"">
+		["MD5-CAM-1.0.1"] = <"970CBEE3BEEB73D5597F030FA6E9F5A9">
+		["build_uid"] = <"effca0de-5736-38df-a3e9-00ef33ccdc84">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Report
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {
+				participations cardinality matches {0..*; unordered} matches {
+					PARTICIPATION occurrences matches {0..1} matches {
+						function matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0025,    -- Report Requestor
+									at0026,    -- Copied to
+									at0027]    -- General Practitioner
+								}
+							}
+						}
+					}
+				}
+				other_context matches {
+					ITEM_TREE[at0001] matches {    -- Tree
+						items cardinality matches {0..1; ordered} matches {
+							ELEMENT[at0032] occurrences matches {0..1} matches {    -- Clinical process identifier
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							allow_archetype CLUSTER[at0030] occurrences matches {0..1} matches {    -- EXTERNAL DOCUMENT HEADER
+								include
+									archetype_id/value matches {/.*/}
+							}
+							allow_archetype CLUSTER[at0031] occurrences matches {0..*} matches {    -- PARTICIPATIONS
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Report(en)">
+					description = <"*Generic reporting composition in response to a request for information or testing.(en)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0025"] = <
+					text = <"*Report Requestor(en)">
+					description = <"*The person or organisation requesting this report.(en)">
+				>
+				["at0026"] = <
+					text = <"*Copied to(en)">
+					description = <"*Parties to whom the report has been copied.(en)">
+				>
+				["at0027"] = <
+					text = <"*General Practitioner(en)">
+					description = <"*The subject's GP or main health care provider.(en)">
+				>
+				["at0030"] = <
+					text = <"*EXTERNAL DOCUMENT HEADER (en)">
+					description = <"*Details of Document Header which should be modelled in an EHR EXTRACT Document Header.(en)">
+				>
+				["at0031"] = <
+					text = <"*PARTICIPATIONS(en)">
+					description = <"*Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes.(en)">
+				>
+				["at0032"] = <
+					text = <"*Clinical process identifier(en)">
+					description = <"*An identifier which labels this report as being part of a particular clinical process.(en)">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Report">
+					description = <"Generic reporting composition in response to a request for information or testing.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0025"] = <
+					text = <"Report Requestor">
+					description = <"The person or organisation requesting this report.">
+				>
+				["at0026"] = <
+					text = <"Copied to">
+					description = <"Parties to whom the report has been copied.">
+				>
+				["at0027"] = <
+					text = <"General Practitioner">
+					description = <"The subject's GP or main health care provider.">
+				>
+				["at0030"] = <
+					text = <"EXTERNAL DOCUMENT HEADER">
+					description = <"Details of Document Header which should be modelled in an EHR EXTRACT Document Header.">
+				>
+				["at0031"] = <
+					text = <"PARTICIPATIONS">
+					description = <"Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes.">
+				>
+				["at0032"] = <
+					text = <"Clinical process identifier">
+					description = <"An identifier which labels this report as being part of a particular clinical process.">
+				>
+			>
+		>
+	>
