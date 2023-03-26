@@ -851,6 +851,18 @@
                             <items id="text">ytterligare följdfrågedetaljer</items>
                             <items id="description"></items>
                         </term_definitions>
+                        <term_definitions code="at0.0.1">
+                            <items id="text">mild B (sv)</items>
+                            <items id="description">B1</items>
+                        </term_definitions>
+                        <term_definitions code="at0.0.2">
+                            <items id="text">måttlig B (sv)</items>
+                            <items id="description">B2</items>
+                        </term_definitions>
+                        <term_definitions code="at0.0.3">
+                            <items id="text">svår B (sv)</items>
+                            <items id="description">B3</items>
+                        </term_definitions>
                     </children>
                     <children xsi:type="C_ARCHETYPE_ROOT">
                         <rm_type_name>CLUSTER</rm_type_name>
@@ -1051,6 +1063,18 @@
                         <term_definitions code="at0004">
                             <items id="text">ytterligare följdfrågedetaljer</items>
                             <items id="description"></items>
+                        </term_definitions>
+                        <term_definitions code="at0.1">
+                            <items id="text">mild C</items>
+                            <items id="description">C1</items>
+                        </term_definitions>
+                        <term_definitions code="at0.2">
+                            <items id="text">måttlig C</items>
+                            <items id="description">C2</items>
+                        </term_definitions>
+                        <term_definitions code="at0.3">
+                            <items id="text">svår C</items>
+                            <items id="description">C3</items>
                         </term_definitions>
                     </children>
                     <children xsi:type="C_ARCHETYPE_ROOT">
@@ -1315,6 +1339,18 @@
                         <term_definitions code="at0004">
                             <items id="text">ytterligare följdfrågedetaljer</items>
                             <items id="description"></items>
+                        </term_definitions>
+                        <term_definitions code="at0.0.1">
+                            <items id="text">mild BB</items>
+                            <items id="description">BB1</items>
+                        </term_definitions>
+                        <term_definitions code="at0.0.2">
+                            <items id="text">måttlig BB</items>
+                            <items id="description">BB2</items>
+                        </term_definitions>
+                        <term_definitions code="at0.0.3">
+                            <items id="text">svår BB</items>
+                            <items id="description">BB3</items>
                         </term_definitions>
                     </children>
                     <cardinality>
