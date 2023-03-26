@@ -1,0 +1,502 @@
+{
+  "templateId" : "test 2 of ordinal selection defentition in template",
+  "semVer" : "3.0.3",
+  "version" : "2.3",
+  "defaultLanguage" : "en",
+  "languages" : [ "sv", "en" ],
+  "tree" : {
+    "id" : "test_2_of_ordinal_selection_defintition_in_template",
+    "name" : "test 2 of ordinal selection defintition in template",
+    "localizedName" : "test 2 of ordinal selection defintition in template",
+    "rmType" : "COMPOSITION",
+    "nodeId" : "openEHR-EHR-COMPOSITION.encounter.v1",
+    "min" : 1,
+    "max" : 1,
+    "localizedNames" : {
+      "sv" : "test of ordinal selection defentition in template",
+      "en" : "test 2 of ordinal selection defintition in template"
+    },
+    "localizedDescriptions" : {
+      "sv" : "Interaktion, kontakt eller vårdhändelse mellan vårdtagare och vårdgivare inom hälso- och sjukvården.",
+      "en" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
+    },
+    "aqlPath" : "",
+    "children" : [ {
+      "id" : "context",
+      "rmType" : "EVENT_CONTEXT",
+      "nodeId" : "",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/context",
+      "children" : [ {
+        "id" : "start_time",
+        "name" : "Start_time",
+        "rmType" : "DV_DATE_TIME",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/context/start_time",
+        "inputs" : [ {
+          "type" : "DATETIME"
+        } ],
+        "inContext" : true
+      }, {
+        "id" : "setting",
+        "name" : "Setting",
+        "rmType" : "DV_CODED_TEXT",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/context/setting",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "value",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "symptom_sign_screening_questionnaire",
+      "name" : "Symptom/sign screening questionnaire",
+      "localizedName" : "Symptom/sign screening questionnaire",
+      "rmType" : "OBSERVATION",
+      "nodeId" : "openEHR-EHR-OBSERVATION.symptom_sign_screening.v1",
+      "min" : 0,
+      "max" : 1,
+      "localizedNames" : {
+        "sv" : "Frågeformulär för symptom och andra tecken",
+        "en" : "Symptom/sign screening questionnaire"
+      },
+      "localizedDescriptions" : {
+        "sv" : "Lista av frågor och tillhörande svarsalternativ, används för att screena efter symtom eller tecken.",
+        "en" : "Series of questions and associated answers used to screen for symptoms or signs."
+      },
+      "annotations" : {
+        "comment" : "The answers may be self-reported."
+      },
+      "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]",
+      "children" : [ {
+        "id" : "any_event",
+        "name" : "Any event",
+        "localizedName" : "Any event",
+        "rmType" : "EVENT",
+        "nodeId" : "at0002",
+        "min" : 0,
+        "max" : -1,
+        "localizedNames" : {
+          "sv" : "Ospecificerad händelse",
+          "en" : "Any event"
+        },
+        "localizedDescriptions" : {
+          "sv" : "Ospecificerad standardhändelse vid en tidpunkt eller inom ett tidsintervall som explicit kan definieras i en mall eller genereras automatiskt av vissa IT-system.",
+          "en" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+        },
+        "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]",
+        "children" : [ {
+          "id" : "specific_symptom_sign",
+          "name" : "Specific symptom/sign",
+          "localizedName" : "Specific symptom/sign",
+          "rmType" : "CLUSTER",
+          "nodeId" : "at0022",
+          "min" : 0,
+          "max" : -1,
+          "localizedNames" : {
+            "sv" : "Specifika symptom/tecken",
+            "en" : "Specific symptom/sign"
+          },
+          "localizedDescriptions" : {
+            "sv" : "Detaljer om ett specifikt symptom eller tecken eller gruppering av symtom eller tecken som är relevanta för screeningändamålet.",
+            "en" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
+          },
+          "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]",
+          "children" : [ {
+            "id" : "symptom_sign_name",
+            "name" : "Symptom/sign name",
+            "localizedName" : "Symptom/sign name",
+            "rmType" : "DV_TEXT",
+            "nodeId" : "at0004",
+            "min" : 1,
+            "max" : 1,
+            "localizedNames" : {
+              "sv" : "Symptom/tecken-benämning",
+              "en" : "Symptom/sign name"
+            },
+            "localizedDescriptions" : {
+              "sv" : "Benämning på det symptom eller annat tecken (eller grupp av dessa) som screenas.\r\n\r\n",
+              "en" : "Identification of a specific symptom or sign or grouping of symptoms or signs, by name."
+            },
+            "annotations" : {
+              "comment" : "Coding of the 'Symptom/sign name' with a terminology is preferred, where possible."
+            },
+            "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[at0004]/value",
+            "inputs" : [ {
+              "type" : "TEXT",
+              "defaultValue" : "Symptomtest #1"
+            } ]
+          }, {
+            "id" : "followup_question_with_ctcae_test",
+            "name" : "Followup question with CTCAE_test",
+            "localizedName" : "Followup question with CTCAE_test",
+            "rmType" : "CLUSTER",
+            "nodeId" : "openEHR-EHR-CLUSTER.followup_question-ctcae_test.v0",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "sv" : "Följdfråga med CTCAE_test",
+              "en" : "Followup question with CTCAE_test"
+            },
+            "localizedDescriptions" : {
+              "sv" : "Följdfråga med CTCAE_test (description)",
+              "en" : "Followup question with CTCAE_test (description)"
+            },
+            "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question-ctcae_test.v0]",
+            "children" : [ {
+              "id" : "a_ordinal_type_and_content_defined_in_archetype",
+              "name" : "A: Ordinal type and content defined in archetype",
+              "localizedName" : "A: Ordinal type and content defined in archetype",
+              "rmType" : "DV_ORDINAL",
+              "nodeId" : "at0002.1",
+              "min" : 1,
+              "max" : 1,
+              "localizedNames" : {
+                "sv" : "A: Ordinal typ och ordinal-innehåll definerat i arketyp",
+                "en" : "A: Ordinal type and content defined in archetype"
+              },
+              "localizedDescriptions" : {
+                "sv" : "*Question to the patinet regarding the severity of the adverse event. (en)",
+                "en" : "Question to the patinet regarding the severity of the adverse event."
+              },
+              "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question-ctcae_test.v0]/items[at0002.1,'A: Ordinal type and content defined in archetype']/value",
+              "inputs" : [ {
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "at0.2",
+                  "label" : "Mild",
+                  "localizedLabels" : {
+                    "sv" : "mild (sv)",
+                    "en" : "Mild"
+                  },
+                  "localizedDescriptions" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 1
+                }, {
+                  "value" : "at0.3",
+                  "label" : "Moderate",
+                  "localizedLabels" : {
+                    "sv" : "måttlig (sv)",
+                    "en" : "Moderate"
+                  },
+                  "localizedDescriptions" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 2
+                }, {
+                  "value" : "at0.4",
+                  "label" : "Severe",
+                  "localizedLabels" : {
+                    "sv" : "svår (sv)",
+                    "en" : "Severe"
+                  },
+                  "localizedDescriptions" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 3
+                } ]
+              } ]
+            } ]
+          }, {
+            "id" : "followup_question_with_ctcae",
+            "name" : "Followup question with CTCAE",
+            "localizedName" : "Followup question with CTCAE",
+            "rmType" : "CLUSTER",
+            "nodeId" : "openEHR-EHR-CLUSTER.followup_question-ctcae.v0",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "sv" : "följdfråga med CTCAE",
+              "en" : "Followup question with CTCAE"
+            },
+            "localizedDescriptions" : {
+              "sv" : "Följdfråga som kan användas t.ex. i frågeformulär efter att ha svarat \"Ja\" på frågor som \"upplever du några symtom på...\"",
+              "en" : "Followup question with CTCAE"
+            },
+            "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question-ctcae.v0,'Followup question with CTCAE']",
+            "children" : [ {
+              "id" : "b_ordinal_type_set_in_archetype_and_ordinal_content_defined_in_template",
+              "name" : "B: Ordinal type set in archetype and ordinal content defined in template",
+              "localizedName" : "B: Ordinal type set in archetype and ordinal content defined in template",
+              "rmType" : "DV_ORDINAL",
+              "nodeId" : "at0002.1",
+              "min" : 1,
+              "max" : 1,
+              "localizedNames" : {
+                "sv" : "B: Ordinal typ satt  i arketyp och ordinal-innehåll definerat i template",
+                "en" : "B: Ordinal type set in archetype and ordinal content defined in template"
+              },
+              "localizedDescriptions" : {
+                "sv" : "*Question to the patinet regarding the severity of the adverse event. (en)",
+                "en" : "Question to the patinet regarding the severity of the adverse event."
+              },
+              "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question-ctcae.v0,'Followup question with CTCAE']/items[at0002.1,'B: Ordinal type set in archetype and ordinal content defined in template']/value",
+              "inputs" : [ {
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "at0.0.1",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 1
+                }, {
+                  "value" : "at0.0.2",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 2
+                }, {
+                  "value" : "at0.0.3",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 3
+                } ]
+              } ]
+            } ]
+          }, {
+            "id" : "followup_question",
+            "name" : "Followup question",
+            "localizedName" : "Followup question",
+            "rmType" : "CLUSTER",
+            "nodeId" : "openEHR-EHR-CLUSTER.followup_question.v0",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "sv" : "följdfråga",
+              "en" : "Followup question"
+            },
+            "localizedDescriptions" : {
+              "sv" : "Följdfråga som kan användas t.ex. i frågeformulär efter att ha svarat \"Ja\" på frågor som \"upplever du några symtom på...\"",
+              "en" : "Follow-up question that may be used e.g. in questionnaires after answering 'Yes' to questions like \"Do you experience any symptoms of ...\""
+            },
+            "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question.v0]",
+            "children" : [ {
+              "id" : "c_ordinal_type_set_in_template_and_ordinal_content_defiend_in_template",
+              "name" : "C: Ordinal type set in template and ordinal content defiend in template",
+              "localizedName" : "C: Ordinal type set in template and ordinal content defiend in template",
+              "rmType" : "DV_ORDINAL",
+              "nodeId" : "at0002",
+              "min" : 1,
+              "max" : 1,
+              "localizedNames" : {
+                "sv" : "C: Ordinal typ satt i template och ordinal-innehåll definerat i template",
+                "en" : "C: Ordinal type set in template and ordinal content defiend in template"
+              },
+              "localizedDescriptions" : {
+                "sv" : "Fråga riktad till slutanvändaren.",
+                "en" : "Question directed to the end user."
+              },
+              "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question.v0]/items[at0002,'C: Ordinal type set in template and ordinal content defiend in template']/value",
+              "inputs" : [ {
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "at0.1",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 1
+                }, {
+                  "value" : "at0.2",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 2
+                }, {
+                  "value" : "at0.3",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 3
+                } ]
+              } ]
+            } ]
+          }, {
+            "id" : "second_copy_of_followup_question_with_ctcae",
+            "name" : "Second copy of followup question with CTCAE",
+            "localizedName" : "Second copy of followup question with CTCAE",
+            "rmType" : "CLUSTER",
+            "nodeId" : "openEHR-EHR-CLUSTER.followup_question-ctcae.v0",
+            "min" : 0,
+            "max" : 1,
+            "localizedNames" : {
+              "sv" : "följdfråga med CTCAE",
+              "en" : "Second copy of followup question with CTCAE"
+            },
+            "localizedDescriptions" : {
+              "sv" : "Följdfråga som kan användas t.ex. i frågeformulär efter att ha svarat \"Ja\" på frågor som \"upplever du några symtom på...\"",
+              "en" : "Followup question with CTCAE"
+            },
+            "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question-ctcae.v0,'Second copy of followup question with CTCAE']",
+            "children" : [ {
+              "id" : "bb_ordinal_type_set_in_archetype_and_ordinal_content_defined_in_template",
+              "name" : "BB: Ordinal type set in archetype and ordinal content defined in template",
+              "localizedName" : "BB: Ordinal type set in archetype and ordinal content defined in template",
+              "rmType" : "DV_ORDINAL",
+              "nodeId" : "at0002.1",
+              "min" : 1,
+              "max" : 1,
+              "localizedNames" : {
+                "sv" : "B: Ordinal typ satt  i arketyp och ordinal-innehåll definerat i template",
+                "en" : "BB: Ordinal type set in archetype and ordinal content defined in template"
+              },
+              "localizedDescriptions" : {
+                "sv" : "*Question to the patinet regarding the severity of the adverse event. (en)",
+                "en" : "Question to the patinet regarding the severity of the adverse event."
+              },
+              "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question-ctcae.v0,'Second copy of followup question with CTCAE']/items[at0002.1,'BB: Ordinal type set in archetype and ordinal content defined in template']/value",
+              "inputs" : [ {
+                "type" : "CODED_TEXT",
+                "list" : [ {
+                  "value" : "at0.0.1",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 1
+                }, {
+                  "value" : "at0.0.2",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 2
+                }, {
+                  "value" : "at0.0.3",
+                  "localizedLabels" : {
+                    "sv" : "",
+                    "en" : ""
+                  },
+                  "ordinal" : 3
+                } ]
+              } ]
+            } ]
+          } ]
+        }, {
+          "id" : "time",
+          "name" : "Time",
+          "rmType" : "DV_DATE_TIME",
+          "min" : 1,
+          "max" : 1,
+          "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/time",
+          "inputs" : [ {
+            "type" : "DATETIME"
+          } ],
+          "inContext" : true
+        } ]
+      }, {
+        "id" : "language",
+        "name" : "Language",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/language",
+        "inContext" : true
+      }, {
+        "id" : "encoding",
+        "name" : "Encoding",
+        "rmType" : "CODE_PHRASE",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/encoding",
+        "inContext" : true
+      }, {
+        "id" : "subject",
+        "name" : "Subject",
+        "rmType" : "PARTY_PROXY",
+        "min" : 1,
+        "max" : 1,
+        "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/subject",
+        "inputs" : [ {
+          "suffix" : "id",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_scheme",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "id_namespace",
+          "type" : "TEXT"
+        }, {
+          "suffix" : "name",
+          "type" : "TEXT"
+        } ],
+        "inContext" : true
+      } ]
+    }, {
+      "id" : "category",
+      "rmType" : "DV_CODED_TEXT",
+      "nodeId" : "",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/category",
+      "inputs" : [ {
+        "suffix" : "code",
+        "type" : "CODED_TEXT",
+        "list" : [ {
+          "value" : "433",
+          "label" : "event",
+          "localizedLabels" : {
+            "sv" : "",
+            "en" : "event"
+          }
+        } ],
+        "terminology" : "openehr"
+      } ],
+      "inContext" : true
+    }, {
+      "id" : "language",
+      "name" : "Language",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/language",
+      "inContext" : true
+    }, {
+      "id" : "territory",
+      "name" : "Territory",
+      "rmType" : "CODE_PHRASE",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/territory",
+      "inContext" : true
+    }, {
+      "id" : "composer",
+      "name" : "Composer",
+      "rmType" : "PARTY_PROXY",
+      "min" : 1,
+      "max" : 1,
+      "aqlPath" : "/composer",
+      "inputs" : [ {
+        "suffix" : "id",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_scheme",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "id_namespace",
+        "type" : "TEXT"
+      }, {
+        "suffix" : "name",
+        "type" : "TEXT"
+      } ],
+      "inContext" : true
+    } ]
+  }
+}
