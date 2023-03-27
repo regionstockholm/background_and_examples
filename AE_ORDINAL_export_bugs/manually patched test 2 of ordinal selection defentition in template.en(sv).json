@@ -246,23 +246,26 @@
                 "type" : "CODED_TEXT",
                 "list" : [ {
                   "value" : "at0.0.1",
+                  "label" : "Mild B",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "mild B (sv)",
+                    "en" : "Mild B"
                   },
                   "ordinal" : 1
                 }, {
                   "value" : "at0.0.2",
+                  "label" : "Moderate B",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "måttlig B (sv)",
+                    "en" : "Moderate B"
                   },
                   "ordinal" : 2
                 }, {
                   "value" : "at0.0.3",
+                  "label" : "Severe B",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "svår B (sv)",
+                    "en" : "Severe B"
                   },
                   "ordinal" : 3
                 } ]
@@ -306,6 +309,7 @@
                 "type" : "CODED_TEXT",
                 "list" : [ {
                   "value" : "at0.1",
+                  "label" : "",
                   "localizedLabels" : {
                     "sv" : "",
                     "en" : ""
@@ -313,6 +317,7 @@
                   "ordinal" : 1
                 }, {
                   "value" : "at0.2",
+                  "label" : "",
                   "localizedLabels" : {
                     "sv" : "",
                     "en" : ""
@@ -320,6 +325,7 @@
                   "ordinal" : 2
                 }, {
                   "value" : "at0.3",
+                  "label" : "",
                   "localizedLabels" : {
                     "sv" : "",
                     "en" : ""
@@ -366,6 +372,7 @@
                 "type" : "CODED_TEXT",
                 "list" : [ {
                   "value" : "at0.0.1",
+                  "label" : "",
                   "localizedLabels" : {
                     "sv" : "",
                     "en" : ""
@@ -373,6 +380,7 @@
                   "ordinal" : 1
                 }, {
                   "value" : "at0.0.2",
+                  "label" : "",
                   "localizedLabels" : {
                     "sv" : "",
                     "en" : ""
@@ -380,6 +388,7 @@
                   "ordinal" : 2
                 }, {
                   "value" : "at0.0.3",
+                  "label" : "",
                   "localizedLabels" : {
                     "sv" : "",
                     "en" : ""
