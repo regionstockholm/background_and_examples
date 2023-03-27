@@ -309,26 +309,26 @@
                 "type" : "CODED_TEXT",
                 "list" : [ {
                   "value" : "at0.1",
-                  "label" : "",
+                  "label" : "Mild C",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "mild C",
+                    "en" : "Mild C"
                   },
                   "ordinal" : 1
                 }, {
                   "value" : "at0.2",
-                  "label" : "",
+                  "label" : "Moderate C",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "måttlig C",
+                    "en" : "Moderate C"
                   },
                   "ordinal" : 2
                 }, {
                   "value" : "at0.3",
-                  "label" : "",
+                  "label" : "Severe C",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "svår C",
+                    "en" : "Severe C"
                   },
                   "ordinal" : 3
                 } ]
@@ -369,29 +369,29 @@
               },
               "aqlPath" : "/content[openEHR-EHR-OBSERVATION.symptom_sign_screening.v1]/data[at0001]/events[at0002]/data[at0003]/items[at0022]/items[openEHR-EHR-CLUSTER.followup_question-ctcae.v0,'Second copy of followup question with CTCAE']/items[at0002.1,'BB: Ordinal type set in archetype and ordinal content defined in template']/value",
               "inputs" : [ {
-                "type" : "CODED_TEXT",
-                "list" : [ {
+                 "type" : "CODED_TEXT",
+                 "list" : [ {
                   "value" : "at0.0.1",
-                  "label" : "",
+                  "label" : "Mild BB",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "mild BB (sv)",
+                    "en" : "Mild BB"
                   },
                   "ordinal" : 1
                 }, {
                   "value" : "at0.0.2",
-                  "label" : "",
+                  "label" : "Moderate BB",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "måttlig BB (sv)",
+                    "en" : "Moderate BB"
                   },
                   "ordinal" : 2
                 }, {
                   "value" : "at0.0.3",
-                  "label" : "",
+                  "label" : "Severe BB",
                   "localizedLabels" : {
-                    "sv" : "",
-                    "en" : ""
+                    "sv" : "svår BB (sv)",
+                    "en" : "Severe BB"
                   },
                   "ordinal" : 3
                 } ]
