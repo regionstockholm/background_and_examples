@@ -21,7 +21,8 @@
       "custodian_namespace" : "",
       "sem_ver" : "6.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "fd4c4d9e2a4d31052328a00d776f5cb2"
+      "MD5-CAM-1.0.1" : "7a0c942d61799c477cd4ee157da124aa",
+      "PARENT:MD5-CAM-1.0.1" : "ae578696104b77c1c5491da34d6d24a5"
     },
     "details" : {
       "sv" : {
@@ -334,7 +335,7 @@
                   "value" : "PVK_color"
                 },
                 "constraint" : [ ],
-                "selectedTerminologies" : [ "PVK_color " ],
+                "selectedTerminologies" : [ "PVK_color" ],
                 "includedExternalTerminologyCodes" : [ {
                   "terminologyId" : "PVK_color",
                   "code" : "1",
