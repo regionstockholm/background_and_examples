@@ -56,6 +56,163 @@
         "otherDetails" : {
           "notes" : "Generated automatically by Adl Designer"
         }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "purpose" : "En generell behållare för information som behöver delas med andra.",
+        "keywords" : [ "rapport" ],
+        "use" : "Används som en generell arketyp för information som behöver delas med andra.\r\n\r\nVanliga användningsfall är att dokumentera ett svar på en förfrågan om information, resultatet av ett test, aktiviteter som har utförts, eller händelser som har inträffat.\r\n\r\nRapporten kan fyllas med alla SECTION- eller ENTRY-arketyper som är lämpliga för det kliniska syftet i en mall.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "purpose" : "*Generic container archetype to carry information that needs to be shared with others.(en)",
+        "keywords" : [ "*report(en)" ],
+        "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "purpose" : "다른 사람들과 공유될 필요가 있는 정보를 운반하기 위한 일반적인 컨테이너 아키타입",
+        "keywords" : [ "리포트" ],
+        "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "purpose" : "Arquétipo de conteúdo genérico para carregar informações que precisam ser compartilhadas com outros.",
+        "keywords" : [ "relatório" ],
+        "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "purpose" : "نموذج جنيس (غير محدود الملكية) يحتوي على معلومات من أجل مشاركتها مع الجميع.",
+        "keywords" : [ "تقرير" ],
+        "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
+        "copyright" : "© openEHR Foundation",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "purpose" : "Archetipo contenitore generico per veicolare informazioni che devono essere condivise con gli altri.",
+        "keywords" : [ "rapporto" ],
+        "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "purpose" : "用作携带共享所需信息的通用容器原型。",
+        "keywords" : [ "报告" ],
+        "use" : "用作携带共享所需信息的通用原型。\r\n常见用例是：请求信息的响应记录；测试结果；已进行的活动；或已经发生的事件。\r\n主要的Section/Content有意设计为不受约束，从而允许在模板中填充符合临床目的的任何 SECTION 或 ENTRY 原型。",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "En generisk container-arketype for å lagre informasjon som skal deles med andre.",
+        "keywords" : [ "rapport", "svar", "svarrapport" ],
+        "use" : "Brukes som en generisk arketype for å lagre informasjon som skal deles med andre.\r\n\r\nVanlige bruksområder: Dokumentasjon av svar på informasjonsforespørsel, prøveresultat, aktiviteter som er utført, eller hendelser som har skjedd eller hendelser som har skjedd, der det ikke finnes spesialiserte arketyper for de spesifikke rapporttypene. Eksempler på dette kan være laboratoriesvar, logistikkmeldinger, dialogmeldinger, helseopplysningsmeldinger og statusrapporter til fastlege.\r\n\r\nInnholdskomponenten er bevisst latt være ubegrenset. Dette tillater bruk av enhver SECTION- og/eller ENTRY-arketype som er nødvendig/hensiktsmessig i templaten brukt i den aktuelle kliniske konteksten.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "purpose" : "Arquetipo contenedor genérico para la portación de información que necesita ser compartida con otros.",
+        "keywords" : [ "informe" ],
+        "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
+        "copyright" : "© openEHR Foundation",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "purpose" : "*Generic container archetype to carry information that needs to be shared with others.(en)",
+        "keywords" : [ "*report(en)" ],
+        "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
+        "copyright" : "© openEHR Foundation",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "purpose" : "Generiek containerarchetype om informatie over te dragen die met anderen moet worden gedeeld.",
+        "keywords" : [ "rapportage" ],
+        "use" : "*Use as a generic archetype to carry information that needs to be shared with others, where no specialised archetype for a specific report type exists.\r\n\r\nCommon use cases are: documenting a response to a request for information; the outcome of testing; activities that have been performed; or events that have occurred.\r\n\r\nThe main Sections/Content component has been deliberately left unconstrained. This will allow it to be populated with any SECTION or ENTRY archetypes appropriate for the clinical purpose within a template. (en)",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -76,6 +233,16 @@
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "EVENT_CONTEXT",
         "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0001.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        }, {
           "@type" : "C_ATTRIBUTE",
           "rmAttributeName" : "participations",
           "existence" : "0..1",
@@ -114,16 +281,6 @@
                 "attributeTuples" : [ ]
               } ]
             } ],
-            "attributeTuples" : [ ]
-          } ]
-        }, {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "other_context",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "ITEM_TREE",
-            "nodeId" : "at0001.1",
-            "attributes" : [ ],
             "attributeTuples" : [ ]
           } ]
         } ],
@@ -175,12 +332,6 @@
           "text" : "British Columbia Cancer agency Breast Cancer Synoptic Report",
           "description" : "*Generic reporting composition in response to a request for information or testing.(en)"
         },
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "*Report(en)",
-          "description" : "*Generic reporting composition in response to a request for information or testing.(en)"
-        },
         "at0025" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0025",
@@ -225,12 +376,424 @@
           "text" : "British Columbia Cancer agency Breast Cancer Synoptic Report",
           "description" : "Generic reporting composition in response to a request for information or testing."
         },
-        "at0000" : {
+        "at0025" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Report",
-          "description" : "Generic reporting composition in response to a request for information or testing."
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
         },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "ar-sy" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "sl" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "es-ar" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "pt-br" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "nb" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "ko" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "fi" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "it" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "nl" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "sv" : {
+        "at0025" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0025",
+          "text" : "Report Requestor",
+          "description" : "The person or organisation requesting this report."
+        },
+        "at0026" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0026",
+          "text" : "Copied to",
+          "description" : "Parties to whom the report has been copied."
+        },
+        "at0027" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027",
+          "text" : "General Practitioner",
+          "description" : "The subject's GP or main health care provider."
+        },
+        "at0030" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030",
+          "text" : "EXTERNAL DOCUMENT HEADER",
+          "description" : "Details of Document Header which should be modelled in an EHR EXTRACT Document Header."
+        },
+        "at0031" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031",
+          "text" : "PARTICIPATIONS",
+          "description" : "Details of Participations, which will actually be modelled in the Reference Model Composition/Entry class attributes."
+        },
+        "at0032" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032",
+          "text" : "Clinical process identifier",
+          "description" : "An identifier which labels this report as being part of a particular clinical process."
+        }
+      },
+      "zh" : {
         "at0025" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0025",
@@ -305,6 +868,129 @@
           "keywords" : [ ],
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -345,14 +1031,16 @@
             "code" : "at0000.1",
             "text" : "Patient Identity",
             "description" : "A generic section header"
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Adhoc heading",
-            "description" : "A generic section header"
           }
-        }
+        },
+        "ru" : { },
+        "es-ar" : { },
+        "sl" : { },
+        "nb" : { },
+        "pt-br" : { },
+        "sv" : { },
+        "de" : { },
+        "it" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -370,7 +1058,116 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Daniel Hall",
+        "organisation" : "Region Östergötland",
+        "email" : "daniel.hall@regionostergotland.se"
+      },
+      "accreditation" : "Åsa Skagerhult, Lisa Axelsson",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Paolo Anedda",
+        "organisation" : "Inpeco",
+        "email" : "paolo.anedda@inpeco.com"
+      },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "09452fff-ec6c-353f-9319-2d14b73c5e44",
@@ -582,6 +1379,129 @@
           "keywords" : [ ],
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -622,14 +1542,16 @@
             "code" : "at0000.1",
             "text" : "Diagnostic Summary",
             "description" : "A generic section header"
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Adhoc heading",
-            "description" : "A generic section header"
           }
-        }
+        },
+        "ru" : { },
+        "es-ar" : { },
+        "sl" : { },
+        "nb" : { },
+        "pt-br" : { },
+        "sv" : { },
+        "de" : { },
+        "it" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -647,7 +1569,116 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Daniel Hall",
+        "organisation" : "Region Östergötland",
+        "email" : "daniel.hall@regionostergotland.se"
+      },
+      "accreditation" : "Åsa Skagerhult, Lisa Axelsson",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Paolo Anedda",
+        "organisation" : "Inpeco",
+        "email" : "paolo.anedda@inpeco.com"
+      },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "ef0f792f-269d-3c0e-8fcd-83e89a611b56",
@@ -1870,6 +2901,129 @@
           "keywords" : [ ],
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -1910,14 +3064,16 @@
             "code" : "at0000.1",
             "text" : "2. Current biopsy findings",
             "description" : "A generic section header"
-          },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Adhoc heading",
-            "description" : "A generic section header"
           }
-        }
+        },
+        "ru" : { },
+        "es-ar" : { },
+        "sl" : { },
+        "nb" : { },
+        "pt-br" : { },
+        "sv" : { },
+        "de" : { },
+        "it" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1935,7 +3091,116 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Daniel Hall",
+        "organisation" : "Region Östergötland",
+        "email" : "daniel.hall@regionostergotland.se"
+      },
+      "accreditation" : "Åsa Skagerhult, Lisa Axelsson",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Paolo Anedda",
+        "organisation" : "Inpeco",
+        "email" : "paolo.anedda@inpeco.com"
+      },
+      "otherDetails" : { }
+    } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "d55a2205-704f-3163-aaa5-92a2d4fc11d9",
@@ -2085,6 +3350,12 @@
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "items",
                             "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "ELEMENT",
+                              "nodeId" : "at0.82.1",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
                               "@type" : "C_ARCHETYPE_ROOT",
                               "rmTypeName" : "CLUSTER",
                               "occurrences" : "0..*",
@@ -2102,12 +3373,6 @@
                               "attributeTuples" : [ ],
                               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-microscopy_breast_carcinoma-007.v1",
                               "referenceType" : "archetypeOverlay"
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "ELEMENT",
-                              "nodeId" : "at0.82.1",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -2434,6 +3699,81 @@
           "copyright" : "copyright (c) 2010 openEHR foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Identifikation und Dokumentation von strukturierten Daten bezüglich einer bestimmten Körperstelle oder innerhalb des menschlichen Körpers, unter Verwendung makroskopischer anatomischer Fachbegriffe.",
+          "keywords" : [ "Lokalisation", "Stelle", "anatomisch", "anatomischer Bereich", "topographische Anatomie", "makroskopisch", "Anatomie" ],
+          "use" : "Zur Dokumentation von strukturierten und konsistenten Details eines einzelnen bestimmten physischen Bereich innerhalb des menschlichen Körpers verwenden.\r\n\r\nDieser Archetyp wurde speziell für die Verwendung im Rahmen von allen geeigneten ENTRY- oder CLUSTER-Archetypen entwickelt, die den Kontext des anatomischen Fundortes liefern.\r\n\r\nAls grundlegender Bestandteil der klinischen Praxis, können Mediziner anatomische Lokalisationen auf einer Vielzahl von komplexen und variablen Wegen definieren. In der Praxis tragen einige Archetypen ein einziges Datenelement für eine einfache Beschreibung der Körperstelle - zum Beispiel OBSERVATION.blood_pressure und CLUSTER.symptom bei der Beschreibung von Ohrenschmerzen. In dieser Situation, in der die Wertemenge berechenbar und simpel zu definieren ist, ist dieses einzelne Datenelement eine sehr genaue und pragmatische Möglichkeit, die Stelle im Körper zu protokollieren und zu einem späteren Zeitpunkt abzufragen. In der Situation, in der die anatomische Lage nicht genau definiert ist oder zur Laufzeit bestimmt werden muss, kann es flexibler sein, diesen strukturierten Archetyp zu verwenden. Wenn zum Beispiel jedes Symptom ohne einen vordefinierten Umfang der Symptomatik aufgezeichnet werden kann, dann ist es sinnvoll, diesen Archetyp zu verwenden, um eine spezifische anatomische Lokalisation im Körper zu definieren. In diesem Fall trägt der CLUSTER.symptom Archetyp auch einen SLOT für 'Detaillierte anatomische Lokalisation', der diesen Archetyp enthalten kann, um maximale Flexibilität bei der Erfassung der Daten zur anatomischen Lage zu gewährleisten.\r\n\r\nDieser Archetyp unterstützt die Aufnahme von komplex strukturierten anatomischen Stellen. Beispielsweise findet sich der Scheitelpunkt des Herzens typischerweise am fünften linken Interkostalraum in der Mittelklavikularlinie, Schmerzempfindlichkeit am McBurney-Punkt an der Bauchdecke oder eine Risswunde an der Handflächeninnenseite des proximalen rechten Daumens.\r\n\r\nEine Kombination der Datenelemente in diesem Archetyp kann verwendet werden, um jede Komponente eines postkoordinierten Terminologieausdrucks, der den anatomischen Bereich repräsentiert, individuell zu dokumentieren.\r\n\r\nDer SLOT \"Alternative Struktur\" erlaubt die Aufnahme zusätzlicher Archetypen, die eine alternative Struktur zur Beschreibung derselben Körperstelle bieten, wie z.B. CLUSTER.anatomical_location_relative oder CLUSTER.anatomical_location_clock, falls dies benötigt wird. Wenn dieser Archetyp nur zur Benennung eines großen und/oder unspezifischen Körperteils verwendet werden kann, unterstützt die zusätzliche Verwendung des Archetyps CLUSTER.anatomical_location_relative die Aufnahme einer genaueren Position - zum Beispiel 2 cm vor der kubitalen Fossa des linken Unterarms oder 4 cm unter dem Rippenrand an der Brustwand in der Mittelklavikularlinie.\r\n\r\nWenn dieser Archetyp in anderen Archetypen verwendet wird, in denen das angegebene Thema nicht die Person ist, für die der Datensatz erstellt wird, z.B. ein Fötus in-utero, dann wird der anatomische Ort eine Körperstelle auf oder innerhalb des Fötus identifizieren.\"\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registering av strukturerte detaljer om én enkelt makroskopisk fysisk lokalisering på eller i menneskekroppen.",
+          "keywords" : [ "sted", "lokalisering", "lokalisasjon", "anatomisk", "kroppssted", "anatomisk region", "topografisk anatomi", "makroskopisk", "anatomi", "kroppsdel", "dermatom", "legemsdel" ],
+          "use" : "Brukes for å dokumentere strukturerte og ensartede detaljer om et enkelt identifisert fysisk sted på eller i menneskekroppen.\r\n\r\nDenne arketypen er spesifikt designet for bruk i ENTRY og CLUSTER-arketyper som gir konteksten for den anatomiske lokaliseringen.\r\n\r\nSom en grunnleggende del av klinisk praksis kan klinikere beskrive anatomiske lokaliseringer på et utall forskjellige måter. Noen arketyper inneholder et enkelt dataelement for enkel beskrivelse av en kroppslig lokalisering - for eksempel OBSERVATION.blood_pressure, og CLUSTER.symptom når man beskriver øresmerter. I denne situasjonen, hvor verdisettet er forutsigbart og enkelt å definere, er dette enkle dataelementet en meget nøyaktig og praktisk måte for å registrere et anatomisk sted på eller i kroppen og søke på det på et senere tidspunkt. Når den anatomiske lokaliseringen derimot ikke er veldefinert eller må defineres fortløpende, kan det være mer fleksibelt å bruke denne strukturerte arketypen. For eksempel i en situasjon hvor et hvilket som helst symptom kan bli registrert uten noen forkunnskaper om hvilke typer symptomer det kan være, så vil muligheten for å bruke denne arketypen være nyttig. I dette tilfellet har CLUSTER.symptom-arketypen et SLOT for \"Strukturert anatomisk lokalisering\" som kan inneholde denne arketypen for å støtte maksimal fleksibilitet i registrering av data om den anatomiske lokaliseringen.\r\n\r\nArketypen støtter registrering av komplekse strukturerte anatomiske steder. For eksempel finnes hjertespisstøt typisk i femte venstre intercostalrom i midtclaviculære linjen, ømhet ved McBurney's punkt på abdomen eller laserasjon på den palmare siden av den proksimale høyre tommelen.\r\n\r\nEn kombinasjon av dataelementer i denne arketypen kan brukes for individuell registrering av hver komponent av et postkoordinert terminologiuttrykk for anatomisk sted.\r\n\r\nArketypen inneholder et \"Alternativ struktur\" SLOT som tillater inklusjon av ytterligere arketyper som gir en alternativ struktur for beskrivelse av det samme kroppssted, som CLUSTER.anatomical_location_relative eller CLUSTER.anatomical_location_clock om dette er nødvendig. I en situasjon hvor denne arketypen bare brukes til å navngi en større og/eller ikke-spesifikk kroppsdel, kan ytterligere bruk av CLUSTER.anatomical_location_relative-arketypen understøtte registrering av en mer presis lokasjon - for eksempel 2 cm anteriort for venstre arms cubitalfossa eller 4 cm under høyre costamargin på brystveggen i midtclaviculærlinjen.\r\n\r\nHvis denne arketypen brukes i andre arketyper hvor pasienten/klienten ikke er den som dokumentasjonen omhandler, for eksempel foetus-in-utero, så vil den anatomiske lokaliseringen bli identifisert som en lokalisering på eller i kroppen til fosteret.",
+          "misuse" : "Brukes ikke for spesifisering av unilateral/bilateral forekomst av et anatomisk kjennetegn.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para identificar e anotar informações estruturadas sobre um único local físico do corpo humano usando termos anatômicos macroscópicos.",
+          "keywords" : [ "localização", "local", "anatômico", "região anatômica", "topografia anatômica", "macroscópico", "anatomia" ],
+          "use" : "Use para gravar detalhes estruturados e consistentes sobre um único local físico identificado do corpo humano.\r\n\r\nEste arquétipo foi projetado especificamente para ser utilizado dentro do contexto de qualquer entrada ou CLUSTER arquétipo que forneça o contexto da localização anatômica.\r\n\r\nComo uma parte fundamental da prática clínica, os médicos podem descrever localizações anatômicas em uma miríade de formas complexas e variáveis. Na prática, alguns arquétipos carregam um elemento de dados único para o transporte de uma simples descrição do local do corpo - por exemplo, OBSERVATION.blood_pressure e CLUSTER.symptom quando descrevem a dor de ouvido. Nesta situação, onde o valor definido é previsível e simples de definir, este elemento de dados único é uma maneira muito precisa e pragmática para gravar o local no corpo e a consulta em uma data posterior. No entanto na situação onde a localização anatômica não é bem definida ou precisa ser determinada em tempo de execução, pode ser mais flexível para usar este arquétipo estruturado. Por exemplo, na situação onde qualquer sintoma pode ser gravado sem qualquer escopo predefinido do tipo, em seguida, permitindo o uso deste arquétipo especificamente, definir uma localização anatômica do corpo pode ser útil. Neste caso, o arquétipo CLUSTER.symptom carrega também um SLOT para localização anatômica detalhada que inclui este arquétipo para oferecer suporte a máxima flexibilidade na gravação de dados da localização anatômica.\r\n\r\nEste arquétipo suporta gravação de locais anatômicos estruturados complexos. Por exemplo, a batida do ápice do coração é normalmente encontrada no quinto espaço intercostal esquerdo na linha médio-clavicular, ou a sensibilidade em ponto de McBurneys na parede abdominal ou laceração na face palmar do polegar direito proximal.\r\n\r\nUma combinação de elementos de dados neste arquétipo pode ser usado para gravar individualmente cada componente de uma expressão de terminologia coordenada que representa o site anatômico.\r\n\r\nA estrutura alternativa SLOT permite a inclusão de arquétipos adicionais que fornecem uma estrutura alternativa para descrever o mesmo local do corpo, como CLUSTER.anatomical_location_relative ou CLUSTER.anatomical_location_clock, esta deve ser exigida. Na situação onde este arquétipo só pode ser usado para nomear uma parte do corpo e/ou não-específica, o uso adicional do arquétipo CLUSTER.anatomical_location_relative oferecerá suporte a gravação de uma localização mais precisa - por exemplo, 2 cm anterior da fossa cubital do antebraço esquerdo ou 4 cm abaixo da margem costal de R na parede torácica na linha médio-clavicular.\r\n\r\nSe este arquétipo é usado dentro de outros arquétipos onde o assunto especificado de cuidados não é o indivíduo para quem o registro está sendo criado, por exemplo um feto em útero, então a localização anatômica vai estar realizada identificando um local do corpo ou com o feto.",
+          "misuse" : "Não deve ser usado para especificar as ocorrências unilateral/bilateral de uma característica anatômica.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To record details about anatomical location.(en)",
+          "keywords" : [ "*location(en)", "*site(en)", "*anatomical(en)" ],
+          "misuse" : "*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تسجيل المكان التشريحي بالتفصيل",
+          "keywords" : [ "الموقع", "المكان", "تشريحي" ],
+          "misuse" : "لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
         }
       }
     },
@@ -2451,79 +3791,6 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0005.0.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0028.0.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "at0029", "at0030", "at0031", "at0032", "at0033", "at0034", "at0035", "at0036", "at0037", "at0038", "at0039", "at0040", "at0041", "at0042", "at0043", "at0044", "at0045", "at0046" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0024.0.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "at0011", "at0025", "at0026", "at0027" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..0",
-          "nodeId" : "at0020.0.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
@@ -2545,9 +3812,1538 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anatomical location",
+            "description" : "A physical site on or within the human body."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Body site name",
+            "description" : "Identification of a single physical site either on, or within, the human body.",
+            "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Laterality",
+            "description" : "The side of the body on which the identified body site is located.",
+            "comment" : "If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Left",
+            "description" : "Left side of the body."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Right",
+            "description" : "Right side of the body."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Description",
+            "description" : "Narrative description that can be used to further refine and support the 'Body site name'.",
+            "comment" : "For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area."
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
+            "text" : "Alternative structure",
+            "description" : "Additional detail about the anatomical site using alternative approaches to describe the same body site.",
+            "comment" : "For example, relative location or precise locations using coordinates."
+          },
+          "at0054" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054",
+            "text" : "Multimedia representation",
+            "description" : "Image or other media used to support identification of the body site."
+          },
+          "at0055" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055",
+            "text" : "Anatomical Line",
+            "description" : "Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body.",
+            "comment" : "Common anatomical lines have been included as a value set, which can be extended over time, plus a free text option. The additional use of this data element allows for recording of the typical position of the heart's apex beat at 5th intercostal space, left side, and mid-clavicular line. If the 'Body site name' data element uses pre-coordinated terms that include anatomical line, then this data element is redundant."
+          },
+          "at0056" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056",
+            "text" : "Midaxillary line",
+            "description" : "Line running vertically down the surface of the body, passing through the apex of the axilla."
+          },
+          "at0057" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0057",
+            "text" : "Anterior axillary line",
+            "description" : "Line running vertically down the surface of the body, passing through the anterior axillary skinfold."
+          },
+          "at0058" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058",
+            "text" : "Posterior axillary line",
+            "description" : "Line running vertically down the surface of the body, passing through the posterior axillary skinfold."
+          },
+          "at0059" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0059",
+            "text" : "Mid-clavicular line",
+            "description" : "Line running vertically down the surface of the body, parallel to the midline and passing through the midpoint of the clavicle."
+          },
+          "at0060" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060",
+            "text" : "Mid-pupillary line",
+            "description" : "Line running vertically down the face through the midpoint of the pupil when looking directly forward."
+          },
+          "at0062" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0062",
+            "text" : "Midline",
+            "description" : "Line running vertically which divides the body into left and right portions, passing through the head, spinal cord, and umbilicus. Alternatively it can refer to a line dividing a body part into two equal portions, for example a digit."
+          },
+          "at0063" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "Mid-scapular line",
+            "description" : "Line running vertically down the posterior surface of the body, parallel to the midline and passing through the inferior point of the scapula."
+          },
+          "at0064" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064",
+            "text" : "Aspect",
+            "description" : "Qualifying detail about the specific aspect of the identified body site.",
+            "comment" : "Use to increase precision of identification of the body site, if required. Common aspects have been included as a value set, which can be extended over time, plus a free text option. Assumes that the body is being described while in the anatomical position. For example: proximal urethra; plantar aspect of the left thumb. Multiple aspects can also be described, if required, by allowing for 0..2 occurrences. For example: a lesion may be on the left anterior/lateral (ie anterolateral) chest wall. If the 'Body site name' data element uses pre-coordinated terms that include the aspect, then this data element is redundant."
+          },
+          "at0065" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Specific site",
+            "description" : "Additional detail using a specific region or a point on, or within, the identified body site.",
+            "comment" : "Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant."
+          },
+          "at0067" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "Medial",
+            "description" : "Towards the midline of the body site."
+          },
+          "at0068" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068",
+            "text" : "Lateral",
+            "description" : "Towards the side, or edge, of the body site."
+          },
+          "at0069" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "Superior",
+            "description" : "Above the body site, often meaning towards the head."
+          },
+          "at0070" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "Inferior",
+            "description" : "Below the body site, often meaning towards the feet."
+          },
+          "at0071" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071",
+            "text" : "Anterior",
+            "description" : "Towards the front, or ventral surface, of  the body site."
+          },
+          "at0072" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072",
+            "text" : "Posterior",
+            "description" : "Towards the back, or dorsal surface, of the body site."
+          },
+          "at0073" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073",
+            "text" : "Proximal",
+            "description" : "More central or closer to the point of attachment, and usually describing part of a limb, digit or appendage."
+          },
+          "at0074" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074",
+            "text" : "Distal",
+            "description" : "More peripheral, or further from the point of attachment, and usually describing part of a limb, digit or appendage."
+          },
+          "at0075" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075",
+            "text" : "Palmar",
+            "description" : "Towards the palm of the hand."
+          },
+          "at0076" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076",
+            "text" : "Plantar",
+            "description" : "Towards the sole of the foot."
+          },
+          "at0077" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "Mid",
+            "description" : "In the middle of the body site."
+          },
+          "at0078" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0078",
+            "text" : "Oral",
+            "description" : "Towards the mouth. Usually used to describe locations within the digestive system."
+          },
+          "at0079" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079",
+            "text" : "Anal",
+            "description" : "Towards the anus. Usually used to describe locations within the digestive system."
+          },
+          "at0080" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080",
+            "text" : "Deep",
+            "description" : "Away from the surface of the body site."
+          },
+          "at0081" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0081",
+            "text" : "Superficial",
+            "description" : "Towards the surface of the body site."
+          },
+          "at0082" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0082",
+            "text" : "Dorsal",
+            "description" : "Towards the back of the hand or top of the foot. To be used as opposites of palmar or plantar, not as a synonym of posterior."
+          },
+          "at0083" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0083",
+            "text" : "Occurrence",
+            "description" : "One or more sides of the body."
+          },
+          "at0084" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0084",
+            "text" : "Unilateral",
+            "description" : "One-sided."
+          },
+          "at0085" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085",
+            "text" : "Bilateral",
+            "description" : "Two-sided."
+          },
+          "at0086" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0086",
+            "text" : "Left and right",
+            "description" : "Both sides of the body."
+          },
+          "at0023.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Description",
+            "description" : "Narrative description that can be used to further refine and support the 'Body site name'.",
+            "comment" : "For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area."
+          }
+        },
+        "ar-sy" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Anatomical location(en)",
+            "description" : "*A physical site on or within the human body.(en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Anatomical location(en)",
+            "description" : "*A physical site on or within the human body.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Body site name(en)",
+            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
+            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Laterality (en)",
+            "description" : "*The side of the body on which the identified body site is located. (en)",
+            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Left(en)",
+            "description" : "*Left side of the body.(en)"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "*Right(en)",
+            "description" : "*Right side of the body.(en)"
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description that can be used to further refine and support the 'Body site name'.(en)",
+            "comment" : "*For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area.(en)"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
+            "text" : "*Alternative structure(en)",
+            "description" : "*Additional detail about the anatomical site using alternative approaches to describe the same body site.(en)",
+            "comment" : "*For example, relative location or precise locations using coordinates. (en)"
+          },
+          "at0054" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054",
+            "text" : "*Multimedia representation(en)",
+            "description" : "*Image or other media used to support identification of the body site.(en)"
+          },
+          "at0055" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055",
+            "text" : "*Anatomical Line(en)",
+            "description" : "*Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body.(en)",
+            "comment" : "*Common anatomical lines have been included as a value set, which can be extended over time, plus a free text option. The additional use of this data element allows for recording of the typical position of the heart's apex beat at 5th intercostal space, left side, and mid-clavicular line. If the 'Body site name' data element uses pre-coordinated terms that include anatomical line, then this data element is redundant.(en)"
+          },
+          "at0056" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056",
+            "text" : "*Midaxillary line(en)",
+            "description" : "*Line running vertically down the surface of the body, passing through the apex of the axilla.(en)"
+          },
+          "at0057" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0057",
+            "text" : "*Anterior axillary line(en)",
+            "description" : "*Line running vertically down the surface of the body, passing through the anterior axillary skinfold.(en)"
+          },
+          "at0058" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058",
+            "text" : "*Posterior axillary line(en)",
+            "description" : "*Line running vertically down the surface of the body, passing through the posterior axillary skinfold.(en)"
+          },
+          "at0059" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0059",
+            "text" : "*Mid-clavicular line(en)",
+            "description" : "*Line running vertically down the surface of the body, parallel to the midline and passing through the midpoint of the clavicle.(en)"
+          },
+          "at0060" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060",
+            "text" : "*Mid-pupillary line(en)",
+            "description" : "*Line running vertically down the face through the midpoint of the pupil when looking directly forward.(en)"
+          },
+          "at0062" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0062",
+            "text" : "*Midline(en)",
+            "description" : "*Line running vertically which divides the body into left and right portions, passing through the head, spinal cord, and umbilicus. Alternatively it can refer to a line dividing a body part into two equal portions, for example a digit.(en)"
+          },
+          "at0063" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "*Mid-scapular line(en)",
+            "description" : "*Line running vertically down the posterior surface of the body, parallel to the midline and passing through the inferior point of the scapula.(en)"
+          },
+          "at0064" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064",
+            "text" : "*Aspect(en)",
+            "description" : "*Qualifying detail about the specific aspect of the identified body site.(en)",
+            "comment" : "*Use to increase precision of identification of the body site, if required. Common aspects have been included as a value set, which can be extended over time, plus a free text option. Assumes that the body is being described while in the anatomical position. For example: proximal urethra; plantar aspect of the left thumb. Multiple aspects can also be described, if required, by allowing for 0..2 occurrences. For example: a lesion may be on the left anterior/lateral (ie anterolateral) chest wall. If the 'Body site name' data element uses pre-coordinated terms that include the aspect, then this data element is redundant.(en)"
+          },
+          "at0065" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "*Specific site(en)",
+            "description" : "*Additional detail using a specific region or a point on, or within, the identified body site.(en)",
+            "comment" : "*Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant.(en)"
+          },
+          "at0067" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "*Medial(en)",
+            "description" : "*Towards the midline of the body site.(en)"
+          },
+          "at0068" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068",
+            "text" : "*Lateral(en)",
+            "description" : "*Towards the side, or edge, of the body site.(en)"
+          },
+          "at0069" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "*Superior(en)",
+            "description" : "*Above the body site, often meaning towards the head.(en)"
+          },
+          "at0070" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "*Inferior(en)",
+            "description" : "*Below the body site, often meaning towards the feet.(en)"
+          },
+          "at0071" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071",
+            "text" : "*Anterior(en)",
+            "description" : "*Towards the front, or ventral surface, of  the body site.(en)"
+          },
+          "at0072" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072",
+            "text" : "*Posterior(en)",
+            "description" : "*Towards the back, or dorsal surface, of the body site.(en)"
+          },
+          "at0073" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073",
+            "text" : "*Proximal(en)",
+            "description" : "*More central or closer to the point of attachment, and usually describing part of a limb, digit or appendage.(en)"
+          },
+          "at0074" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074",
+            "text" : "*Distal(en)",
+            "description" : "*More peripheral, or further from the point of attachment, and usually describing part of a limb, digit or appendage.(en)"
+          },
+          "at0075" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075",
+            "text" : "*Palmar(en)",
+            "description" : "*Towards the palm of the hand.(en)"
+          },
+          "at0076" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076",
+            "text" : "*Plantar(en)",
+            "description" : "*Towards the sole of the foot.(en)"
+          },
+          "at0077" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "*Mid(en)",
+            "description" : "*In the middle of the body site.(en)"
+          },
+          "at0078" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0078",
+            "text" : "*Oral(en)",
+            "description" : "*Towards the mouth. Usually used to describe locations within the digestive system.(en)"
+          },
+          "at0079" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079",
+            "text" : "*Anal(en)",
+            "description" : "*Towards the anus. Usually used to describe locations within the digestive system.(en)"
+          },
+          "at0080" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080",
+            "text" : "*Deep(en)",
+            "description" : "*Away from the surface of the body site.(en)"
+          },
+          "at0081" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0081",
+            "text" : "*Superficial(en)",
+            "description" : "*Towards the surface of the body site.(en)"
+          },
+          "at0082" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0082",
+            "text" : "*Dorsal(en)",
+            "description" : "*Towards the back of the hand or top of the foot. To be used as opposites of palmar or plantar, not as a synonym of posterior.(en)"
+          },
+          "at0083" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0083",
+            "text" : "*Occurrence (en)",
+            "description" : "*One or more sides of the body. (en)"
+          },
+          "at0084" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0084",
+            "text" : "*Unilateral (en)",
+            "description" : "*One-sided. (en)"
+          },
+          "at0085" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085",
+            "text" : "*Bilateral (en)",
+            "description" : "*Two-sided. (en)"
+          },
+          "at0086" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0086",
+            "text" : "*Left and right (en)",
+            "description" : "*Both sides of the body. (en)"
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Anatomical location(en)",
+            "description" : "*A physical site on or within the human body.(en)"
+          },
+          "at0023.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description that can be used to further refine and support the 'Body site name'.(en)",
+            "comment" : "*For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area.(en)"
+          }
+        },
+        "sl" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Anatomical location(en)",
+            "description" : "*A physical site on or within the human body.(en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Anatomical location(en)",
+            "description" : "*A physical site on or within the human body.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Body site name(en)",
+            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
+            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Laterality (en)",
+            "description" : "*The side of the body on which the identified body site is located. (en)",
+            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Left(en)",
+            "description" : "*Left side of the body.(en)"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "*Right(en)",
+            "description" : "*Right side of the body.(en)"
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description that can be used to further refine and support the 'Body site name'.(en)",
+            "comment" : "*For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area.(en)"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
+            "text" : "*Alternative structure(en)",
+            "description" : "*Additional detail about the anatomical site using alternative approaches to describe the same body site.(en)",
+            "comment" : "*For example, relative location or precise locations using coordinates. (en)"
+          },
+          "at0054" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054",
+            "text" : "*Multimedia representation(en)",
+            "description" : "*Image or other media used to support identification of the body site.(en)"
+          },
+          "at0055" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055",
+            "text" : "*Anatomical Line(en)",
+            "description" : "*Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body.(en)",
+            "comment" : "*Common anatomical lines have been included as a value set, which can be extended over time, plus a free text option. The additional use of this data element allows for recording of the typical position of the heart's apex beat at 5th intercostal space, left side, and mid-clavicular line. If the 'Body site name' data element uses pre-coordinated terms that include anatomical line, then this data element is redundant.(en)"
+          },
+          "at0056" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056",
+            "text" : "*Midaxillary line(en)",
+            "description" : "*Line running vertically down the surface of the body, passing through the apex of the axilla.(en)"
+          },
+          "at0057" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0057",
+            "text" : "*Anterior axillary line(en)",
+            "description" : "*Line running vertically down the surface of the body, passing through the anterior axillary skinfold.(en)"
+          },
+          "at0058" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058",
+            "text" : "*Posterior axillary line(en)",
+            "description" : "*Line running vertically down the surface of the body, passing through the posterior axillary skinfold.(en)"
+          },
+          "at0059" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0059",
+            "text" : "*Mid-clavicular line(en)",
+            "description" : "*Line running vertically down the surface of the body, parallel to the midline and passing through the midpoint of the clavicle.(en)"
+          },
+          "at0060" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060",
+            "text" : "*Mid-pupillary line(en)",
+            "description" : "*Line running vertically down the face through the midpoint of the pupil when looking directly forward.(en)"
+          },
+          "at0062" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0062",
+            "text" : "*Midline(en)",
+            "description" : "*Line running vertically which divides the body into left and right portions, passing through the head, spinal cord, and umbilicus. Alternatively it can refer to a line dividing a body part into two equal portions, for example a digit.(en)"
+          },
+          "at0063" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "*Mid-scapular line(en)",
+            "description" : "*Line running vertically down the posterior surface of the body, parallel to the midline and passing through the inferior point of the scapula.(en)"
+          },
+          "at0064" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064",
+            "text" : "*Aspect(en)",
+            "description" : "*Qualifying detail about the specific aspect of the identified body site.(en)",
+            "comment" : "*Use to increase precision of identification of the body site, if required. Common aspects have been included as a value set, which can be extended over time, plus a free text option. Assumes that the body is being described while in the anatomical position. For example: proximal urethra; plantar aspect of the left thumb. Multiple aspects can also be described, if required, by allowing for 0..2 occurrences. For example: a lesion may be on the left anterior/lateral (ie anterolateral) chest wall. If the 'Body site name' data element uses pre-coordinated terms that include the aspect, then this data element is redundant.(en)"
+          },
+          "at0065" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "*Specific site(en)",
+            "description" : "*Additional detail using a specific region or a point on, or within, the identified body site.(en)",
+            "comment" : "*Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant.(en)"
+          },
+          "at0067" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "*Medial(en)",
+            "description" : "*Towards the midline of the body site.(en)"
+          },
+          "at0068" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068",
+            "text" : "*Lateral(en)",
+            "description" : "*Towards the side, or edge, of the body site.(en)"
+          },
+          "at0069" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "*Superior(en)",
+            "description" : "*Above the body site, often meaning towards the head.(en)"
+          },
+          "at0070" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "*Inferior(en)",
+            "description" : "*Below the body site, often meaning towards the feet.(en)"
+          },
+          "at0071" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071",
+            "text" : "*Anterior(en)",
+            "description" : "*Towards the front, or ventral surface, of  the body site.(en)"
+          },
+          "at0072" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072",
+            "text" : "*Posterior(en)",
+            "description" : "*Towards the back, or dorsal surface, of the body site.(en)"
+          },
+          "at0073" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073",
+            "text" : "*Proximal(en)",
+            "description" : "*More central or closer to the point of attachment, and usually describing part of a limb, digit or appendage.(en)"
+          },
+          "at0074" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074",
+            "text" : "*Distal(en)",
+            "description" : "*More peripheral, or further from the point of attachment, and usually describing part of a limb, digit or appendage.(en)"
+          },
+          "at0075" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075",
+            "text" : "*Palmar(en)",
+            "description" : "*Towards the palm of the hand.(en)"
+          },
+          "at0076" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076",
+            "text" : "*Plantar(en)",
+            "description" : "*Towards the sole of the foot.(en)"
+          },
+          "at0077" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "*Mid(en)",
+            "description" : "*In the middle of the body site.(en)"
+          },
+          "at0078" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0078",
+            "text" : "*Oral(en)",
+            "description" : "*Towards the mouth. Usually used to describe locations within the digestive system.(en)"
+          },
+          "at0079" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079",
+            "text" : "*Anal(en)",
+            "description" : "*Towards the anus. Usually used to describe locations within the digestive system.(en)"
+          },
+          "at0080" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080",
+            "text" : "*Deep(en)",
+            "description" : "*Away from the surface of the body site.(en)"
+          },
+          "at0081" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0081",
+            "text" : "*Superficial(en)",
+            "description" : "*Towards the surface of the body site.(en)"
+          },
+          "at0082" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0082",
+            "text" : "*Dorsal(en)",
+            "description" : "*Towards the back of the hand or top of the foot. To be used as opposites of palmar or plantar, not as a synonym of posterior.(en)"
+          },
+          "at0083" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0083",
+            "text" : "*Occurrence (en)",
+            "description" : "*One or more sides of the body. (en)"
+          },
+          "at0084" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0084",
+            "text" : "*Unilateral (en)",
+            "description" : "*One-sided. (en)"
+          },
+          "at0085" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085",
+            "text" : "*Bilateral (en)",
+            "description" : "*Two-sided. (en)"
+          },
+          "at0086" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0086",
+            "text" : "*Left and right (en)",
+            "description" : "*Both sides of the body. (en)"
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Anatomical location(en)",
+            "description" : "*A physical site on or within the human body.(en)"
+          },
+          "at0023.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description that can be used to further refine and support the 'Body site name'.(en)",
+            "comment" : "*For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area.(en)"
+          }
+        },
+        "nb" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anatomisk lokalisering",
+            "description" : "Et fysisk sted på eller inne i menneskekroppen."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anatomisk lokalisering",
+            "description" : "Et fysisk sted på eller inne i menneskekroppen."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Navn på kroppssted",
+            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
+            "comment" : "Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at \"Navn på kroppssted\" registreres så anatomisk spesifikt som mulig. For eksempel; registrer \"øvre øyelokk\" heller enn \"øyelokk\" med \"øvre\" som kvalifikator; \"femte ribben\" heller enn \"ribben\" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer.\r\n\r\nDette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte når mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi.\r\n\r\nDersom navn på kroppssted er oppgitt i foreldrearketypen kan dette dataelementet være redundant. Imidlertid er det identifisert bruksområder der dataverdien kan kopieres inn i dette elementet for å understøtte semantiske spørringer basert på denne arketypen heller enn på foreldrearketypen."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Laterality (en)",
+            "description" : "*The side of the body on which the identified body site is located. (en)",
+            "comment" : "Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Venstre",
+            "description" : "Venstre side av kroppen"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Høyre",
+            "description" : "Høyre side av kroppen."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstbeskrivelse som kan brukes for å ytterligere presisere og støtte \"Navn på kroppsted\".",
+            "comment" : "For eksempel: Tilgrensende til leppens overgang fra slimhinne til hud; en tatovering dekker nedre halvdel av dette området."
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
+            "text" : "Alternativ struktur",
+            "description" : "Tilleggsinformasjon om det anatomiske stedet ved bruk av alternativ tilnærming for å beskrive det samme kroppsstedet.",
+            "comment" : "*For example, relative location or precise locations using coordinates. (en)"
+          },
+          "at0054" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054",
+            "text" : "Multimediarepresentasjon",
+            "description" : "Bilde eller annet medium brukt for å understøtte identifikasjonen av kroppsstedet."
+          },
+          "at0055" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055",
+            "text" : "Anatomisk linje",
+            "description" : "Detaljer om det anatomiske stedet beskrevet med teoretiske linjer tegnet gjennom anatomiske strukturer til bruk som et konsistent referansepunkt.",
+            "comment" : "Vanlige anatomiske linjer er inkludert som verdisett som kan utvides over tid, i tillegg gis mulighet for å bruke fritekst. Ytterligere bruk av dette dataelementet tillater registrering av typiske steder for hjertetspisstøt ved 5. intercostalrom på venstre side i midtclaviculærlinjen. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
+          },
+          "at0056" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056",
+            "text" : "Midtaksillærlinjen",
+            "description" : "Linje som løper vertikalt ned langs overflaten av kroppen gjennom apex i aksillen."
+          },
+          "at0057" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0057",
+            "text" : "Fremre aksillærlinje",
+            "description" : "En linje som løper vertikalt ned langs kroppsoverflaten, og passerer gjennom fremre aksillære hudfold."
+          },
+          "at0058" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058",
+            "text" : "Bakre aksillærlinje",
+            "description" : "En linje som løper vertikalt ned langs kroppsoverflaten, og passerer gjennom bakre aksillære hudfold."
+          },
+          "at0059" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0059",
+            "text" : "Midtclaviculærlinjen",
+            "description" : "En linje som løper vertikalt ned langs kroppsoverflaten parallelt med midtlinjen og passerer gjennom clavicelens midtpunkt."
+          },
+          "at0060" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060",
+            "text" : "Midtpupillinjen",
+            "description" : "En linje som løper vertikalt ned ansiktet gjennom midtpunktet av pupillen når man ser rett framover."
+          },
+          "at0062" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0062",
+            "text" : "Midtlinjen",
+            "description" : "En linje som løper vertikalt og deler kroppen i en venstre og en høyre del, passerer gjennom hodet, spinal medulla og umbilicus. Alternativt kan det brukes som en delelinje av en kroppsdel, for eksempel en inndeling av en finger."
+          },
+          "at0063" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "Midtskapulærlinjen",
+            "description" : "En linje som løper vertikalt ned langs ryggens overflate, parallelt med midtlinjen og passerer gjennom det inferiore punkt av skapula."
+          },
+          "at0064" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064",
+            "text" : "Aspekt",
+            "description" : "Spesifiserende detaljer om mer spesifikke aspekter ved det aktuelle kroppsstedet.",
+            "comment" : "Brukes til å øke presisjonen ved spesifisering av kroppsstedet, ved behov. Vanlige aspekter er blitt inkludert som et verdisett som kan utvides over tid, i tillegg til mulighet for å bruke fritekst. Elementet har som antagelse at kroppen blir beskrevet i den anatomiske posisjon. F.eks. proksimal uretra, plantart aspekt av venstre tommel. Flere aspekter kan også beskrives om det er nødvendig ved å åpne for opptil 2 forekomster. F.eks. venstre anterior/laterale (anteriolaterale) brystvegg. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
+          },
+          "at0065" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Spesifikt sted",
+            "description" : "Ytterligere detaljer gitt ved hjelp av en spesifikk region eller et punkt på eller i det spesifiserte kroppsstedet.",
+            "comment" : "Brukes til å øke presisjonen ved spesifisering av kroppsstedet, dersom påkrevd. For eksempel den øvre høyre kvadranten eller McBurneys punkt på bukveggen, eller interfalangealleddet på stortåen. Dersom dataelementet \"Navn på kroppssted\" er registrert ved hjelp av prekoordinerte termer som omfatter det spesifikke stedet er dette dataelementet overflødig."
+          },
+          "at0067" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "Medial",
+            "description" : "Mot midtlinjen av kroppen."
+          },
+          "at0068" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068",
+            "text" : "Lateral",
+            "description" : "Mot utsiden eller kanten av kroppen."
+          },
+          "at0069" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "Superior",
+            "description" : "Over kroppssted, ofte menes mot hodet. Synonymt med \"kranial\"."
+          },
+          "at0070" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "Inferior",
+            "description" : "Under kroppssted, ofte menes mot føttene. Synonymt med \"kaudal\"."
+          },
+          "at0071" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071",
+            "text" : "Anterior",
+            "description" : "Mot fronten eller ventrale overflaten av kroppsstedet."
+          },
+          "at0072" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072",
+            "text" : "Posterior",
+            "description" : "Mot bakside eller mot den dorsale overflaten av kroppsstedet."
+          },
+          "at0073" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073",
+            "text" : "Proksimal",
+            "description" : "Mer sentralt eller tettere til festepunktet, beskriver vanligvis en del av et lem, finger eller vedheng."
+          },
+          "at0074" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074",
+            "text" : "Distal",
+            "description" : "Mer perifert eller lengre vekke fra festepunktet, beskriver vanligvis av en del av et lem, finger eller vedheng."
+          },
+          "at0075" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075",
+            "text" : "Palmar",
+            "description" : "Mot håndflaten."
+          },
+          "at0076" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076",
+            "text" : "Plantar",
+            "description" : "Mot fotsålen."
+          },
+          "at0077" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "Mid",
+            "description" : "I midten av kroppsstedet."
+          },
+          "at0078" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0078",
+            "text" : "Oral",
+            "description" : "Mot munnen. Brukes som regel til å beskrive lokaliseringer i fordøyelsessystemet."
+          },
+          "at0079" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079",
+            "text" : "Anal",
+            "description" : "Mot anus. Brukes som regel til å beskrive lokaliseringer i fordøyelsessystemet."
+          },
+          "at0080" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080",
+            "text" : "Dyp",
+            "description" : "Bort fra overflaten av kroppsstedet."
+          },
+          "at0081" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0081",
+            "text" : "Overfladisk",
+            "description" : "Mot overflaten av kroppsstedet."
+          },
+          "at0082" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0082",
+            "text" : "Dorsal",
+            "description" : "Mot håndbaken eller toppen av foten. Brukes som motsetning til palmar og plantar, ikke som synonym for posterior."
+          },
+          "at0083" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0083",
+            "text" : "*Occurrence (en)",
+            "description" : "*One or more sides of the body. (en)"
+          },
+          "at0084" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0084",
+            "text" : "*Unilateral (en)",
+            "description" : "*One-sided. (en)"
+          },
+          "at0085" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085",
+            "text" : "*Bilateral (en)",
+            "description" : "*Two-sided. (en)"
+          },
+          "at0086" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0086",
+            "text" : "*Left and right (en)",
+            "description" : "*Both sides of the body. (en)"
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anatomisk lokalisering",
+            "description" : "Et fysisk sted på eller inne i menneskekroppen."
+          },
+          "at0023.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstbeskrivelse som kan brukes for å ytterligere presisere og støtte \"Navn på kroppsted\".",
+            "comment" : "For eksempel: Tilgrensende til leppens overgang fra slimhinne til hud; en tatovering dekker nedre halvdel av dette området."
+          }
+        },
+        "pt-br" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Localização anatômica",
+            "description" : "Identificação de um local físico dentro ou no corpo humano."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Localização anatômica",
+            "description" : "Identificação de um local físico dentro ou no corpo humano."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Body site name(en)",
+            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
+            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*Laterality (en)",
+            "description" : "*The side of the body on which the identified body site is located. (en)",
+            "comment" : "Se o local identificado do corpo não tem relação com a lateralidade, este elemento de dados não deve ter um valor.\r\nSe o elemento de dados de nome de local do corpo usa termos predefinidos que incluem lateralidade, então este elemento de dados é redundante."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Esquerdo",
+            "description" : "Lado esquerdo do corpo."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Direito",
+            "description" : "Lado direito do corpo."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Descrição",
+            "description" : "Descrição narrativa que pode ser usada para refinar e apoiar o 'nome do local do corpo'.",
+            "comment" : "Por exemplo: adjacentes à borda do vermelhão; uma tatuagem cobre a metade inferior desta área."
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
+            "text" : "Estrutura alternativa",
+            "description" : "Detalhes adicionais sobre o local anatômico usando abordagens alternativas para descrever o mesmo local do corpo.",
+            "comment" : "*For example, relative location or precise locations using coordinates. (en)"
+          },
+          "at0054" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054",
+            "text" : "Representação multimídia",
+            "description" : "Imagem ou outros meios de comunicação utilizados para apoiar a identificação do local do corpo."
+          },
+          "at0055" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055",
+            "text" : "Linha anatômica",
+            "description" : "Detalhes adicionais utilizando-se linhas teóricas desenhadas através de estruturas anatômicas, utilizadas para fornecer um ponto de referência consistente no corpo humano.",
+            "comment" : "Linhas anatômicas comuns foram incluídas como um conjunto de valor, que pode ser estendido ao longo do tempo, além de uma opção de texto livre. O uso adicional deste elemento de dados permite a gravação da posição típica da batida do ápice cardíaco no 5º espaço intercostal, lado esquerdo e linha médio-clavicular. Se o elemento de dados de nome de local do corpo usa termos predefinidos que incluem linha anatômica, então este elemento de dados é redundante."
+          },
+          "at0056" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056",
+            "text" : "Linha axilar média",
+            "description" : "Linha correndo verticalmente para baixo na superfície do corpo, passando através do ápice da axila."
+          },
+          "at0057" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0057",
+            "text" : "Linha axilar anterior",
+            "description" : "Linha correndo verticalmente para baixo da superfície do corpo , passando pela dobra cutânea axilar anterior ."
+          },
+          "at0058" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058",
+            "text" : "Linha axilar posterior",
+            "description" : "Linha correndo verticalmente para baixo da superfície do corpo , passando pela dobra cutânea axilar posterior ."
+          },
+          "at0059" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0059",
+            "text" : "Linha clavicular média",
+            "description" : "Linha correndo verticalmente para baixo na superfície do corpo, paralelo à linha média e passando pelo ponto médio da clavícula."
+          },
+          "at0060" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060",
+            "text" : "Linha pupilar média",
+            "description" : "Linha correndo verticalmente para baixo à face através do ponto médio da pupila quando se olha diretamente para a frente."
+          },
+          "at0062" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0062",
+            "text" : "Linha média",
+            "description" : "Linha vertical que divide o corpo em partes esquerda e direita, passando através da cabeça, medula espinhal e umbigo. Alternativamente pode referir uma linha que divide uma parte do corpo em duas partes iguais."
+          },
+          "at0063" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "Linha escapular média",
+            "description" : "A linha que corre verticalmente para baixo da superfície posterior do corpo, paralelamente à linha mediana e que passa pelo ponto inferior da escápula."
+          },
+          "at0064" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064",
+            "text" : "Aspecto",
+            "description" : "Detalhes sobre o aspecto específico do local identificado no corpo.",
+            "comment" : "Use para aumentar a precisão da identificação do site do corpo, se necessário. Aspectos comuns foram incluídos como um conjunto de valor, que pode ser estendido ao longo do tempo, além de uma opção de texto livre. Pressupõe que o corpo está sendo descrito enquanto na posição anatômica. Por exemplo: uretra proximal; face plantar do polegar esquerdo. Múltiplos aspectos também podem ser descritos, se necessário, permitindo para as ocorrências de 0..2. Por exemplo: uma lesão pode ser na parede torácica esquerda anterior-lateral (ou seja, ântero-lateral). Se o elemento de dados de nome de local do corpo usa termos predefinidos que incluem o aspecto, então este elemento de dados é redundante."
+          },
+          "at0065" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Local específico",
+            "description" : "Detalhes adicionais utilizando uma região específica ou um ponto, ou dentro, o local do corpo identificado.",
+            "comment" : "Use para aumentar a precisão da identificação do local do corpo, se necessário. Por exemplo, o quadrante superior direito ou ponto de McBurney na parede abdominal ou região inter falângica dos dedos do pé. Se o elemento de dados do nome do local do corpo usa termos predefinidos que incluem o local específico, então este elemento de dados é redundante."
+          },
+          "at0067" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "Medial",
+            "description" : "Em direção à linha média do local do corpo"
+          },
+          "at0068" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068",
+            "text" : "Lateral",
+            "description" : "Para o lado, ou borda , do local do corpo."
+          },
+          "at0069" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "Superior",
+            "description" : "Acima do local do corpo, frequentemente significa na direção da cabeça."
+          },
+          "at0070" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "Inferior",
+            "description" : "Abaixo do local do corpo, frequentemente significa para os pés."
+          },
+          "at0071" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071",
+            "text" : "Anterior",
+            "description" : "Para a frente , ou na superfície ventral, do local do corpo."
+          },
+          "at0072" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072",
+            "text" : "Posterior",
+            "description" : "Para a parte traseira ou superfície dorsal do local do corpo."
+          },
+          "at0073" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073",
+            "text" : "Proximal",
+            "description" : "Mais central ou para mais perto do ponto de ligação, e, geralmente descreve a parte de um membro, dedo ou apêndice."
+          },
+          "at0074" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074",
+            "text" : "Distal",
+            "description" : "Mais periférico, ou mais do ponto de acessório, e geralmente descreve a parte de um membro, apêndice ou dígito."
+          },
+          "at0075" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075",
+            "text" : "Palmar",
+            "description" : "Em direção às palmas das mãos."
+          },
+          "at0076" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076",
+            "text" : "Plantar",
+            "description" : "Em direção às solas dos pés."
+          },
+          "at0077" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "Médio",
+            "description" : "No meio do corpo."
+          },
+          "at0078" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0078",
+            "text" : "Oral",
+            "description" : "Para a boca. Geralmente utilizado para descrever locais no sistema digestivo."
+          },
+          "at0079" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079",
+            "text" : "Anal",
+            "description" : "Para o ânus. Geralmente utilizado para descrever locais no sistema digestivo."
+          },
+          "at0080" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080",
+            "text" : "*Deep(en)",
+            "description" : "*Away from the surface of the body site.(en)"
+          },
+          "at0081" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0081",
+            "text" : "*Superficial(en)",
+            "description" : "*Towards the surface of the body site.(en)"
+          },
+          "at0082" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0082",
+            "text" : "*Dorsal(en)",
+            "description" : "*Towards the back of the hand or top of the foot. To be used as opposites of palmar or plantar, not as a synonym of posterior.(en)"
+          },
+          "at0083" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0083",
+            "text" : "*Occurrence (en)",
+            "description" : "*One or more sides of the body. (en)"
+          },
+          "at0084" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0084",
+            "text" : "*Unilateral (en)",
+            "description" : "*One-sided. (en)"
+          },
+          "at0085" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085",
+            "text" : "*Bilateral (en)",
+            "description" : "*Two-sided. (en)"
+          },
+          "at0086" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0086",
+            "text" : "*Left and right (en)",
+            "description" : "*Both sides of the body. (en)"
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Localização anatômica",
+            "description" : "Identificação de um local físico dentro ou no corpo humano."
+          },
+          "at0023.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Descrição",
+            "description" : "Descrição narrativa que pode ser usada para refinar e apoiar o 'nome do local do corpo'.",
+            "comment" : "Por exemplo: adjacentes à borda do vermelhão; uma tatuagem cobre a metade inferior desta área."
+          }
+        },
+        "de" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anatomische Lokalisation",
+            "description" : "Eine physische Stelle am oder innerhalb des menschlichen Körpers."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anatomische Lokalisation",
+            "description" : "Eine physische Stelle am oder innerhalb des menschlichen Körpers."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Name der Körperstelle",
+            "description" : "Identifikation einer einzelnen physischen Stelle entweder am oder innerhalb des menschlichen Körpers.",
+            "comment" : "Dieses Datenelement ist der einzige verpflichtend auszufüllende Datenpunkt in diesem Archetypen und sollte als primärer Datenpunkt verwendet werden, um eine anatomische Lokalisation mit einem häufig verwendeten Namen aufzuzeichnen. Es wird dringend empfohlen, dass der Name der Körperstelle so genau aufgezeichnet wird, wie es anatomisch möglich ist. Zum Beispiel: zeichne \"oberes Augenlid\" auf und nicht \"Augenlid\" mit \"oberer\" als Qualifier; \"fünfte Rippe\" statt \"Rippe\" mit einem numerischen Qualifier. Verwenden Sie die anderen Datenelemente für Lateralität, Sichtweise, Region und anatomische Linie, um mehr Details anzugeben. \r\n\r\nDieses Datenelement sollte mit einer Terminologie kodiert werden, die nach Möglichkeit Entscheidungsunterstützung auslösen kann - ein geeignetes Termset für die Verwendung hier könnte aus einzelnen Konzepten oder einer Liste von vorab abgestimmten Begriffen zusammengesetzt sein. Freitext sollte nur verwendet werden, wenn keine entsprechende Terminologie vorhanden ist. \r\n\r\nWenn der Name der Körperstelle bereits im übergeordneten Archetyp angegeben ist, kann dieses Datenelement redundant sein. Alternativ wurde ein Anwendungsfall ermittelt, bei dem der Wert in dieses Element dupliziert sein könnte, um semantische Abfragen unter Verwendung dieses Archetyps und nicht das Datenelement innerhalb des übergeordneten Elements zu unterstützen."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Lateralität",
+            "description" : "Die Seite des Körpers, an der sich die identifizierte Körperstelle befindet.",
+            "comment" : "Wenn die identifizierte Körperstelle keine Seitenlage aufweist, sollte dieses Datenelement keinen Wert haben. Wenn das Datenelement \"Name der Körperstelle\" präkoordinierte Bezeichnungen verwendet, die eine Seitenlokalisation einschließt, dann ist dieses Datenelement redundant."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Links",
+            "description" : "Die linke Körperseite."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Rechts",
+            "description" : "Die rechte Körperseite."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Beschreibung",
+            "description" : "Aussagekräftige Erläuterung, die verwendet werden kann, um die \"Körperstelle\" weiter zu verfeinern.",
+            "comment" : "Zum Beispiel: Angrenzend an den Amorbogen; eine Tätowierung bedeckt die untere Hälfte dieses Bereichs."
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
+            "text" : "Alternative Struktur",
+            "description" : "Zusätzliche Informationen über die anatomische Lage mit alternativen Ansätzen zur Beschreibung der gleichen Körperstelle.",
+            "comment" : "Zum Beispiel, relative oder exakte Positionen unter Verwendung von Koordinaten."
+          },
+          "at0054" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054",
+            "text" : "Multimediale Darstellung",
+            "description" : "Bilder oder andere Medien, die der Identifizierung der Körperstelle dienen."
+          },
+          "at0055" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055",
+            "text" : "Anatomische Linie",
+            "description" : "Zusätzliches Detail unter Verwendung theoretischer Linien, die durch anatomische Strukturen erweitert werden können, um einen einheitlichen Bezugspunkt auf dem menschlichen Körper zu erhalten.",
+            "comment" : "Verbreitete anatomische Linien wurden als Wertemenge aufgenommen, die im Laufe der Zeit erweitert werden können, sowie eine Freitextoption. Die zusätzliche Verwendung dieses Datenelements ermöglicht die Aufzeichnung der typischen Position des Herzschlags am 5. Interkostalraum, der linken Seite und der Mittelklavikularlinie. Wenn das Datenelement 'Body site name' vorkoordinierte Begriffe verwendet, die eine anatomische Linie enthalten, ist dieses Datenelement redundant."
+          },
+          "at0056" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056",
+            "text" : "mittlere Axillarlinie",
+            "description" : "Linie, die senkrecht zur Körperoberfläche verläuft und durch den Scheitelpunkt der Achselhöhle geht."
+          },
+          "at0057" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0057",
+            "text" : "vordere Axillarlinie",
+            "description" : "Die Linie verläuft senkrecht über die Körperoberfläche und verläuft durch die vordere Hautfalte der Achselhöhle."
+          },
+          "at0058" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058",
+            "text" : "hintere Axillarlinie",
+            "description" : "Linie, die senkrecht über die Körperoberfläche verläuft und durch die hintere Achselhaut führt."
+          },
+          "at0059" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0059",
+            "text" : "Medioklavikularlinie",
+            "description" : "Linie, die senkrecht über die Körperoberfläche verläuft, parallel zur Mittellinie und durch den Mittelpunkt der Klavikula führt."
+          },
+          "at0060" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060",
+            "text" : "Mittelere Pupillarlinie",
+            "description" : "Die Linie verläuft vertikal durch den Mittelpunkt der Pupille, wenn man direkt nach vorne schaut."
+          },
+          "at0062" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0062",
+            "text" : "Mittellinie",
+            "description" : "Vertikal verlaufende Linie, die den Körper in eine linke und rechte Seite teilt und durch den Kopf, das Rückenmark und den Nabel verläuft. Alternativ kann es sich auf eine Linie beziehen, die ein Körperteil in zwei gleiche Teile teilt, zum Beispiel einen Zeh/Finger."
+          },
+          "at0063" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063",
+            "text" : "Mittlere Skapularlinie",
+            "description" : "Die Linie verläuft senkrecht über die hintere Körperoberfläche, parallel zur Mittellinie und verläuft durch den unteren Punkt des Schulterblattes."
+          },
+          "at0064" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064",
+            "text" : "Perspektive",
+            "description" : "Qualifizierende Angabe unter spezifischer Sicht der identifizierten Körperstelle.",
+            "comment" : "Falls benötigt, verwenden Sie dieses Element zur Erhöhung der Erkennungsgenauigkeit der Körperstelle. Häufige Aspekte wurden als Wertmengen hinzugefügt, die im Laufe der Zeit erweitert werden können, sowie auch eine Freitextoption. Dies setzt voraus, dass der Körper in der anatomischen Position beschrieben wird. Zum Beispiel: proximal Urethra; plantare Seite des linken Daumens. Bei Bedarf können auch mehrere Aspekte beschrieben werden, indem 0..2 Lokalisationen zugelassen werden. Zum Beispiel: Eine Läsion kann sich an der linken anterior/lateral (d.h. anterolateralen) Brustwand befinden. Wenn das Datenelement 'Körperstelle' vordefinierte Begriffe verwendet, die die Perspektive enthalten, dann ist dieses Datenelement redundant."
+          },
+          "at0065" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Spezifische Körperstelle",
+            "description" : "Zusätzliches Detail unter Verwendung eines bestimmten Bereiches oder eines Punktes auf oder innerhalb der spezifischen Körperstelle.",
+            "comment" : "Zur Erhöhung der Erkennungsgenauigkeit der Körperstelle, falls dies erforderlich ist. Zum Beispiel der obere rechte Quadrant oder McBurney's Punkt auf der Bauchdecke oder das Zwischengelenk der Großzehe. Wenn das Datenelement \"Name der Körperstelle\" präkoordinierte Bezeichnungen für die jeweilige Stelle enthält, dann ist dieses Datenelement redundant."
+          },
+          "at0067" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067",
+            "text" : "Medial",
+            "description" : "Zur Körpermitte hin orientiert."
+          },
+          "at0068" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068",
+            "text" : "Lateral",
+            "description" : "Zur Seite oder zum Rand der Körperstelle."
+          },
+          "at0069" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069",
+            "text" : "Superior",
+            "description" : "Über der Körpermitte, oft in Richtung des Kopfes."
+          },
+          "at0070" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070",
+            "text" : "Inferior",
+            "description" : "Unterhalb der Körpermitte, oft in Richtung der Füße."
+          },
+          "at0071" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071",
+            "text" : "Anterior",
+            "description" : "In Richtung der Vorderseite oder der ventralen Oberfläche des Körpers."
+          },
+          "at0072" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072",
+            "text" : "Posterior",
+            "description" : "In Richtung Rücken oder Rückseite des Körpers."
+          },
+          "at0073" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073",
+            "text" : "Proximal",
+            "description" : "Zur Körpermitte hin. Beschreibt für gewöhnlich einen Teil eines Gliedmaßes, Fingers oder eines Anhängsels."
+          },
+          "at0074" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074",
+            "text" : "Distal",
+            "description" : "Mehr periphere oder weiter vom Körpermitte entfernte Stelle. Beschreibt in der Regel einen Teil einer Extremität, eines Fingers/Zehs oder Körperglieds."
+          },
+          "at0075" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075",
+            "text" : "Palmar",
+            "description" : "In Richtung der Handfläche."
+          },
+          "at0076" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076",
+            "text" : "Plantar",
+            "description" : "In Richtung der Fußsohle."
+          },
+          "at0077" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077",
+            "text" : "Mid",
+            "description" : "In der Mitte des Körpers."
+          },
+          "at0078" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0078",
+            "text" : "Oral",
+            "description" : "Den Mund betreffend. Wird üblicherweise zur Beschreibung von Stellen im Verdauungssystem verwendet."
+          },
+          "at0079" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079",
+            "text" : "Anal",
+            "description" : "Zum Anus hin. Wird üblicherweise zur Beschreibung von Stellen im Verdauungssystem verwendet."
+          },
+          "at0080" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080",
+            "text" : "Tief",
+            "description" : "Entfernt von der Oberfläche der Körperstelle."
+          },
+          "at0081" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0081",
+            "text" : "Oberflächlich",
+            "description" : "Auf die Oberfläche zu, bezeichnet oberflächlich gelegene Strukturen."
+          },
+          "at0082" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0082",
+            "text" : "Dorsal",
+            "description" : "In Richtung des Handrückens oder des Fußrückens hin gelegen. Als Gegenstück zu Palmar oder Plantar, nicht als Synonym für posterior."
+          },
+          "at0083" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0083",
+            "text" : "Auftreten",
+            "description" : "Eine oder mehrere Seiten des Körpers."
+          },
+          "at0084" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0084",
+            "text" : "Unilateral",
+            "description" : "Einseitig betrachtet."
+          },
+          "at0085" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085",
+            "text" : "Bilateral",
+            "description" : "Beidseitig betrachtet."
+          },
+          "at0086" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0086",
+            "text" : "Links und Rechts",
+            "description" : "Beide Körperseiten."
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Anatomische Lokalisation",
+            "description" : "Eine physische Stelle am oder innerhalb des menschlichen Körpers."
+          },
+          "at0023.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Beschreibung",
+            "description" : "Aussagekräftige Erläuterung, die verwendet werden kann, um die \"Körperstelle\" weiter zu verfeinern.",
+            "comment" : "Zum Beispiel: Angrenzend an den Amorbogen; eine Tätowierung bedeckt die untere Hälfte dieses Bereichs."
+          }
+        }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0002" : "term:SNOMED-CT::272741003",
+          "at0003" : "term:SNOMED-CT::419161000",
+          "at0004" : "term:SNOMED-CT::419465000"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
@@ -2563,7 +5359,72 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ ]
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout",
+        "email" : "ballout.sarah@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês - SP",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "Biljana Princic"
+      },
+      "otherDetails" : { }
+    } ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
@@ -2581,6 +5442,154 @@
     },
     "author" : {
       "name" : "Jasmin Buck"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : {
+      "name" : "Sofia Janstad, Åsa Skagerhult",
+      "organisation" : "SLL, Region Östergötland",
+      "email" : "sofia.lang-janstad@sll.se, asa.skagerhult@regionostergotland.se"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : {
+      "name" : "Alan March",
+      "organisation" : "Hospital Universitario Austral - Buenos Aires - Argentina",
+      "email" : "alandmarch@gmail.com"
+    },
+    "accreditation" : "physician",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "John Tore Valand, Liv Laugen, Silje Ljosland Bakke",
+      "organisation" : "Helse Bergen, ​Oslo University Hospital, Norway, Helse Vest IKT AS",
+      "email" : "liv.laugen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : {
+      "name" : "Seung-Jong Yu",
+      "organisation" : "InfoClinic Co.,Ltd.",
+      "email" : "seungjong.yu@gmail.com"
+    },
+    "accreditation" : "Certified Board of Family Medicine in South Korea",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : {
+      "name" : "Adriana Kitajima, Débora Farage, Fernanda Maia, Laíse Figueiredo, Marivan Abrahão",
+      "organisation" : "Core Consulting",
+      "email" : "contato@coreconsulting.com.br"
+    },
+    "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : {
+      "name" : "?"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : {
+      "name" : "Mona Saleh"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : {
+      "name" : "Francesca Frexia",
+      "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+      "email" : "francesca.frexia@crs4.it"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : {
+      "name" : "Pieter Bos, Jelte Zeilstra",
+      "organisation" : "Nedap Healthcare"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : {
+      "name" : "Yexuan Cheng",
+      "organisation" : "浙江大学",
+      "email" : "3160100913@zju.edu.cn"
     },
     "otherDetails" : { }
   } ]
