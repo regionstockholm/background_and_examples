@@ -24,10 +24,10 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "bb9f2284748de9b388e57c72de18a4f7",
+      "MD5-CAM-1.0.1" : "5a80bb2e6f7170d7b35031954545c0f0",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959",
       "original_language" : "ISO_639-1::de",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.1.0",
       "build_uid" : ""
     },
     "details" : {
@@ -327,7 +327,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Mikrobiologischer Befund",
+          "text" : "Microbiology Report",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         },
         "at0002.0.1" : {
