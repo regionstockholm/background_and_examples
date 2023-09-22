@@ -18,8 +18,8 @@
     "conversionDetails" : { },
     "otherDetails" : {
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959",
-      "MD5-CAM-1.0.1" : "efce0cbccd1b9460671d297ba0646523",
-      "sem_ver" : "1.1.0",
+      "MD5-CAM-1.0.1" : "45dabb868f0a47efa76b33657e0cfdf5",
+      "sem_ver" : "1.2.0",
       "build_uid" : ""
     },
     "details" : {
@@ -303,7 +303,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Generic laboratory report (E)",
+          "text" : "Laboratory report (E)",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         }
       },
