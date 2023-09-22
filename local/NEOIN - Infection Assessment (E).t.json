@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD",
-      "MD5-CAM-1.0.1" : "1aad3f1acd3838a75e5e4820b6eb6987"
+      "MD5-CAM-1.0.1" : "142aafa58ad2c2b1730fe6e4f30741cb"
     },
     "details" : {
       "de" : {
@@ -5866,7 +5866,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Blood gloucose",
+            "text" : "Blood glucose level",
             "description" : "The result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual."
           }
         },
@@ -6181,7 +6181,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
               "defaultValue" : {
-                "value" : "Blood glucose",
+                "value" : "Blood glucose level",
                 "@type" : "DV_TEXT"
               },
               "attributes" : [ {
@@ -6190,7 +6190,7 @@
                 "children" : [ {
                   "@type" : "C_STRING",
                   "rmTypeName" : "STRING",
-                  "constraint" : [ "Blood glucose" ]
+                  "constraint" : [ "Blood glucose level" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
