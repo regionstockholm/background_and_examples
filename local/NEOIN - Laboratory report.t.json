@@ -18,7 +18,7 @@
     "conversionDetails" : { },
     "otherDetails" : {
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959",
-      "MD5-CAM-1.0.1" : "45dabb868f0a47efa76b33657e0cfdf5",
+      "MD5-CAM-1.0.1" : "165ef200894def39f5b2823c230ae6ab",
       "sem_ver" : "1.2.0",
       "build_uid" : ""
     },
@@ -611,42 +611,11 @@
         }
       },
       "sv" : {
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000",
           "text" : "Rapport",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Rapport-id",
-          "description" : "Information som identifierar rapporten.\r\n"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilläggsinformation",
-          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
-          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -669,42 +638,11 @@
         }
       },
       "zh" : {
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000",
           "text" : "报告",
           "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
-        "at0000" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "报告ID",
-          "description" : "关于这份报告的标识信息。"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "状态",
-          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "扩展",
-          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
-          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -749,7 +687,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "D02DE57ACD4A04C1ADAE1F8B28197890"
+        "PARENT:MD5-CAM-1.0.1" : "4694A2E191E014CC4D0AC9B43628F6ED"
       },
       "details" : {
         "de" : {
@@ -2150,7 +2088,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F0EBDC100A16A3A8BE1511BF3715C582"
+        "PARENT:MD5-CAM-1.0.1" : "967D00C9F1E461171847529D4FDA100A"
       },
       "details" : {
         "de" : {
@@ -2912,7 +2850,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "75CA45A0853AE06C9EA912841C3F1E9D"
+        "PARENT:MD5-CAM-1.0.1" : "387596AF709CE27D623064209E998D45"
       },
       "details" : {
         "de" : {
@@ -3137,88 +3075,6 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : {
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "*Number of Containers(en)",
-            "description" : "*The total number of physical units holding this specimen. (en)",
-            "comment" : "*For example: Number of buckets, jars, vials, tubes, blocks, slides or grids. (en)"
-          },
-          "at0083" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0083",
-            "text" : "*Additional details (en)",
-            "description" : "*Additional structured details about the specimen. (en)",
-            "comment" : "*For example: details about needle biopsies in prostate cancer, where both the request and reporting about the specimen are detailed and specific. (en)"
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "*Container Details(en)",
-            "description" : "*Details about containers used. (en)"
-          },
-          "at0087" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0087",
-            "text" : "*Source site (en)",
-            "description" : "*Identification of the body site or other location from where the specimen is collected. (en)",
-            "comment" : "*Coding of the name of the source site with a terminology is preferred, where possible. Use this data element to record precoordinated source sites. If the requirements for recording the source site are determined at run-time by the application or require more complex modelling such as relative locations then use the 'Structured source site' SLOT in this archetype. If the source site is included in the 'Specimen type' via precoordinated codes, this data element becomes redundant. (en)"
-          },
-          "at0088" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0088",
-            "text" : "*External identifier (en)",
-            "description" : "*A unique identifier of the specimen, assigned by a party external to the laboratory such as the requester. (en)"
-          },
-          "at0089" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0089",
-            "text" : "*Icteric (en)",
-            "description" : "*The specimen was icteric. (en)"
-          },
-          "at0090" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0090",
-            "text" : "*Handling error (en)",
-            "description" : "*An error arose when handling the specimen. For example: The specimen was spilled, or stored outside the recommended temperature range. (en)"
-          },
-          "at0091" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0091",
-            "text" : "*Age (en)",
-            "description" : "*The specimen was too old to analyse accurately. (en)"
-          },
-          "at0092" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0092",
-            "text" : "*Technical failure (en)",
-            "description" : "*The specimen could not be analysed for technical reasons. (en)"
-          },
-          "at0093" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0093",
-            "text" : "*Transport details (en)",
-            "description" : "*Structured details about transport of the specimen. (en)"
-          },
-          "at0094" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0094",
-            "text" : "*Clotted (en)",
-            "description" : "*The specimen was clotted. (en)"
-          },
-          "at0095" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0095",
-            "text" : "*Incorrectly labelled (en)",
-            "description" : "*The specimen was labelled incorrectly. (en)"
-          },
-          "at0096" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0096",
-            "text" : "*Digital representation (en)",
-            "description" : "*Structured details about a digital representation of the specimen. (en)",
-            "comment" : "*For example the scanned image of a histopathology slide. (en)"
-          },
           "at0097" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0097",
@@ -3245,108 +3101,9 @@
             "code" : "at0100",
             "text" : "*Storage details (en)",
             "description" : "*Structured details about the storage of the specimen. (en)"
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "*Collection Method(en)",
-            "description" : "*The method of collection used. (en)",
-            "comment" : "*For example: venepuncture, biopsy, resection. Coding of the collection method with a terminology is preferred, where possible. If the collection method is included in the 'Specimen type' via precoordinated codes, this data element becomes redundant. (en)",
-            "fhir_mapping" : "*Specimen.collection.method(en)"
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "العينة",
-            "description" : "*A specimen collected from an individual or related to that individual. (en)",
-            "comment" : "*For example: Tissue, body fluid or food. (en)"
           }
         },
         "en" : {
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Number of containers",
-            "description" : "The total number of physical units holding this specimen.",
-            "comment" : "For example: Number of buckets, jars, vials, tubes, blocks, slides or grids."
-          },
-          "at0083" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0083",
-            "text" : "Additional details",
-            "description" : "Additional structured details about the specimen.",
-            "comment" : "For example: details about needle biopsies in prostate cancer, where both the request and reporting about the specimen are detailed and specific."
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "Container details",
-            "description" : "Details about containers used."
-          },
-          "at0087" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0087",
-            "text" : "Source site",
-            "description" : "Identification of the body site or other location from where the specimen is collected.",
-            "comment" : "For example: 'wound on left calf', 'IV cannula right arm', 'right kidney'.\r\nCoding of the name of the source site with a terminology is preferred, where possible. Use this data element to record precoordinated source sites. If the requirements for recording the source site are determined at run-time by the application or require more complex modelling such as relative locations then use the 'Structured source site' SLOT in this archetype. If the source site is included in the 'Specimen type' via precoordinated codes, this data element becomes redundant."
-          },
-          "at0088" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0088",
-            "text" : "External identifier",
-            "description" : "A unique identifier of the specimen, assigned by a party external to the laboratory.",
-            "comment" : "For example: 'Requester ID', 'Archive ID, 'Biobank ID'.",
-            "fhir_mapping" : "Specimen.identifier"
-          },
-          "at0089" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0089",
-            "text" : "Icteric",
-            "description" : "The specimen was icteric."
-          },
-          "at0090" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0090",
-            "text" : "Handling error",
-            "description" : "An error arose when handling the specimen. For example: Incorrect storage, broken container."
-          },
-          "at0091" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0091",
-            "text" : "Age",
-            "description" : "The specimen was too old to analyse or to analyse accurately."
-          },
-          "at0092" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0092",
-            "text" : "Technical failure",
-            "description" : "The specimen could not be analysed for technical reasons."
-          },
-          "at0093" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0093",
-            "text" : "Transport details",
-            "description" : "Structured details about transport of the specimen."
-          },
-          "at0094" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0094",
-            "text" : "Clotted",
-            "description" : "The specimen was clotted."
-          },
-          "at0095" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0095",
-            "text" : "Incorrectly labelled",
-            "description" : "The specimen was labelled incorrectly."
-          },
-          "at0096" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0096",
-            "text" : "Digital representation",
-            "description" : "Structured details about a digital representation of the specimen.",
-            "comment" : "For example the scanned image of a histopathology slide."
-          },
           "at0097" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0097",
@@ -3373,106 +3130,9 @@
             "code" : "at0100",
             "text" : "Storage details",
             "description" : "Structured details about the storage of the specimen."
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Collection method",
-            "description" : "The method of collection used.",
-            "comment" : "For example: venepuncture, biopsy, resection. Coding of the collection method with a terminology is preferred, where possible. If the collection method is included in the 'Specimen type' via precoordinated codes, this data element becomes redundant.",
-            "fhir_mapping" : "Specimen.collection.method"
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Specimen",
-            "description" : "A physical sample collected from, or related to, an individual for the purpose of investigation, examination or analysis.",
-            "comment" : "For example: Tissue or body fluid."
           }
         },
         "pt-br" : {
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Número de recipientes",
-            "description" : "*The total number of physical units holding this specimen. (en)",
-            "comment" : "*For example: Number of buckets, jars, vials, tubes, blocks, slides or grids. (en)"
-          },
-          "at0083" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0083",
-            "text" : "*Additional details (en)",
-            "description" : "*Additional structured details about the specimen. (en)",
-            "comment" : "*For example: details about needle biopsies in prostate cancer, where both the request and reporting about the specimen are detailed and specific. (en)"
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "Detalhes do recipiente",
-            "description" : "*Details about containers used. (en)"
-          },
-          "at0087" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0087",
-            "text" : "*Source site (en)",
-            "description" : "*Identification of the body site or other location from where the specimen is collected. (en)",
-            "comment" : "*Coding of the name of the source site with a terminology is preferred, where possible. Use this data element to record precoordinated source sites. If the requirements for recording the source site are determined at run-time by the application or require more complex modelling such as relative locations then use the 'Structured source site' SLOT in this archetype. If the source site is included in the 'Specimen type' via precoordinated codes, this data element becomes redundant. (en)"
-          },
-          "at0088" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0088",
-            "text" : "*External identifier (en)",
-            "description" : "*A unique identifier of the specimen, assigned by a party external to the laboratory such as the requester. (en)"
-          },
-          "at0089" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0089",
-            "text" : "*Icteric (en)",
-            "description" : "*The specimen was icteric. (en)"
-          },
-          "at0090" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0090",
-            "text" : "*Handling error (en)",
-            "description" : "*An error arose when handling the specimen. For example: The specimen was spilled, or stored outside the recommended temperature range. (en)"
-          },
-          "at0091" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0091",
-            "text" : "*Age (en)",
-            "description" : "*The specimen was too old to analyse accurately. (en)"
-          },
-          "at0092" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0092",
-            "text" : "*Technical failure (en)",
-            "description" : "*The specimen could not be analysed for technical reasons. (en)"
-          },
-          "at0093" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0093",
-            "text" : "*Transport details (en)",
-            "description" : "*Structured details about transport of the specimen. (en)"
-          },
-          "at0094" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0094",
-            "text" : "*Clotted (en)",
-            "description" : "*The specimen was clotted. (en)"
-          },
-          "at0095" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0095",
-            "text" : "*Incorrectly labelled (en)",
-            "description" : "*The specimen was labelled incorrectly. (en)"
-          },
-          "at0096" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0096",
-            "text" : "*Digital representation (en)",
-            "description" : "*Structured details about a digital representation of the specimen. (en)",
-            "comment" : "*For example the scanned image of a histopathology slide. (en)"
-          },
           "at0097" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0097",
@@ -3499,106 +3159,9 @@
             "code" : "at0100",
             "text" : "*Storage details (en)",
             "description" : "*Structured details about the storage of the specimen. (en)"
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Método de coleta",
-            "description" : "*The method of collection used. (en)",
-            "comment" : "*For example: venepuncture, biopsy, resection. Coding of the collection method with a terminology is preferred, where possible. If the collection method is included in the 'Specimen type' via precoordinated codes, this data element becomes redundant. (en)"
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Espécime",
-            "description" : "*A specimen collected from an individual or related to that individual. (en)",
-            "comment" : "*For example: Tissue, body fluid or food. (en)"
           }
         },
         "nb" : {
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Antall beholdere",
-            "description" : "Det totale antallet fysiske enheter som prøvematerialet er fordelt på.",
-            "comment" : "For eksempel antall bøtter, glass, rør, mikrorør, blokker, prøveglass eller grid."
-          },
-          "at0083" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0083",
-            "text" : "Ytterligere detaljer",
-            "description" : "Ytterligere strukturerte detaljer om prøvematerialet.",
-            "comment" : "For eksempel detaljer om nålebiopsier ved prostatakreft, der både rekvisisjonen og svarrapporten inneholder mange spesifikke detaljer om prøvematerialet."
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "Detaljer om beholder",
-            "description" : "Detaljer om brukte beholdere."
-          },
-          "at0087" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0087",
-            "text" : "Opprinnelsessted",
-            "description" : "Kroppssted eller annen lokalisering som prøven er tatt fra.",
-            "comment" : "For eksempel \"sår på venstre legg\", \"venekateter på høyre arm\", \"høyre nyre\".\r\nKoding av den anatomiske lokaliseringen med en terminologi er foretrukket der det er mulig. Bruk dette dataelementet til å registrere prekoordinerte anatomiske lokaliseringer. Dersom behovene for registrering av den anatomiske lokaliseringen bestemmes i applikasjonen eller krever kompleks modellering slik som relative lokaliseringer, bruk SLOTet \"Strukturert anatomisk lokalisering\" i denne arketypen. Dersom den anatomiske lokaliseringen er med i \"Type prøvemateriale\" via prekoordinerte koder, blir dette dataelementet overflødig."
-          },
-          "at0088" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0088",
-            "text" : "Ekstern identifikator",
-            "description" : "En unik identifikator av prøvematerialet, tilordnet av en part utenfor laboratoriet.",
-            "comment" : "For eksempel \"Rekvirentens ID\", \"ArkivID\" eller \"BiobankID\"."
-          },
-          "at0089" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0089",
-            "text" : "Ikterisk",
-            "description" : "Prøvematerialet var ikterisk."
-          },
-          "at0090" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0090",
-            "text" : "Håndteringsfeil",
-            "description" : "En feil oppsto ved håndtering av prøven. For eksempel feil oppbevaring, knust prøveglass."
-          },
-          "at0091" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0091",
-            "text" : "Alder",
-            "description" : "Prøvematerialet var for gammelt til å analyseres eller analyseres nøyaktig."
-          },
-          "at0092" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0092",
-            "text" : "Teknisk feil",
-            "description" : "Prøvematerialet kunne ikke analyseres av tekniske årsaker."
-          },
-          "at0093" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0093",
-            "text" : "Transportdetaljer",
-            "description" : "Strukturerte detaljer om transport av prøvematerialet."
-          },
-          "at0094" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0094",
-            "text" : "Koagulert",
-            "description" : "Prøvematerialet var koagulert."
-          },
-          "at0095" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0095",
-            "text" : "Feilmerking",
-            "description" : "Prøvematerialet ble feilmerket."
-          },
-          "at0096" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0096",
-            "text" : "Digital representasjon",
-            "description" : "Strukturerte detaljer om en digital representasjon av prøvematerialet.",
-            "comment" : "For eksempel et scannet bilde av et prøveglass innen patologi."
-          },
           "at0097" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0097",
@@ -3625,107 +3188,9 @@
             "code" : "at0100",
             "text" : "Lagringsdetaljer",
             "description" : "Strukturerte detaljer om arkivering/lagring av prøvematerialet."
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Prøvetakingsmetode",
-            "description" : "Prøvetakingsmetoden som er brukt.",
-            "comment" : "For eksempel venepunksjon, biopsi eller reseksjon. Koding av prøvetakingsmetoden med en terminologi er foretrukket, når det er mulig. Dersom prøvetakingsmetoden er inkludert i \"Type prøvemateriale\" gjennom bruk av prekoordinerte koder blir dette elementet overflødig."
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Prøvemateriale",
-            "description" : "Et fysisk prøvemateriale tatt fra eller relatert til et individ, for undersøkelse eller analyse.",
-            "comment" : "For eksempel kroppsvev eller kroppsvæske."
           }
         },
         "de" : {
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Anzahl der Behälter",
-            "description" : "Die Gesamtzahl der physischen Einheiten, in denen sich die Probe befindet.",
-            "comment" : "Zum Beispiel: Anzahl der Behälter, Gefäße, Fläschchen, Röhrchen, Blöcke, Objektträger oder Gitter."
-          },
-          "at0083" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0083",
-            "text" : "Zusätzliche Angaben",
-            "description" : "Zusätzliche strukturierte Angaben zu der Probe.",
-            "comment" : "Zum Beispiel Details zu Nadelbiopsien bei Prostatakrebs, bei denen sowohl die Anforderung als auch die Beschreibung über die Probe detailliert und spezifisch sind."
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "Behälter Details",
-            "description" : "Details über Behälter, der/die verwendet wurde/n."
-          },
-          "at0087" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0087",
-            "text" : "Probenentnahmestelle",
-            "description" : "Identifizierung der Körperstelle oder einer anderen Stelle, an der die Probe entnommen wird.",
-            "comment" : "Zum Beispiel: „Wunde an linker Wade“, „IV-Kanüle rechter Arm“, „rechte Niere“. \r\nNach Möglichkeit wird die Codierung des Namens der Probenentnahmestelle mit einer Terminologie bevorzugt. Verwenden Sie dieses Datenelement, um vorkoordinierte Probenentnahmestellen zu erfassen. Wenn die Anforderungen für die Darstellung der Probenentnahmestelle zur Laufzeit der Anwendung bestimmt werden oder diese eine komplexere Modellierung erfordern, z.B. relative Positionen, verwenden Sie in diesem Archetyp den SLOT \"Probenentnahmestelle strukturiert\". Wenn die Probenentnahmestelle über vorab koordinierte Kodes in das Element \"Probenart\" einbezogen wird, wird dieses Datenelement überflüssig."
-          },
-          "at0088" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0088",
-            "text" : "Externer Identifikator",
-            "description" : "Eine eindeutige Kennung der Probe, die von einer Organisation außerhalb des Labors wie dem Auftraggeber zugeordnet wurde.",
-            "comment" : "Zum Beispiel: \"Anforderer-ID\", \"Archiv-ID\", \"Biobank-ID\".",
-            "fhir_mapping" : "Specimen.identifier"
-          },
-          "at0089" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0089",
-            "text" : "Ikterisch",
-            "description" : "Die Probe war ikterisch."
-          },
-          "at0090" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0090",
-            "text" : "Verarbeitungsfehler",
-            "description" : "Beim Umgang mit der Probe ist ein Fehler aufgetreten. Zum Beispiel: Falsche Lagerung, zerbrochener Behälter."
-          },
-          "at0091" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0091",
-            "text" : "Alter",
-            "description" : "Die Probe war zu alt, um sie akkurat zu analysieren."
-          },
-          "at0092" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0092",
-            "text" : "Technischer Fehler",
-            "description" : "Die Probe konnte aus technischen Gründen nicht analysiert werden."
-          },
-          "at0093" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0093",
-            "text" : "Angaben zum Transport",
-            "description" : "Strukturierte Angaben zum Transport der Probe."
-          },
-          "at0094" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0094",
-            "text" : "Geronnen",
-            "description" : "Die Probe war geronnen."
-          },
-          "at0095" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0095",
-            "text" : "Falsch beschriftet",
-            "description" : "Das Probe war falsch beschriftet."
-          },
-          "at0096" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0096",
-            "text" : "Digitale Darstellung",
-            "description" : "Strukturierte Details über eine digitale Darstellung der Probe.",
-            "comment" : "Zum Beispiel das gescannte Bild eines Histopathologie-Dias."
-          },
           "at0097" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0097",
@@ -3770,89 +3235,6 @@
           }
         },
         "sv" : {
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Antal behållare",
-            "description" : "Det totala antalet fysiska enheter som provmaterialet är distribuerat i. \r\n",
-            "comment" : "Till exempel: antal provbehållare, provrör, provflaskor, block, objektglas eller galler.\r\n\r\n"
-          },
-          "at0083" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0083",
-            "text" : "Ytterligare detaljer",
-            "description" : "Ytterligare strukturerade detaljer om provet.",
-            "comment" : "Exempelvis: detaljer om nålbiopsier vid prostatacancer, där både remiss och svarsrapportering om provet är detaljerade och specifika."
-          },
-          "at0085" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0085",
-            "text" : "Detaljer om provbehållare",
-            "description" : "Detaljer om provbehållare som har använts."
-          },
-          "at0087" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0087",
-            "text" : "Provkälla",
-            "description" : "Identifiering av var på kroppen eller annat ställe som provet är taget från.\r\n",
-            "comment" : "Exempelvis \"sår på vänster underben\", \"venkateter på höger arm\", \"höger njure\". Kodning av provkälla till en terminologi är att föredra i de fall det är möjligt.\r\n\r\nAnvänd detta dataelement för att ange prekoordinerade provkällor. Om behoven för registrering av den anatomiska platsen bestäms i applikationen eller kräver komplex modellering såsom relativa platser, använd SLOT \"Strukturerad anatomisk lokalisation\" i denna arketyp. Om den anatomiska platsen ingår i \"Provtyp\" via förkoordinerade koder blir detta dataelement överflödigt.\r\n"
-          },
-          "at0088" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0088",
-            "text" : "Extern identifierare",
-            "description" : "En unik providentifierare som anges av en extern part utanför laboratoriet.",
-            "comment" : "Exempelvis remiss-ID, beställnings-ID, arkiverings-ID, Biobank-ID."
-          },
-          "at0089" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0089",
-            "text" : "Ikteriskt",
-            "description" : "Provmaterialet var ikteriskt."
-          },
-          "at0090" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0090",
-            "text" : "Hanteringsfel",
-            "description" : "Ett fel inträffade vid hantering av provet. Till exempel: Felaktig lagring eller trasig behållare."
-          },
-          "at0091" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0091",
-            "text" : "Ålder",
-            "description" : "Provet var för gammalt för att analysera eller för att analysera korrekt."
-          },
-          "at0092" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0092",
-            "text" : "Tekniskt fel",
-            "description" : "Provmaterialet kunde inte analyseras på grund av tekniska skäl."
-          },
-          "at0093" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0093",
-            "text" : "Transportdetaljer",
-            "description" : "Strukturerade detaljer om transport av provet."
-          },
-          "at0094" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0094",
-            "text" : "Koagulerat",
-            "description" : "Provmaterialet var koagulerat."
-          },
-          "at0095" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0095",
-            "text" : "Felaktig märkning",
-            "description" : "Provet var felaktigt märkt."
-          },
-          "at0096" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0096",
-            "text" : "Digital representation",
-            "description" : "Strukturerade detaljer om digital representation av provmaterialet.",
-            "comment" : "Till exempel den skannade bilden av en histopatologibild.\r\n"
-          },
           "at0097" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0097",
