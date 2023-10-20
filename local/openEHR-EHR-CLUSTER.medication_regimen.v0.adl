@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"82be11a90e82767e250a7bb808021f1a">
+		["MD5-CAM-1.0.1"] = <"9c6793eb60c72e7d2027965a080cf56f">
 		["build_uid"] = <"cf6d0ca2-d284-3e26-ba02-d552fbcfa840">
 	>
 
@@ -38,25 +38,15 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- First administration date
+			ELEMENT[at0027] occurrences matches {0..1} matches {    -- Course number
 				value matches {
-					DV_DATE_TIME matches {*}
+					DV_COUNT matches {*}
 				}
 			}
-			ELEMENT[at0028] occurrences matches {0..1} matches {    -- First administration of last course
+			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Course day
 				value matches {
-					DV_DATE_TIME matches {*}
-				}
-			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Original drug dose
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0024,    -- escalation: Dose escalation
-							at0025,    -- full: Full dose
-							at0026]    -- reduced: Reduced dose
-						}
+					DV_COUNT matches {
+						magnitude matches {|1..31|}
 					}
 				}
 			}
@@ -90,18 +80,6 @@ definition
 					DV_BOOLEAN matches {*}
 				}
 			}
-			ELEMENT[at0027] occurrences matches {0..1} matches {    -- Course number
-				value matches {
-					DV_COUNT matches {*}
-				}
-			}
-			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Course day
-				value matches {
-					DV_COUNT matches {
-						magnitude matches {|1..31|}
-					}
-				}
-			}
 		}
 	}
 
@@ -115,14 +93,6 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Regimen name">
-					description = <"">
-				>
-				["at0002"] = <
-					text = <"First administration date">
-					description = <"">
-				>
-				["at0003"] = <
-					text = <"Original drug dose">
 					description = <"">
 				>
 				["at0004"] = <
@@ -165,24 +135,8 @@ ontology
 					text = <">5 - >5">
 					description = <"">
 				>
-				["at0024"] = <
-					text = <"escalation: Dose escalation">
-					description = <"">
-				>
-				["at0025"] = <
-					text = <"full: Full dose">
-					description = <"">
-				>
-				["at0026"] = <
-					text = <"reduced: Reduced dose">
-					description = <"">
-				>
 				["at0027"] = <
 					text = <"Course number">
-					description = <"">
-				>
-				["at0028"] = <
-					text = <"First administration of last course">
 					description = <"">
 				>
 				["at0030"] = <
