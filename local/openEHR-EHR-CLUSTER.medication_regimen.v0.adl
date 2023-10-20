@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"74c657eb0d447c3b2c54919f4bc917f7">
+		["MD5-CAM-1.0.1"] = <"82be11a90e82767e250a7bb808021f1a">
 		["build_uid"] = <"cf6d0ca2-d284-3e26-ba02-d552fbcfa840">
 	>
 
@@ -93,6 +93,13 @@ definition
 			ELEMENT[at0027] occurrences matches {0..1} matches {    -- Course number
 				value matches {
 					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {    -- Course day
+				value matches {
+					DV_COUNT matches {
+						magnitude matches {|1..31|}
+					}
 				}
 			}
 		}
@@ -176,6 +183,10 @@ ontology
 				>
 				["at0028"] = <
 					text = <"First administration of last course">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Course day">
 					description = <"">
 				>
 			>
