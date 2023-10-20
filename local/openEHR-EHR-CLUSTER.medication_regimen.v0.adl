@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2023-10-20">
 		["name"] = <"Ian McNicoll">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"ian@freshehr.com">
-		["date"] = <"2023-10-20">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cde6f9627ebf6e0284ab6bb050915a34">
+		["MD5-CAM-1.0.1"] = <"74c657eb0d447c3b2c54919f4bc917f7">
 		["build_uid"] = <"cf6d0ca2-d284-3e26-ba02-d552fbcfa840">
 	>
 
@@ -39,6 +39,11 @@ definition
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- First administration date
+				value matches {
+					DV_DATE_TIME matches {*}
+				}
+			}
+			ELEMENT[at0028] occurrences matches {0..1} matches {    -- First administration of last course
 				value matches {
 					DV_DATE_TIME matches {*}
 				}
@@ -83,6 +88,11 @@ definition
 			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Exclude from regimen ?
 				value matches {
 					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0027] occurrences matches {0..1} matches {    -- Course number
+				value matches {
+					DV_COUNT matches {*}
 				}
 			}
 		}
@@ -158,6 +168,14 @@ ontology
 				>
 				["at0026"] = <
 					text = <"reduced: Reduced dose">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Course number">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"First administration of last course">
 					description = <"">
 				>
 			>
