@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "PARENT:MD5-CAM-1.0.1" : "DE0723367AA22BB716CEC5342B21FF60",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5cbd2498f60788b8a52e94e61fbe98b5"
+      "MD5-CAM-1.0.1" : "e50b91c3b3cea4782e064098aed0f6b6"
     },
     "details" : {
       "de" : {
@@ -1724,9 +1724,50 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
+                  "occurrences" : "0..1",
                   "nodeId" : "at0148.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1: Curative", "2: Palliative" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0148.2",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "1 - Neoadjuvant", "2 - Concomitant", "3 - Adjuvant", "4 - salvage therapy (hematology)", "5 - Curative treatment only medical treatment (oncology)", "6 - Induction", "8 - Supportive" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -1918,6 +1959,15 @@
                   "nodeId" : "at0167.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_ARCHETYPE_ROOT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0166.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ],
+                  "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication_regimen-001.v0",
+                  "referenceType" : "archetypeOverlay"
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -1960,14 +2010,69 @@
             "text" : "Drug substance",
             "description" : "Name of the medication, vaccine or other therapeutic/prescribable item being ordered.",
             "comment" : "Depending on the prescribing context this field could be used for either generic- or product-based prescribing. This data field can be used to record tightly bound orders of different medications when they are prescribed as a single pack. It is strongly recommended that the 'Medication item' be coded with a terminology capable of triggering decision support, where possible. The extent of coding may vary from the simple name of the medication item through to structured details about the actual medication pack to be used. Free text entry should only be used if there is no appropriate terminology available."
+          },
+          "at0148.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0148.2",
+            "text" : "Detailed intent",
+            "description" : "The overall therapeutic intent of the ordered item.",
+            "comment" : "For example: 'pain relief'; 'palliative care'; 'low-dose prophylaxis'; 'rehydration'; 'nutritional infusion'."
           }
         },
-        "nb" : { },
-        "pt-br" : { },
-        "es-ar" : { },
-        "de" : { },
-        "sv" : { },
-        "ca" : { }
+        "nb" : {
+          "at0148.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0148.1",
+            "text" : "Terapeutisk hensikt (2)",
+            "description" : "Overordnet terapeutisk hensikt med den ordinerte varen.",
+            "comment" : "For eksempel \"smertelindring\", \"palliasjon\", \"lavdose profylakse\", \"rehydrering\" eller \"ernæringsinfusjon\"."
+          }
+        },
+        "pt-br" : {
+          "at0148.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0148.1",
+            "text" : "Intenção terapêutica (2)",
+            "description" : "A intenção terapêutica sobre o item prescrito.",
+            "comment" : "Por exemplo: \"Alívio da dor\", \"cuidado paliativo\"; \"baixa-dose profilática\", \"rehidratação\", \"infusão nutricional\"."
+          }
+        },
+        "es-ar" : {
+          "at0148.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0148.1",
+            "text" : "Propósito terapéutico (2)",
+            "description" : "El propósito terapéutico general del ítem ordenado.",
+            "comment" : "Por ejemplo: 'alivio del dolor'; 'cuidado paliativo'; 'profilaxis a baja dosis'; 'rehidratación'; 'infusión nutricional';"
+          }
+        },
+        "de" : {
+          "at0148.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0148.1",
+            "text" : "Therapiezweck (2)",
+            "description" : "Gesamttherapeutischer Zweck des verordneten Arzneimittels.",
+            "comment" : "Zum Beispiel: \"Schmerzlinderung\"; \"Palliativversorgung\"; \"Niedrigdosis-Prophylaxe\"; \"Rehydratation\"; \"Ernährungsinfusion\"."
+          }
+        },
+        "sv" : {
+          "at0148.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0148.1",
+            "text" : "Behandlingsavsikt (2)",
+            "description" : "Den övergripande behandlingsavsikten med den beställda artikeln.",
+            "comment" : "Till exempel: \"smärtlindring\"; \"palliativ vård\"; \"lågdosprofylakse\"; \"rehydrering\"; \"näringsinfusion\"."
+          }
+        },
+        "ca" : {
+          "at0148.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0148.1",
+            "text" : "Intenció terapèutica (2)",
+            "description" : "La intenció terapèutica general de l'element ordenat.",
+            "comment" : "Per exemple: \"alleujament de dolor\"; \"cures pal·liatives\"; \"profilaxis de baixa dosi\"; \"rehidratació\"; 'infusió nutricional'."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2071,6 +2176,57 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "3f85065c-2058-421d-b2fb-06c542883172",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "d74b69a57874aa59ac5adf25c970db96"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_regimen.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-medication_regimen-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "cf6d0ca2-d284-3e26-ba02-d552fbcfa840",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
