@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d74b69a57874aa59ac5adf25c970db96">
+		["MD5-CAM-1.0.1"] = <"cde6f9627ebf6e0284ab6bb050915a34">
 		["build_uid"] = <"cf6d0ca2-d284-3e26-ba02-d552fbcfa840">
 	>
 
@@ -66,22 +66,6 @@ definition
 							at0013,    -- 4 - Fourth line treatment
 							at0014,    -- 5 - Fifth line treatment
 							at0015]    -- >5 - >5
-						}
-					}
-				}
-			}
-			ELEMENT[at0016] occurrences matches {0..1} matches {    -- Treatment intent detail
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0017,    -- 1 - Neoadjuvant
-							at0018,    -- 2 - Concomitant
-							at0019,    -- 3 - Adjuvant
-							at0020,    -- 4 - salvage therapy (hematology)
-							at0021,    -- 5 - Curative treatment only medical treatment (oncology)
-							at0022,    -- 6 - Induction
-							at0023]    -- 8 - Supportive
 						}
 					}
 				}
@@ -162,38 +146,6 @@ ontology
 				>
 				["at0015"] = <
 					text = <">5 - >5">
-					description = <"">
-				>
-				["at0016"] = <
-					text = <"Treatment intent detail">
-					description = <"">
-				>
-				["at0017"] = <
-					text = <"1 - Neoadjuvant">
-					description = <"">
-				>
-				["at0018"] = <
-					text = <"2 - Concomitant">
-					description = <"">
-				>
-				["at0019"] = <
-					text = <"3 - Adjuvant">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"4 - salvage therapy (hematology)">
-					description = <"">
-				>
-				["at0021"] = <
-					text = <"5 - Curative treatment only medical treatment (oncology)">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"6 - Induction">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"8 - Supportive">
 					description = <"">
 				>
 				["at0024"] = <
