@@ -22,7 +22,7 @@
       "sem_ver" : "29.0.0",
       "build_uid" : "a6096c49-3320-4d00-a8ed-9ceae1407d43",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "81c8558223dce169f3860700242940bb"
+      "MD5-CAM-1.0.1" : "a7164f6c0329166f058870ba989c354c"
     },
     "details" : {
       "de" : {
@@ -413,7 +413,7 @@
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
+          "code" : "at0000",
           "text" : "تقرير",
           "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
         },
@@ -470,7 +470,7 @@
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
+          "code" : "at0000",
           "text" : "Poročilo",
           "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
         },
@@ -527,7 +527,7 @@
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
+          "code" : "at0000",
           "text" : "Informe",
           "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
         },
@@ -578,7 +578,7 @@
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
+          "code" : "at0000",
           "text" : "*Report(en)",
           "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
         },
@@ -629,7 +629,7 @@
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
+          "code" : "at0000",
           "text" : "Raportti",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
         },
@@ -680,7 +680,7 @@
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
+          "code" : "at0000",
           "text" : "Rapporto",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
         },
@@ -731,7 +731,7 @@
         },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
+          "code" : "at0000",
           "text" : "Rapportage",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
         },
@@ -780,36 +780,11 @@
           "text" : "Användning av kärlaccesser",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
         },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
-          "text" : "Rapport",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
         "at0000" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000",
-          "text" : "Rapport",
-          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "Rapport-id",
-          "description" : "Information som identifierar rapporten.\r\n"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "Status",
-          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilläggsinformation",
-          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
-          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+          "text" : "Report",
+          "description" : "Document to communicate information to others, commonly in response to a request from another party."
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -831,36 +806,11 @@
           "text" : "Venous_access",
           "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
         },
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
         "at0000" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000",
-          "text" : "报告",
-          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "报告ID",
-          "description" : "关于这份报告的标识信息。"
-        },
-        "at0005" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0005",
-          "text" : "状态",
-          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
-        },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "扩展",
-          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
-          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
+          "text" : "Report",
+          "description" : "Document to communicate information to others, commonly in response to a request from another party."
         },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -2551,123 +2501,6 @@
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-details_insertion_drains_and_catheters_-001.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-characteristics_drains_and_chateters-001.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.3",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_CDK",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.4",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_SVP",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.5",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_PICC",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.6",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_PA_catheter",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.7",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_PVK",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.8",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_Arterial-line",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.9",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_intraosseous_needle",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.10",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_långtidsPVK/midline",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.11",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_introducer",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.12",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_SVP_needel ",
-              "referenceType" : "templateId"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.13",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "characteristics_subkutan_perifer_line",
-              "referenceType" : "templateId"
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
@@ -2956,6 +2789,123 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-details_insertion_drains_and_catheters_-001.v0",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-characteristics_drains_and_chateters-001.v0",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_CDK",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.4",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_SVP",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.5",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_PICC",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.6",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_PA_catheter",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.7",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_PVK",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.8",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_Arterial-line",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.9",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_intraosseous_needle",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.10",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_långtidsPVK/midline",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.11",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_introducer",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.12",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_SVP_needel ",
+              "referenceType" : "templateId"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.13",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "characteristics_subkutan_perifer_line",
+              "referenceType" : "templateId"
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -6227,15 +6177,6 @@
               "attributes" : [ ],
               "attributeTuples" : [ ]
             }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-details_extraction_drainsandcatheters-001.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
@@ -6374,6 +6315,15 @@
               "nodeId" : "at0005.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-details_extraction_drainsandcatheters-001.v0",
+              "referenceType" : "archetypeOverlay"
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -7136,7 +7086,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8F242A3494D18872E7484433716A5FF9"
+        "PARENT:MD5-CAM-1.0.1" : "5D0F5DCDC1EE023C17264AADA785B272"
       },
       "details" : {
         "de" : {
@@ -7430,41 +7380,6 @@
           "nodeId" : "at0023.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0053",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_circle(-[a-zA-Z0-9_]+)*\\.v1/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_circle(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -7491,20 +7406,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Laterality(en)",
-            "description" : "*The side of the body on which the identified  body site is located.(en)",
-            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Laterality(en)",
-            "description" : "*The side of the body on which the identified  body site is located.(en)",
-            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
           }
         },
         "sl" : {
@@ -7525,20 +7426,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Laterality(en)",
-            "description" : "*The side of the body on which the identified  body site is located.(en)",
-            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Laterality(en)",
-            "description" : "*The side of the body on which the identified  body site is located.(en)",
-            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
           }
         },
         "en" : {
@@ -7559,27 +7446,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.4",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Laterality",
-            "description" : "The side of the body on which the identified  body site is located.",
-            "comment" : "If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Alternative structure",
-            "description" : "Additional detail about the anatomical site using alternative approaches to describe the same body site.",
-            "comment" : "For example, relative location or precise locations using coordinates. "
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Laterality",
-            "description" : "The side of the body on which the identified  body site is located.",
-            "comment" : "If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant."
           },
           "at0086" : {
             "@type" : "ARCHETYPE_TERM",
@@ -7606,27 +7472,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Kroppsside",
-            "description" : "Den identifiserte kroppssiden.",
-            "comment" : "Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Alternativ struktur",
-            "description" : "Tilleggsinformasjon om det anatomiske stedet ved bruk av alternativ tilnærming for å beskrive det samme kroppsstedet.",
-            "comment" : "For eksempel relativ lokalisering eller presis lokalisering ved bruk av koordinater."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Kroppsside",
-            "description" : "Den identifiserte kroppssiden.",
-            "comment" : "Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
           }
         },
         "pt-br" : {
@@ -7647,27 +7492,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.4",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateralidade",
-            "description" : "O lado do corpo em que se encontra o local do corpo identificado.",
-            "comment" : "Se o local identificado do corpo não tem relação com a lateralidade, este elemento de dados não deve ter um valor.\r\nSe o elemento de dados de nome de local do corpo usa termos predefinidos que incluem lateralidade, então este elemento de dados é redundante."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Estrutura alternativa",
-            "description" : "Detalhes adicionais sobre o local anatômico usando abordagens alternativas para descrever o mesmo local do corpo.",
-            "comment" : "Por exemplo, localização relativa ou precisa usando coordenadas."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateralidade",
-            "description" : "O lado do corpo em que se encontra o local do corpo identificado.",
-            "comment" : "Se o local identificado do corpo não tem relação com a lateralidade, este elemento de dados não deve ter um valor.\r\nSe o elemento de dados de nome de local do corpo usa termos predefinidos que incluem lateralidade, então este elemento de dados é redundante."
           }
         },
         "de" : {
@@ -7715,246 +7539,6 @@
             "code" : "ac0.4",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomische locatie",
-            "description" : "Een fysieke regio op of in het menselijk lichaam."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Lichaamslocatie",
-            "description" : "Identificatie van een enkele fysieke regio op of in het menselijk lichaam."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateraliteit",
-            "description" : "De zijde van het lichaam waarop de geïdentificeerde Lichaamslocatie zich bevindt."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Links",
-            "description" : "Linkerzijde van het lichaam."
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Rechts",
-            "description" : "Rechterzijde van het lichaam."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Beschrijving",
-            "description" : "Verhalende beschrijving die kan worden gebruikt om de 'Lichaamslocatie' verder te verfijnen en te ondersteunen."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Alternatieve structuur",
-            "description" : "Extra details over de anatomische regio met alternatieve benaderingen om dezelfde lichaamslocatie te beschrijven."
-          },
-          "at0054" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0054",
-            "text" : "Multimedia representatie",
-            "description" : "Afbeelding of andere media die worden gebruikt om identificatie van de lichaamslocatie te ondersteunen."
-          },
-          "at0055" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0055",
-            "text" : "Anatomische lijn",
-            "description" : "Extra details met behulp van theoretische lijnen getrokken door anatomische structuren die worden gebruikt om een ​​consistent referentiepunt op het menselijk lichaam te bieden."
-          },
-          "at0056" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0056",
-            "text" : "Midaxillaire lijn",
-            "description" : "Lijn die verticaal langs het oppervlak van het lichaam loopt en door de top van de oksel loopt."
-          },
-          "at0057" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0057",
-            "text" : "Anterior axillaire lijn",
-            "description" : "Lijn die verticaal langs het oppervlak van het lichaam loopt en door de voorste axillaire huidplooi gaat."
-          },
-          "at0058" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0058",
-            "text" : "Posterior axillaire lijn",
-            "description" : "Lijn die verticaal langs het oppervlak van het lichaam loopt en door de achterste axillaire huidplooi gaat."
-          },
-          "at0059" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0059",
-            "text" : "Mid-claviculaire lijn",
-            "description" : "Lijn die verticaal langs het lichaamsoppervlak loopt, evenwijdig aan de middellijn en door het middelpunt van het sleutelbeen."
-          },
-          "at0060" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0060",
-            "text" : "Mid-pupillaire lijn",
-            "description" : "Lijn die verticaal over het gezicht loopt door het middelpunt van de pupil als je recht naar voren kijkt."
-          },
-          "at0062" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062",
-            "text" : "Middenlijn",
-            "description" : "Lijn die verticaal loopt en het lichaam in linker en rechter delen verdeelt, die door het hoofd, het ruggenmerg en de navel loopt. Als alternatief kan het verwijzen naar een lijn die een lichaamsdeel in twee gelijke delen verdeelt."
-          },
-          "at0063" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0063",
-            "text" : "Mid-scapulaire lijn",
-            "description" : "Lijn die verticaal langs het achterste oppervlak van het lichaam loopt, evenwijdig aan de middellijn en door het onderste punt van het schouderblad gaat."
-          },
-          "at0064" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064",
-            "text" : "Aspect",
-            "description" : "Kwalificerend detail over het specifieke aspect van de geïdentificeerde lichaamslocatie."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specifieke locatie",
-            "description" : "Extra details met behulp van een specifieke regio of een punt op of binnen de geïdentificeerde lichaamslocatie."
-          },
-          "at0067" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0067",
-            "text" : "Mediaal",
-            "description" : "Naar de middellijn van de lichaamslocatie."
-          },
-          "at0068" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068",
-            "text" : "Lateraal",
-            "description" : "Naar de zijkant of rand van de lichaamslocatie."
-          },
-          "at0069" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069",
-            "text" : "Superior",
-            "description" : "Boven de lichaamslocatie, ookwel richting het hoofd."
-          },
-          "at0070" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070",
-            "text" : "Inferior",
-            "description" : "Onder de lichaamslocatie, ook wel richting de voeten."
-          },
-          "at0071" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071",
-            "text" : "Anterior",
-            "description" : "Naar de voorkant of het ventrale oppervlak van de lichaamslocatie."
-          },
-          "at0072" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072",
-            "text" : "Posterior",
-            "description" : "Naar de achterkant of het dorsale oppervlak van de lichaamslocatie."
-          },
-          "at0073" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073",
-            "text" : "Proximaal",
-            "description" : "Centraler of dichter bij het centrum van het lichaam, meestal gebruikt in de context van een ledenmaat, vinger of aanhangsel."
-          },
-          "at0074" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0074",
-            "text" : "Distaal",
-            "description" : "Verder weg van het centrum van het lichaam, meestal gebruikt in de context van een ledenmaat, vinger of aanhangsel."
-          },
-          "at0075" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0075",
-            "text" : "Palmair",
-            "description" : "Naar de palm van de hand."
-          },
-          "at0076" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0076",
-            "text" : "Plantair",
-            "description" : "Naar de voetzool."
-          },
-          "at0077" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077",
-            "text" : "Midden",
-            "description" : "In het midden van de lichaamslocatie."
-          },
-          "at0078" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078",
-            "text" : "Oraal",
-            "description" : "Naar de mond toe, meestal gebruikt in de context van het spijsverteringssysteem."
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Anaal",
-            "description" : "Naar de anus toe, meestal gebruikt in de context van het spijsverteringssysteem."
-          },
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Diep",
-            "description" : "Dieper onder de oppervlakte van de lichaamslocatie."
-          },
-          "at0081" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0081",
-            "text" : "Oppervlakkig",
-            "description" : "Naar de oppervlakte toe van de lichaamslocatie."
-          },
-          "at0082" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0082",
-            "text" : "Dorsaal",
-            "description" : "Naar de rug van de hand of de voet. Gebruik als tegenovergestelde van palmair of plantair, en niet als synoniem voor posterior."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateraliteit",
-            "description" : "De zijde van het lichaam waarop de geïdentificeerde Lichaamslocatie zich bevindt."
-          },
-          "at0055.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0055",
-            "text" : "Anatomische lijn",
-            "description" : "Extra details met behulp van theoretische lijnen getrokken door anatomische structuren die worden gebruikt om een ​​consistent referentiepunt op het menselijk lichaam te bieden."
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomische locatie",
-            "description" : "Een fysieke regio op of in het menselijk lichaam."
-          },
-          "at0065.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specifieke locatie",
-            "description" : "Extra details met behulp van een specifieke regio of een punt op of binnen de geïdentificeerde lichaamslocatie."
-          },
-          "at0023.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Beschrijving",
-            "description" : "Verhalende beschrijving die kan worden gebruikt om de 'Lichaamslocatie' verder te verfijnen en te ondersteunen."
-          },
-          "at0064.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064",
-            "text" : "Aspect",
-            "description" : "Kwalificerend detail over het specifieke aspect van de geïdentificeerde lichaamslocatie."
-          },
           "at0086" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0086",
@@ -7981,236 +7565,12 @@
             "code" : "ac0.4",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomisk lokalisation",
-            "description" : "Ett fysiskt ställe på eller i människokroppen."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Namn på kroppsställe",
-            "description" : "Identifiering av enskilt fysiskt ställe på eller i människokroppen.",
-            "comment" : "Det här är det enda obligatoriska fältet i denna arketyp och det ska användas som det primära stället att registrera en anatomisk lokalisation med ett vedertaget namn. Det rekommenderas starkt att \"Namn på kroppsställe\" anges så specifikt som det är anatomiskt möjligt. Till exempel; registrera \"övre ögonlock\" snarare än \"ögonlock\" med \"övre\" som kvalificering; \"femte revbenet\" snarare än \"revben\" med en numerisk kvalificering. Använd de andra dataelementen för lateralitet, aspekt, region och anatomisk linje för att ge mer information.\r\n\r\nDetta dataelement bör kodas med en terminologi som kan starta beslutsstödsfunktionalitet när så är möjligt - en lämplig terminologi för användning här kan innehålla enskilda begrepp eller listor med förkoordinerade termer. Fritext bör endast användas om det inte finns någon lämplig terminologi.\r\n\r\nOm kroppsställets namn anges i den överordnade arketypen kan detta dataelement vara överflödigt. Emellertid har användningsfall identifierats där datavärdet kan kopieras till detta element för att stödja semantiska utsökningsfrågor baserat på denna arketyp snarare än den överordnade arketypen.\r\n\r\n\r\n"
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateralitet",
-            "description" : "Den sida av kroppen där det identifierade kroppsstället är lokaliserat.",
-            "comment" : "Om det identifierade kroppsstället saknar lateralitet ska detta fält inte användas. \r\nOm fältet \"Namn på kroppsställe\" har prekoordinerade termer som innefattar lateralitet är detta fält redundant."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Vänster",
-            "description" : "Kroppens vänstra sida."
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Höger",
-            "description" : "Kroppens högra sida."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Beskrivning",
-            "description" : "Beskrivning för att ytterligare specificera och detaljera \"Namn på kroppsställe\".",
-            "comment" : "Till exempel: intill läppröda; en tatuering täcker den nedre halvan av detta område."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Alternativ struktur",
-            "description" : "Ytterligare information om den anatomiska platsen med en alternativ metod för att beskriva samma kroppsställe.\r\n",
-            "comment" : "Till exempel relativ plats eller exakt plats med hjälp av koordinater."
-          },
-          "at0054" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0054",
-            "text" : "Multimediarepresentation",
-            "description" : "Bild eller annat medium som används för att stödja identifieringen av kroppsplatsen."
-          },
-          "at0055" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0055",
-            "text" : "Anatomisk linje",
-            "description" : "Ytterligare detalj där teoretiska linjer dragits genom anatomiska strukturer för att ge en fast referenspunkt på människokroppen.",
-            "comment" : "Vanligt förekommande anatomiska linjer finns inkluderade som en värdemängd som kan utökas över tid, plus möjlighet till fritext. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
-          },
-          "at0056" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0056",
-            "text" : "Mellersta axillarlinjen",
-            "description" : "En vertikal linje som går över kroppsytan genom axillspetsen."
-          },
-          "at0057" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0057",
-            "text" : "Främre axillarlinjen",
-            "description" : "En linje som löper vertikalt ner över kroppens yta och passerar genom det främre axillära hudvecket."
-          },
-          "at0058" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0058",
-            "text" : "Bakre axillarlinjen",
-            "description" : "En linje som löper vertikalt ner över kroppens yta och passerar genom det bakre axillära hudvecket."
-          },
-          "at0059" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0059",
-            "text" : "Medioklavikularlinjen",
-            "description" : "En linje som löper vertikalt ner på kroppens yta, parallellt med mittlinjen och passerar genom nyckelbenets mittpunkt."
-          },
-          "at0060" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0060",
-            "text" : "Mellersta pupillinjen",
-            "description" : "En linjen löper lodrätt nedåt längs ansiktet genom pupillens mittpunkt när man tittar direkt framåt."
-          },
-          "at0062" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062",
-            "text" : "Mittlinje",
-            "description" : "En vertikal linje som delar in kroppen i vänster och höger halva. Den går genom huvud, ryggmärg och navel. Alternativt åsyftas en linje som delar in en kroppsdel i två lika stora delar, exempelvis en tå eller ett finger."
-          },
-          "at0063" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0063",
-            "text" : "Mellersta skapularlinjen",
-            "description" : "En linje som löper vertikalt längs kroppens bakre yta, parallellt med mittlinjen och passerar genom den lägre punkten på skulderbladet."
-          },
-          "at0064" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064",
-            "text" : "Del",
-            "description" : "Utmärkande detalj hos den specifika delen av det identifierade kroppsstället.",
-            "comment" : "Används, om det behövs, för att öka precisionen i identifieringen av kroppsstället. Om dataelementet 'Namn på kroppsstället' använder förkoordinerade termer som inkluderar kroppsdelen är detta dataelement överflödigt."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specifikt ställe",
-            "description" : "Ytterligare detalj angiven som ett specifikt område eller en punkt på eller i det identifierade kroppsstället.",
-            "comment" : "Används för att öka precisionen i identifieringen av kroppsstället. Till exempel McBurneys punkt på bukväggen. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
-          },
-          "at0067" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0067",
-            "text" : "Medial",
-            "description" : "I riktning mot kroppsställets mittlinje."
-          },
-          "at0068" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068",
-            "text" : "Lateral",
-            "description" : "I riktning mot kroppsställets sida eller kant."
-          },
-          "at0069" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069",
-            "text" : "Superior",
-            "description" : "Ovanför kroppsstället, ofta i betydelsen i riktning mot huvudet."
-          },
-          "at0070" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070",
-            "text" : "Inferior",
-            "description" : "Nedanför kroppsstället, ofta i betydelsen i riktning mot fötterna."
-          },
-          "at0071" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071",
-            "text" : "Främre",
-            "description" : "Främre delen eller ventrala ytan av kroppsstället."
-          },
-          "at0072" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072",
-            "text" : "Bakre",
-            "description" : "Bakre delen eller dorsala ytan av kroppsstället."
-          },
-          "at0073" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073",
-            "text" : "Proximal",
-            "description" : "Mer central eller närmare fastsättningspunkten, vanligtvis en beskrivning av en del av extremitet, finger, tå eller bihang."
-          },
-          "at0074" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0074",
-            "text" : "Distal",
-            "description" : "Mer perifert eller längre bort från fastsättningspunkten, vanligtvis en beskrivning av en del av extremitet, finger, tå eller bihang."
-          },
-          "at0075" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0075",
-            "text" : "Palmar",
-            "description" : "I riktning mot handflatan."
-          },
-          "at0076" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0076",
-            "text" : "Plantar",
-            "description" : "I riktning mot fotsulan."
-          },
-          "at0077" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077",
-            "text" : "I mitten av",
-            "description" : "I mitten av kroppsstället."
-          },
-          "at0078" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078",
-            "text" : "Oral",
-            "description" : "I riktning mot munnen. Används vanligtvis för att beskriva lokalisation inom matspjälkningssystemet."
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Anal",
-            "description" : "I riktning mot anus. Används vanligtvis för att beskriva lokalisation inom matspjälkningssystemet."
-          },
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Djup",
-            "description" : "I riktning bort från kroppsställets yta."
-          },
-          "at0081" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0081",
-            "text" : "Ytlig",
-            "description" : "I riktning mot kroppsställets yta."
-          },
-          "at0082" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0082",
-            "text" : "Dorsal",
-            "description" : "I riktning mot handens baksida eller fotens ovansida. Används som motsats till handflata och fotsula, inte som en synonym till bakre."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateralitet",
-            "description" : "Den sida av kroppen där det identifierade kroppsstället är lokaliserat.",
-            "comment" : "Om det identifierade kroppsstället saknar lateralitet ska detta fält inte användas. \r\nOm fältet \"Namn på kroppsställe\" har prekoordinerade termer som innefattar lateralitet är detta fält redundant."
-          },
           "at0055.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0055",
             "text" : "Anatomisk linje",
             "description" : "Ytterligare detalj där teoretiska linjer dragits genom anatomiska strukturer för att ge en fast referenspunkt på människokroppen.",
             "comment" : "Vanligt förekommande anatomiska linjer finns inkluderade som en värdemängd som kan utökas över tid, plus möjlighet till fritext. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomisk lokalisation",
-            "description" : "Ett fysiskt ställe på eller i människokroppen."
           },
           "at0065.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -8243,9 +7603,7 @@
       },
       "termBindings" : {
         "SNOMED-CT" : {
-          "at0002.1" : "term:SNOMED-CT::272741003",
-          "at0003" : "term:SNOMED-CT::7771000",
-          "at0004" : "term:SNOMED-CT::24028007"
+          "at0002.1" : "term:SNOMED-CT::272741003"
         }
       },
       "terminologyExtracts" : { },
@@ -8655,76 +8013,6 @@
           "nodeId" : "at0007.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0019",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.device_details(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.device_details(-[a-zA-Z0-9_]+)*\\.v0/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.device_details(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.device_details(-[a-zA-Z0-9_]+)*\\.v0/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
-        }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0027",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.media_file(-[a-zA-Z0-9_]+)*\\.v1/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.media_file(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -8740,134 +8028,6 @@
         "nb" : { },
         "de" : { },
         "sv" : {
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Medicinsk utrustning",
-            "description" : "Ett instrument, en apparat, ett implantat, ett material eller liknande, som används vid tillhandahållandet av vård.\r\n I detta sammanhang innefattar en medicinsk utrustning ett brett utbud av utrustningar som fungerar på fysiska, mekaniska, termiska eller liknande sätt.\r\nI skopet finns inte de specifika utrustningar som fungerar med medicinska medel såsom farmakologiska, metaboliska eller immunologiska metoder.. \r\nI skopen inkluderas även engångsutrustning, hållbara eller bestående utrustningar som kräver spårning, underhållsaktiviteter eller regelbunden kalibrering, man ska komma ihåg att varje typ av utrustning har specifika datainmatningskrav."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Namn på utrustning",
-            "description" : "Identifiering av den medicinska utrustningen, helst med ett gemensamt namn, ett formellt fullständigt beskrivande namn eller, om det är ett krav med klass eller enhetskategori.",
-            "comment" : "Detta dataelement kommer att fånga den term, fras eller kategori som används i klinisk praktisk. Till exempel: <maskin> (XYZ Audiometer); <storlek> (14G Jelco IV kateter); eller <implantat>. Kodning med en terminologi är önskvärt, om möjligt, även om detta kan vara lokalt och beroende på tillgängliga lokala leveranser."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Beskrivning",
-            "description" : "Berättande beskrivning av den medicinska utrustningen."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Typ",
-            "description" : "Kategorin eller typen av utrustning.",
-            "comment" : "Ej tillämpligt om en kategori redan har spelats in i \"Namn på utrustning\".\r\n Exempel: om \"utrustning\" heter som en \"urinkateter\"; 'Typ' kan registreras som 'kvarliggande' eller 'kondom'. Det är önskvärt att koda med en terminologi, där det är möjligt. Detta kan inkludera användning av GTIN- eller EAN-nummer."
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Tillverkare",
-            "description" : "Tillverkares namn"
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "Tillverknings datum",
-            "description" : "Datumet då utrustningen är tillverkade."
-          },
-          "at0006" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006",
-            "text" : "Parti- / partinummer",
-            "description" : "Det nummer som tillverkaren tilldelar, numret identifierar en grupp av artiklar som tillverkas samtidigt, vanligtvis finns på etiketten eller förpackningsmaterialet."
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "Utgångsdatum",
-            "description" : "Datum efter vilken utrustning/ produkt inte längre är lämplig att använda, vanligtvis finns på själva utrustningen eller tryckt på den medföljande förpackningen.",
-            "comment" : "Detta datum gäller vanligtvis utrustning som ska användas en gång."
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "kommentarer",
-            "description" : "Ytterligare berättelse om utrustningen som inte är fångad i andra fält."
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "Egenskaper",
-            "description" : "Mer information om specifika egenskaper för den medicinska utrustningen."
-          },
-          "at0018" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0018",
-            "text" : "Komponenter",
-            "description" : "Ytterligare strukturerad information om identifierade komponenter i utrustningen."
-          },
-          "at0019" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0019",
-            "text" : "Kapitalförvaltning",
-            "description" : "Mer information om hantering och underhåll av utrustningen.",
-            "comment" : "Till exempel: Ägare, kontaktuppgifter, plats, nätverksadress, datum för utbyte, kalibreringsinformation etc."
-          },
-          "at0020" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0020",
-            "text" : "serienummer",
-            "description" : "Tilldelat nummer av tillverkaren på utrustningen, bör vara specifik för varje utrustning., Dess etikett eller medföljande förpackning. (Ett)"
-          },
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "Unik utrustningsidentifierare (UDI)",
-            "description" : "En numerisk eller alfanumerisk sträng som är associerad med den här utrustningen i ett givet system.",
-            "comment" : "Ofta fixad till utrustningen som streckkod."
-          },
-          "at0022" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022",
-            "text" : "Katalognummer",
-            "description" : "Det exakta nummer som tilldelats av tillverkaren och det visas i tillverkarens katalog, utrustnings märkning eller medföljande förpackning."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Modellnummer",
-            "description" : "Det exakta modellnummer som tilldelats av tillverkaren och finns på utrustnings etiketten eller medföljande förpackning."
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "Annan identifierare",
-            "description" : "Ospecificerad identifierare, som kan specificeras ytterligare i en mall eller vid körning.",
-            "comment" : "Kodning av namnet på identifieraren med en kodverk är önskvärt, om det finns för området."
-          },
-          "at0025" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025",
-            "text" : "Mjukvara-version",
-            "description" : "Identifiering av den version av programvaran som används i den medicinska utrustningen.",
-            "comment" : "När den medicinska utrustningen är en programvara, då får man registrera programversionen med detta dataelement. När den medicinska utrustningen har flera mjukvaruapplikationer inbäddade, får man registrera in varje programvara komponent i en separat CLUSTER-arketyp i Components SLOT - antingen som en kapslad instans av en annan CLUSTER. Device-arketyp eller med en CLUSTER-arketyp som är designad speciellt för registrering av programvara information ( just nu är detta inte tillgänglig vid utveckling av denna arketyp)"
-          },
-          "at0026" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026",
-            "text" : "Förlängning",
-            "description" : "Ytterligare information krävs för att fånga lokalt sammanhang eller för att anpassa sig till andra referensmodeller / formalismer."
-          },
-          "at0027" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0027",
-            "text" : "Multimedia",
-            "description" : "Digital representation av utrustning.",
-            "comment" : "Till exempel: ett tekniskt diagram över en enhet eller en digital bild."
-          },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -9056,7 +8216,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8F242A3494D18872E7484433716A5FF9",
+        "PARENT:MD5-CAM-1.0.1" : "5D0F5DCDC1EE023C17264AADA785B272",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -9343,41 +8503,6 @@
             } ]
           } ],
           "attributeTuples" : [ ]
-        }, {
-          "@type" : "ARCHETYPE_SLOT",
-          "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
-          "nodeId" : "at0053",
-          "includes" : [ {
-            "@type" : "ASSERTION",
-            "stringExpression" : "archetype_id/value matches {/openEHR-EHR-CLUSTER\\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_circle(-[a-zA-Z0-9_]+)*\\.v1/}",
-            "expression" : {
-              "@type" : "BINARY_OPERATOR",
-              "type" : "BOOLEAN",
-              "operator" : "matches",
-              "leftOperand" : {
-                "@type" : "MODEL_REFERENCE",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Attribute",
-                "path" : "archetype_id/value"
-              },
-              "rightOperand" : {
-                "@type" : "CONSTRAINT",
-                "type" : "STRING",
-                "precedenceOverriden" : false,
-                "referenceType" : "Constraint",
-                "item" : {
-                  "@type" : "C_STRING",
-                  "constraint" : [ "/openEHR-EHR-CLUSTER\\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\\.v1|openEHR-EHR-CLUSTER\\.anatomical_location_circle(-[a-zA-Z0-9_]+)*\\.v1/" ]
-                }
-              },
-              "precedenceOverriden" : false
-            },
-            "variables" : [ ]
-          } ],
-          "excludes" : [ ],
-          "closed" : false
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -9398,13 +8523,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Laterality(en)",
-            "description" : "*The side of the body on which the identified  body site is located.(en)",
-            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
           }
         },
         "sl" : {
@@ -9419,13 +8537,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "*Laterality(en)",
-            "description" : "*The side of the body on which the identified  body site is located.(en)",
-            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
           }
         },
         "en" : {
@@ -9440,20 +8551,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Laterality",
-            "description" : "The side of the body on which the identified  body site is located.",
-            "comment" : "If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Alternative structure",
-            "description" : "Additional detail about the anatomical site using alternative approaches to describe the same body site.",
-            "comment" : "For example, relative location or precise locations using coordinates. "
           },
           "at0086" : {
             "@type" : "ARCHETYPE_TERM",
@@ -9474,20 +8571,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Kroppsside",
-            "description" : "Den identifiserte kroppssiden.",
-            "comment" : "Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Alternativ struktur",
-            "description" : "Tilleggsinformasjon om det anatomiske stedet ved bruk av alternativ tilnærming for å beskrive det samme kroppsstedet.",
-            "comment" : "For eksempel relativ lokalisering eller presis lokalisering ved bruk av koordinater."
           }
         },
         "pt-br" : {
@@ -9502,20 +8585,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateralidade",
-            "description" : "O lado do corpo em que se encontra o local do corpo identificado.",
-            "comment" : "Se o local identificado do corpo não tem relação com a lateralidade, este elemento de dados não deve ter um valor.\r\nSe o elemento de dados de nome de local do corpo usa termos predefinidos que incluem lateralidade, então este elemento de dados é redundante."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Estrutura alternativa",
-            "description" : "Detalhes adicionais sobre o local anatômico usando abordagens alternativas para descrever o mesmo local do corpo.",
-            "comment" : "Por exemplo, localização relativa ou precisa usando coordenadas."
           }
         },
         "de" : {
@@ -9551,234 +8620,6 @@
             "code" : "ac0.2",
             "description" : ""
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomische locatie",
-            "description" : "Een fysieke regio op of in het menselijk lichaam."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Lichaamslocatie",
-            "description" : "Identificatie van een enkele fysieke regio op of in het menselijk lichaam."
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateraliteit",
-            "description" : "De zijde van het lichaam waarop de geïdentificeerde Lichaamslocatie zich bevindt."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Links",
-            "description" : "Linkerzijde van het lichaam."
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Rechts",
-            "description" : "Rechterzijde van het lichaam."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Beschrijving",
-            "description" : "Verhalende beschrijving die kan worden gebruikt om de 'Lichaamslocatie' verder te verfijnen en te ondersteunen."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Alternatieve structuur",
-            "description" : "Extra details over de anatomische regio met alternatieve benaderingen om dezelfde lichaamslocatie te beschrijven."
-          },
-          "at0054" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0054",
-            "text" : "Multimedia representatie",
-            "description" : "Afbeelding of andere media die worden gebruikt om identificatie van de lichaamslocatie te ondersteunen."
-          },
-          "at0055" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0055",
-            "text" : "Anatomische lijn",
-            "description" : "Extra details met behulp van theoretische lijnen getrokken door anatomische structuren die worden gebruikt om een ​​consistent referentiepunt op het menselijk lichaam te bieden."
-          },
-          "at0056" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0056",
-            "text" : "Midaxillaire lijn",
-            "description" : "Lijn die verticaal langs het oppervlak van het lichaam loopt en door de top van de oksel loopt."
-          },
-          "at0057" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0057",
-            "text" : "Anterior axillaire lijn",
-            "description" : "Lijn die verticaal langs het oppervlak van het lichaam loopt en door de voorste axillaire huidplooi gaat."
-          },
-          "at0058" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0058",
-            "text" : "Posterior axillaire lijn",
-            "description" : "Lijn die verticaal langs het oppervlak van het lichaam loopt en door de achterste axillaire huidplooi gaat."
-          },
-          "at0059" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0059",
-            "text" : "Mid-claviculaire lijn",
-            "description" : "Lijn die verticaal langs het lichaamsoppervlak loopt, evenwijdig aan de middellijn en door het middelpunt van het sleutelbeen."
-          },
-          "at0060" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0060",
-            "text" : "Mid-pupillaire lijn",
-            "description" : "Lijn die verticaal over het gezicht loopt door het middelpunt van de pupil als je recht naar voren kijkt."
-          },
-          "at0062" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062",
-            "text" : "Middenlijn",
-            "description" : "Lijn die verticaal loopt en het lichaam in linker en rechter delen verdeelt, die door het hoofd, het ruggenmerg en de navel loopt. Als alternatief kan het verwijzen naar een lijn die een lichaamsdeel in twee gelijke delen verdeelt."
-          },
-          "at0063" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0063",
-            "text" : "Mid-scapulaire lijn",
-            "description" : "Lijn die verticaal langs het achterste oppervlak van het lichaam loopt, evenwijdig aan de middellijn en door het onderste punt van het schouderblad gaat."
-          },
-          "at0064" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064",
-            "text" : "Aspect",
-            "description" : "Kwalificerend detail over het specifieke aspect van de geïdentificeerde lichaamslocatie."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specifieke locatie",
-            "description" : "Extra details met behulp van een specifieke regio of een punt op of binnen de geïdentificeerde lichaamslocatie."
-          },
-          "at0067" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0067",
-            "text" : "Mediaal",
-            "description" : "Naar de middellijn van de lichaamslocatie."
-          },
-          "at0068" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068",
-            "text" : "Lateraal",
-            "description" : "Naar de zijkant of rand van de lichaamslocatie."
-          },
-          "at0069" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069",
-            "text" : "Superior",
-            "description" : "Boven de lichaamslocatie, ookwel richting het hoofd."
-          },
-          "at0070" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070",
-            "text" : "Inferior",
-            "description" : "Onder de lichaamslocatie, ook wel richting de voeten."
-          },
-          "at0071" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071",
-            "text" : "Anterior",
-            "description" : "Naar de voorkant of het ventrale oppervlak van de lichaamslocatie."
-          },
-          "at0072" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072",
-            "text" : "Posterior",
-            "description" : "Naar de achterkant of het dorsale oppervlak van de lichaamslocatie."
-          },
-          "at0073" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073",
-            "text" : "Proximaal",
-            "description" : "Centraler of dichter bij het centrum van het lichaam, meestal gebruikt in de context van een ledenmaat, vinger of aanhangsel."
-          },
-          "at0074" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0074",
-            "text" : "Distaal",
-            "description" : "Verder weg van het centrum van het lichaam, meestal gebruikt in de context van een ledenmaat, vinger of aanhangsel."
-          },
-          "at0075" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0075",
-            "text" : "Palmair",
-            "description" : "Naar de palm van de hand."
-          },
-          "at0076" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0076",
-            "text" : "Plantair",
-            "description" : "Naar de voetzool."
-          },
-          "at0077" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077",
-            "text" : "Midden",
-            "description" : "In het midden van de lichaamslocatie."
-          },
-          "at0078" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078",
-            "text" : "Oraal",
-            "description" : "Naar de mond toe, meestal gebruikt in de context van het spijsverteringssysteem."
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Anaal",
-            "description" : "Naar de anus toe, meestal gebruikt in de context van het spijsverteringssysteem."
-          },
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Diep",
-            "description" : "Dieper onder de oppervlakte van de lichaamslocatie."
-          },
-          "at0081" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0081",
-            "text" : "Oppervlakkig",
-            "description" : "Naar de oppervlakte toe van de lichaamslocatie."
-          },
-          "at0082" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0082",
-            "text" : "Dorsaal",
-            "description" : "Naar de rug van de hand of de voet. Gebruik als tegenovergestelde van palmair of plantair, en niet als synoniem voor posterior."
-          },
-          "at0055.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0055",
-            "text" : "Anatomische lijn",
-            "description" : "Extra details met behulp van theoretische lijnen getrokken door anatomische structuren die worden gebruikt om een ​​consistent referentiepunt op het menselijk lichaam te bieden."
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomische locatie",
-            "description" : "Een fysieke regio op of in het menselijk lichaam."
-          },
-          "at0065.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specifieke locatie",
-            "description" : "Extra details met behulp van een specifieke regio of een punt op of binnen de geïdentificeerde lichaamslocatie."
-          },
-          "at0064.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064",
-            "text" : "Aspect",
-            "description" : "Kwalificerend detail over het specifieke aspect van de geïdentificeerde lichaamslocatie."
-          },
           "at0086" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0086",
@@ -9806,229 +8647,12 @@
             "description" : "Ytterligare detalj angiven som ett specifikt område eller en punkt på eller i det identifierade kroppsstället.",
             "comment" : "Används för att öka precisionen i identifieringen av kroppsstället. Till exempel McBurneys punkt på bukväggen. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
           },
-          "at0000" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomisk lokalisation",
-            "description" : "Ett fysiskt ställe på eller i människokroppen."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "Namn på kroppsställe",
-            "description" : "Identifiering av enskilt fysiskt ställe på eller i människokroppen.",
-            "comment" : "Det här är det enda obligatoriska fältet i denna arketyp och det ska användas som det primära stället att registrera en anatomisk lokalisation med ett vedertaget namn. Det rekommenderas starkt att \"Namn på kroppsställe\" anges så specifikt som det är anatomiskt möjligt. Till exempel; registrera \"övre ögonlock\" snarare än \"ögonlock\" med \"övre\" som kvalificering; \"femte revbenet\" snarare än \"revben\" med en numerisk kvalificering. Använd de andra dataelementen för lateralitet, aspekt, region och anatomisk linje för att ge mer information.\r\n\r\nDetta dataelement bör kodas med en terminologi som kan starta beslutsstödsfunktionalitet när så är möjligt - en lämplig terminologi för användning här kan innehålla enskilda begrepp eller listor med förkoordinerade termer. Fritext bör endast användas om det inte finns någon lämplig terminologi.\r\n\r\nOm kroppsställets namn anges i den överordnade arketypen kan detta dataelement vara överflödigt. Emellertid har användningsfall identifierats där datavärdet kan kopieras till detta element för att stödja semantiska utsökningsfrågor baserat på denna arketyp snarare än den överordnade arketypen.\r\n\r\n\r\n"
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Lateralitet",
-            "description" : "Den sida av kroppen där det identifierade kroppsstället är lokaliserat.",
-            "comment" : "Om det identifierade kroppsstället saknar lateralitet ska detta fält inte användas. \r\nOm fältet \"Namn på kroppsställe\" har prekoordinerade termer som innefattar lateralitet är detta fält redundant."
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "Vänster",
-            "description" : "Kroppens vänstra sida."
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "Höger",
-            "description" : "Kroppens högra sida."
-          },
-          "at0023" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Beskrivning",
-            "description" : "Beskrivning för att ytterligare specificera och detaljera \"Namn på kroppsställe\".",
-            "comment" : "Till exempel: intill läppröda; en tatuering täcker den nedre halvan av detta område."
-          },
-          "at0053" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0053",
-            "text" : "Alternativ struktur",
-            "description" : "Ytterligare information om den anatomiska platsen med en alternativ metod för att beskriva samma kroppsställe.\r\n",
-            "comment" : "Till exempel relativ plats eller exakt plats med hjälp av koordinater."
-          },
-          "at0054" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0054",
-            "text" : "Multimediarepresentation",
-            "description" : "Bild eller annat medium som används för att stödja identifieringen av kroppsplatsen."
-          },
-          "at0055" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0055",
-            "text" : "Anatomisk linje",
-            "description" : "Ytterligare detalj där teoretiska linjer dragits genom anatomiska strukturer för att ge en fast referenspunkt på människokroppen.",
-            "comment" : "Vanligt förekommande anatomiska linjer finns inkluderade som en värdemängd som kan utökas över tid, plus möjlighet till fritext. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
-          },
-          "at0056" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0056",
-            "text" : "Mellersta axillarlinjen",
-            "description" : "En vertikal linje som går över kroppsytan genom axillspetsen."
-          },
-          "at0057" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0057",
-            "text" : "Främre axillarlinjen",
-            "description" : "En linje som löper vertikalt ner över kroppens yta och passerar genom det främre axillära hudvecket."
-          },
-          "at0058" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0058",
-            "text" : "Bakre axillarlinjen",
-            "description" : "En linje som löper vertikalt ner över kroppens yta och passerar genom det bakre axillära hudvecket."
-          },
-          "at0059" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0059",
-            "text" : "Medioklavikularlinjen",
-            "description" : "En linje som löper vertikalt ner på kroppens yta, parallellt med mittlinjen och passerar genom nyckelbenets mittpunkt."
-          },
-          "at0060" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0060",
-            "text" : "Mellersta pupillinjen",
-            "description" : "En linjen löper lodrätt nedåt längs ansiktet genom pupillens mittpunkt när man tittar direkt framåt."
-          },
-          "at0062" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062",
-            "text" : "Mittlinje",
-            "description" : "En vertikal linje som delar in kroppen i vänster och höger halva. Den går genom huvud, ryggmärg och navel. Alternativt åsyftas en linje som delar in en kroppsdel i två lika stora delar, exempelvis en tå eller ett finger."
-          },
-          "at0063" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0063",
-            "text" : "Mellersta skapularlinjen",
-            "description" : "En linje som löper vertikalt längs kroppens bakre yta, parallellt med mittlinjen och passerar genom den lägre punkten på skulderbladet."
-          },
-          "at0064" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064",
-            "text" : "Del",
-            "description" : "Utmärkande detalj hos den specifika delen av det identifierade kroppsstället.",
-            "comment" : "Används, om det behövs, för att öka precisionen i identifieringen av kroppsstället. Om dataelementet 'Namn på kroppsstället' använder förkoordinerade termer som inkluderar kroppsdelen är detta dataelement överflödigt."
-          },
-          "at0065" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065",
-            "text" : "Specifikt ställe",
-            "description" : "Ytterligare detalj angiven som ett specifikt område eller en punkt på eller i det identifierade kroppsstället.",
-            "comment" : "Används för att öka precisionen i identifieringen av kroppsstället. Till exempel McBurneys punkt på bukväggen. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
-          },
-          "at0067" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0067",
-            "text" : "Medial",
-            "description" : "I riktning mot kroppsställets mittlinje."
-          },
-          "at0068" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068",
-            "text" : "Lateral",
-            "description" : "I riktning mot kroppsställets sida eller kant."
-          },
-          "at0069" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069",
-            "text" : "Superior",
-            "description" : "Ovanför kroppsstället, ofta i betydelsen i riktning mot huvudet."
-          },
-          "at0070" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070",
-            "text" : "Inferior",
-            "description" : "Nedanför kroppsstället, ofta i betydelsen i riktning mot fötterna."
-          },
-          "at0071" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0071",
-            "text" : "Främre",
-            "description" : "Främre delen eller ventrala ytan av kroppsstället."
-          },
-          "at0072" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072",
-            "text" : "Bakre",
-            "description" : "Bakre delen eller dorsala ytan av kroppsstället."
-          },
-          "at0073" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073",
-            "text" : "Proximal",
-            "description" : "Mer central eller närmare fastsättningspunkten, vanligtvis en beskrivning av en del av extremitet, finger, tå eller bihang."
-          },
-          "at0074" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0074",
-            "text" : "Distal",
-            "description" : "Mer perifert eller längre bort från fastsättningspunkten, vanligtvis en beskrivning av en del av extremitet, finger, tå eller bihang."
-          },
-          "at0075" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0075",
-            "text" : "Palmar",
-            "description" : "I riktning mot handflatan."
-          },
-          "at0076" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0076",
-            "text" : "Plantar",
-            "description" : "I riktning mot fotsulan."
-          },
-          "at0077" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077",
-            "text" : "I mitten av",
-            "description" : "I mitten av kroppsstället."
-          },
-          "at0078" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078",
-            "text" : "Oral",
-            "description" : "I riktning mot munnen. Används vanligtvis för att beskriva lokalisation inom matspjälkningssystemet."
-          },
-          "at0079" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0079",
-            "text" : "Anal",
-            "description" : "I riktning mot anus. Används vanligtvis för att beskriva lokalisation inom matspjälkningssystemet."
-          },
-          "at0080" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0080",
-            "text" : "Djup",
-            "description" : "I riktning bort från kroppsställets yta."
-          },
-          "at0081" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0081",
-            "text" : "Ytlig",
-            "description" : "I riktning mot kroppsställets yta."
-          },
-          "at0082" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0082",
-            "text" : "Dorsal",
-            "description" : "I riktning mot handens baksida eller fotens ovansida. Används som motsats till handflata och fotsula, inte som en synonym till bakre."
-          },
           "at0055.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0055",
             "text" : "Anatomisk linje",
             "description" : "Ytterligare detalj där teoretiska linjer dragits genom anatomiska strukturer för att ge en fast referenspunkt på människokroppen.",
             "comment" : "Vanligt förekommande anatomiska linjer finns inkluderade som en värdemängd som kan utökas över tid, plus möjlighet till fritext. Om dataelementet 'Kroppsställets namn' använder förkoordinerade termer som inkluderar det specifika kroppsstället är detta dataelement överflödigt."
-          },
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Anatomisk lokalisation",
-            "description" : "Ett fysiskt ställe på eller i människokroppen."
           },
           "at0064.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -10045,12 +8669,7 @@
           }
         }
       },
-      "termBindings" : {
-        "SNOMED-CT" : {
-          "at0003" : "term:SNOMED-CT::7771000",
-          "at0004" : "term:SNOMED-CT::24028007"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
