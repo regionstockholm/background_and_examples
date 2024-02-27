@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"453a273a63a46ce6943c0604d5f3079c">
+		["MD5-CAM-1.0.1"] = <"3acbb8a267ff844a027030b3fdd46318">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -45,6 +45,11 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			CLUSTER[at0196] occurrences matches {0..1} matches {    -- Extent
 				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0207] occurrences matches {0..1} matches {    -- Assessable
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
 					ELEMENT[at0194] occurrences matches {0..1} matches {    -- Total lesion extent
 						value matches {
 							C_DV_QUANTITY <
@@ -74,14 +79,9 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0197] occurrences matches {0..1} matches {    -- Comment
+					ELEMENT[at0197] occurrences matches {0..1} matches {    -- Invasive tumour extent comment
 						value matches {
 							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0207] occurrences matches {0..1} matches {    -- Assessable
-						value matches {
-							DV_CODED_TEXT matches {*}
 						}
 					}
 				}
@@ -145,22 +145,12 @@ definition
 					}
 					CLUSTER[at0201] occurrences matches {0..1} matches {    -- Invasion
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0202] occurrences matches {0..1} matches {    -- Present
+							ELEMENT[at0208] occurrences matches {0..1} matches {    -- Present
 								value matches {
-									DV_CODED_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0203] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
-								value matches {
-									DV_CODED_TEXT matches {*}
+									DV_TEXT matches {*}
 								}
 							}
 							ELEMENT[at0205] occurrences matches {0..1} matches {    -- Structure invaded
-								value matches {
-									DV_CODED_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0204] occurrences matches {0..1} matches {    -- Extent
 								value matches {
 									DV_CODED_TEXT matches {*}
 								}
@@ -812,7 +802,7 @@ ontology
 					description = <"">
 				>
 				["at0197"] = <
-					text = <"Comment">
+					text = <"Invasive tumour extent comment">
 					description = <"">
 				>
 				["at0198"] = <
@@ -831,18 +821,6 @@ ontology
 					text = <"Invasion">
 					description = <"">
 				>
-				["at0202"] = <
-					text = <"Present">
-					description = <"">
-				>
-				["at0203"] = <
-					text = <"DV_CODED_TEXT">
-					description = <"">
-				>
-				["at0204"] = <
-					text = <"Extent">
-					description = <"">
-				>
 				["at0205"] = <
 					text = <"Structure invaded">
 					description = <"">
@@ -853,6 +831,10 @@ ontology
 				>
 				["at0207"] = <
 					text = <"Assessable">
+					description = <"">
+				>
+				["at0208"] = <
+					text = <"Present">
 					description = <"">
 				>
 			>
