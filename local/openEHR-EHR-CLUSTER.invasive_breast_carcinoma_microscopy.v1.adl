@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"b55741924d3f7292a9777253387eaac4">
+		["MD5-CAM-1.0.1"] = <"8d93eb585931510ee4e8845bab8e923a">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -164,9 +164,9 @@ definition
 					}
 				}
 			}
-			allow_archetype CLUSTER[at0084] occurrences matches {0..1} matches {    -- Additional details
+			allow_archetype CLUSTER[at0209] occurrences matches {0..*} matches {    -- Additional details
 				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins(-[a-zA-Z0-9_]+)*\.v1/}
+					archetype_id/value matches {/.*/}
 			}
 			CLUSTER[at0054] occurrences matches {0..1} matches {    -- Non-neoplastic cellular changes
 				items cardinality matches {1..*; unordered} matches {
@@ -557,10 +557,6 @@ ontology
 					text = <"Van Nuys Group 3">
 					description = <"Nuclear grade 3 with or without necrosis.">
 				>
-				["at0084"] = <
-					text = <"Additional details">
-					description = <"Details of invasive carcinoma at surgical resection margins.">
-				>
 				["at0087"] = <
 					text = <"Sentinel nodes">
 					description = <"Details of the involvement of tumour in sentinel lymph nodes.">
@@ -819,6 +815,10 @@ ontology
 				>
 				["at0208"] = <
 					text = <"Present">
+					description = <"">
+				>
+				["at0209"] = <
+					text = <"Additional details">
 					description = <"">
 				>
 			>
