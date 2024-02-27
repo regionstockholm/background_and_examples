@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.2",
+      "sem_ver" : "0.1.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d4b3d0b814217aa8726e687c2d72b404",
+      "MD5-CAM-1.0.1" : "eb848ed60e96862fe09322e68735d72f",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1515,24 +1515,6 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-invasive_breast_carcinoma_microscopy-001.v1",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0009.3",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location_circle-001.v1",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0009.3",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
               "referenceType" : "archetypeOverlay"
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
@@ -6198,9 +6180,26 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "b55741924d3f7292a9777253387eaac4"
+        "PARENT:MD5-CAM-1.0.1" : "8d93eb585931510ee4e8845bab8e923a"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record detailed findings about breast cancer found on microscopic examination.",
+          "keywords" : [ "breast", "histopathology", "cancer", "laboratory", "lab", "pathology", "histology", "malignancy" ],
+          "use" : "To record detailed findings about microscopic examination of tissue related to breast cancer. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
+          "copyright" : "copyright (c) 2010 openEHR foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.invasive_breast_carcinoma_microscopy.v1",
     "differential" : true,
@@ -6219,10 +6218,19 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
-          "nodeId" : "at0084.1",
+          "nodeId" : "at0209.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen_measurements-001.v1",
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location_circle-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0209.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
