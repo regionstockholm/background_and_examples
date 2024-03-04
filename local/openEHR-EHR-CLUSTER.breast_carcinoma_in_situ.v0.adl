@@ -26,21 +26,28 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"041ea60948cb62e23308eb61a8dec756">
+		["MD5-CAM-1.0.1"] = <"0dad23ddd8e50e3305461bca68591bad">
 		["build_uid"] = <"6a34cf1c-4ec4-3ace-bd53-43e692bca705">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- breast_carcinoma_in_situ
+	CLUSTER[at0000] matches {    -- Breast carcinoma in situ
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- DCIS present
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- CIS present
 				value matches {
 					DV_BOOLEAN matches {*}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Pattern
+			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Situation?
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0029,    -- Solitary
+							at0030,    -- Detached from invasive tumour
+							at0031]    -- Contiguous to invasive tumour
+						}
+					}
 				}
 			}
 			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Distance to closest margin
@@ -48,113 +55,51 @@ definition
 					DV_QUANTITY matches {*}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Necrosis
-				value matches {
-					DV_CODED_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Microinvasion
-				value matches {
-					DV_CODED_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Calcification
-				value matches {
-					DV_CODED_TEXT matches {*}
-				}
-			}
-			allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {    -- IHC
-				include
-					archetype_id/value matches {/.*/}
-			}
-			CLUSTER[at0014] occurrences matches {0..1} matches {    -- Tumour panel
+			CLUSTER[at0027] occurrences matches {0..*} matches {    -- Carcinoma in situ variant
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Oestrogen receptor
-						value matches {
-							DV_CODED_TEXT matches {*}
-							C_DV_QUANTITY <
-								property = <[openehr::507]>
-								list = <
-									["1"] = <
-										units = <"%">
-										magnitude = <|0.0..100.0|>
-									>
-								>
-							>
-						}
-					}
-					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Progesterone receptor
-						value matches {
-							DV_CODED_TEXT matches {*}
-							C_DV_QUANTITY <
-								property = <[openehr::507]>
-								list = <
-									["1"] = <
-										units = <"%">
-										magnitude = <|0.0..100.0|>
-									>
-								>
-							>
-						}
-					}
-					ELEMENT[at0017] occurrences matches {0..1} matches {    -- HER2 neu receptor
+					ELEMENT[at0001] occurrences matches {0..1} matches {    -- Pattern
 						value matches {
 							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0018] occurrences matches {0..1} matches {    -- Ki 67
-						value matches {
-							C_DV_QUANTITY <
-								property = <[openehr::380]>
-								list = <
-									["1"] = <
-										units = <"%">
-										magnitude = <|0.0..100.0|>
-										precision = <|1|>
-									>
-								>
-							>
-							DV_CODED_TEXT matches {*}
-						}
-					}
-				}
-			}
-			CLUSTER[at0004] occurrences matches {0..1} matches {    -- Histologic Grade
-				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Not assessable
-						value matches {
-							DV_BOOLEAN matches {*}
-						}
-					}
-					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Tubule formation
-						value matches {
-							DV_ORDINAL matches {*}
-						}
-					}
-					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Nuclear pleomorphism (nuclear grade)
-						value matches {
-							DV_ORDINAL matches {*}
-						}
-					}
-					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Mitotic activity (per mm2)
-						value matches {
-							DV_ORDINAL matches {*}
-						}
-					}
-					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Mitotic activity (per 10 HPF [field diametre])
-						value matches {
-							DV_ORDINAL matches {*}
-						}
-					}
-					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Total score
-						value matches {
-							DV_QUANTITY matches {*}
-						}
-					}
-					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Nottingham histologic grade
+					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Microinvasion
 						value matches {
 							DV_CODED_TEXT matches {*}
 						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Necrosis
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Calcification
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0032] occurrences matches {0..*} matches {    -- ?Tumour panel
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Nuclear grade
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0034,    -- Grade 1
+									at0035,    -- Grade 2
+									at0036]    -- Grade 3
+								}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- Dimensions
+						include
+							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0020] occurrences matches {0..*} matches {    -- Sample
+						include
+							archetype_id/value matches {/.*/}
 					}
 					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Comment
 						value matches {
@@ -163,15 +108,6 @@ definition
 					}
 				}
 			}
-			allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- Dimensions
-				include
-					archetype_id/value matches {/.*/}
-			}
-			allow_archetype CLUSTER[at0020] occurrences matches {0..*} matches {    -- Sample
-				include
-					archetype_id/value matches {/.*/}
-			}
-			CLUSTER[at0027] occurrences matches {0..1} matches {*}    -- Carcinoma in situ variant
 		}
 	}
 
@@ -180,7 +116,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"breast_carcinoma_in_situ">
+					text = <"Breast carcinoma in situ">
 					description = <"Ductal carcinoma in situ DCIS">
 				>
 				["at0001"] = <
@@ -195,24 +131,12 @@ ontology
 					text = <"Necrosis">
 					description = <"">
 				>
-				["at0004"] = <
-					text = <"Histologic Grade">
-					description = <"">
-				>
 				["at0005"] = <
-					text = <"DCIS present">
+					text = <"CIS present">
 					description = <"">
 				>
 				["at0006"] = <
 					text = <"Distance to closest margin">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"IHC">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Nottingham histologic grade">
 					description = <"">
 				>
 				["at0009"] = <
@@ -223,26 +147,6 @@ ontology
 					text = <"Comment">
 					description = <"">
 				>
-				["at0014"] = <
-					text = <"Tumour panel">
-					description = <"">
-				>
-				["at0015"] = <
-					text = <"Oestrogen receptor">
-					description = <"">
-				>
-				["at0016"] = <
-					text = <"Progesterone receptor">
-					description = <"">
-				>
-				["at0017"] = <
-					text = <"HER2 neu receptor">
-					description = <"">
-				>
-				["at0018"] = <
-					text = <"Ki 67">
-					description = <"">
-				>
 				["at0019"] = <
 					text = <"Microinvasion">
 					description = <"">
@@ -251,33 +155,45 @@ ontology
 					text = <"Sample">
 					description = <"">
 				>
-				["at0021"] = <
-					text = <"Nuclear pleomorphism (nuclear grade)">
-					description = <"">
-				>
-				["at0022"] = <
-					text = <"Tubule formation">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"Mitotic activity (per mm2)">
-					description = <"">
-				>
-				["at0024"] = <
-					text = <"Mitotic activity (per 10 HPF [field diametre])">
-					description = <"">
-				>
-				["at0025"] = <
-					text = <"Total score">
-					description = <"">
-				>
-				["at0026"] = <
-					text = <"Not assessable">
-					description = <"">
-				>
 				["at0027"] = <
 					text = <"Carcinoma in situ variant">
 					description = <"">
+				>
+				["at0028"] = <
+					text = <"Situation?">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Solitary">
+					description = <"Carcinoma in situ is the only finding. Not associated to invasive carcinoma.">
+				>
+				["at0030"] = <
+					text = <"Detached from invasive tumour">
+					description = <"Carcinoma in situ separated from an invasive carcinoma finding.">
+				>
+				["at0031"] = <
+					text = <"Contiguous to invasive tumour">
+					description = <"Carcinoma in situ adjacent to an invasive tumour">
+				>
+				["at0032"] = <
+					text = <"?Tumour panel">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Nuclear grade">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Grade 1">
+					description = <"Low">
+				>
+				["at0035"] = <
+					text = <"Grade 2">
+					description = <"Intermediate">
+				>
+				["at0036"] = <
+					text = <"Grade 3">
+					description = <"High">
 				>
 			>
 		>
