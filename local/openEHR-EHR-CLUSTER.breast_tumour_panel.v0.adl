@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"afd5a4f5e36709d0a775aa256c31e4b6">
+		["MD5-CAM-1.0.1"] = <"f278646f120500891c0d21851a6a1f37">
 		["build_uid"] = <"8506684f-e02f-3065-a41d-f77b647d67da">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- breast_tumour_panel
+	CLUSTER[at0000] matches {    -- Breast tumour panel
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Oestrogen receptor
 				value matches {
@@ -145,7 +145,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"breast_tumour_panel">
+					text = <"Breast tumour panel">
 					description = <"breast immunohistochemistry">
 				>
 				["at0010"] = <
