@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"713fda862748fc8c701e5f38ddaa1e5d">
+		["MD5-CAM-1.0.1"] = <"5b0b865aa1c5085044785effdd65ef50">
 		["build_uid"] = <"6a34cf1c-4ec4-3ace-bd53-43e692bca705">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Ductal carcinoma in situ DCIS
+	CLUSTER[at0000] matches {    -- Breast carcinoma in situ
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0005] occurrences matches {0..1} matches {    -- DCIS present
 				value matches {
@@ -67,7 +67,7 @@ definition
 				include
 					archetype_id/value matches {/.*/}
 			}
-			CLUSTER[at0014] occurrences matches {0..1} matches {    -- IHC
+			CLUSTER[at0014] occurrences matches {0..1} matches {    -- Tumour panel
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Oestrogen receptor
 						value matches {
@@ -171,6 +171,7 @@ definition
 				include
 					archetype_id/value matches {/.*/}
 			}
+			CLUSTER[at0027] occurrences matches {0..1} matches {*}    -- Carcinoma in situ variant
 		}
 	}
 
@@ -179,7 +180,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Ductal carcinoma in situ DCIS">
+					text = <"Breast carcinoma in situ">
 					description = <"Ductal carcinoma in situ DCIS">
 				>
 				["at0001"] = <
@@ -223,7 +224,7 @@ ontology
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"IHC">
+					text = <"Tumour panel">
 					description = <"">
 				>
 				["at0015"] = <
@@ -272,6 +273,10 @@ ontology
 				>
 				["at0026"] = <
 					text = <"Not assessable">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Carcinoma in situ variant">
 					description = <"">
 				>
 			>
