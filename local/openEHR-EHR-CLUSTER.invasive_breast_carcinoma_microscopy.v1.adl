@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"da45eec2655f845260e247735c0679df">
+		["MD5-CAM-1.0.1"] = <"e7a7fffcf4c3a1ebbeafb4240e6e9181">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -153,7 +153,7 @@ definition
 							}
 						}
 					}
-					CLUSTER[at0201] occurrences matches {0..1} matches {    -- Invasion
+					CLUSTER[at0201] occurrences matches {0..*} matches {    -- Vascular invasion
 						items cardinality matches {1..*; unordered} matches {
 							ELEMENT[at0208] occurrences matches {0..1} matches {    -- Present
 								value matches {
@@ -162,7 +162,13 @@ definition
 							}
 							ELEMENT[at0205] occurrences matches {0..1} matches {    -- Structure invaded
 								value matches {
-									DV_CODED_TEXT matches {*}
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0212,    -- Lymphatic vessels
+											at0213]    -- Venous
+										}
+									}
 								}
 							}
 							ELEMENT[at0206] occurrences matches {0..1} matches {    -- Comment
@@ -808,7 +814,7 @@ ontology
 					description = <"">
 				>
 				["at0201"] = <
-					text = <"Invasion">
+					text = <"Vascular invasion">
 					description = <"">
 				>
 				["at0205"] = <
@@ -837,6 +843,14 @@ ontology
 				>
 				["at0211"] = <
 					text = <"Comment of number of invasive tumours">
+					description = <"">
+				>
+				["at0212"] = <
+					text = <"Lymphatic vessels">
+					description = <"">
+				>
+				["at0213"] = <
+					text = <"Venous">
 					description = <"">
 				>
 			>
