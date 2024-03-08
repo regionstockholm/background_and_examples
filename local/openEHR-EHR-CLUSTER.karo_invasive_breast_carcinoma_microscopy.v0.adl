@@ -36,18 +36,19 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"b64ed26a3c0f5928d1dfd46c34612d58">
+		["MD5-CAM-1.0.1"] = <"82706d7b0175d4623d7b12cc48accb3a">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- karo_invasive_breast_carcinoma_microscopy
+	CLUSTER[at0000] matches {    -- Invasive breast carcinoma microscopy
 		items cardinality matches {1..*; unordered} matches {
 			CLUSTER[at0196] occurrences matches {0..1} matches {    -- Extent
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0207] occurrences matches {0..1} matches {    -- Assessable
 						value matches {
 							DV_CODED_TEXT matches {*}
+							DV_BOOLEAN matches {*}
 						}
 					}
 					ELEMENT[at0194] occurrences matches {0..1} matches {    -- Total lesion extent
@@ -82,6 +83,11 @@ definition
 					ELEMENT[at0197] occurrences matches {0..1} matches {    -- Invasive tumour extent comment
 						value matches {
 							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0218] occurrences matches {0..1} matches {    -- Size of largest invasive tumour
+						value matches {
+							DV_QUANTITY matches {*}
 						}
 					}
 				}
@@ -188,14 +194,20 @@ definition
 							ELEMENT[at0215] occurrences matches {0..1} matches {    -- Skin
 								value matches {
 									DV_CODED_TEXT matches {*}
+									DV_TEXT matches {*}
 								}
 							}
 							ELEMENT[at0216] occurrences matches {0..1} matches {    -- Chest wall
 								value matches {
 									DV_CODED_TEXT matches {*}
+									DV_TEXT matches {*}
 								}
 							}
 						}
+					}
+					allow_archetype CLUSTER[at0219] occurrences matches {0..*} matches {    -- Dimensions
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -219,7 +231,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"karo_invasive_breast_carcinoma_microscopy">
+					text = <"Invasive breast carcinoma microscopy">
 					description = <"Microscopic anatomic pathology findings related to breast cancer.">
 				>
 				["at0014"] = <
@@ -388,6 +400,14 @@ ontology
 				>
 				["at0217"] = <
 					text = <"Score">
+					description = <"">
+				>
+				["at0218"] = <
+					text = <"Size of largest invasive tumour">
+					description = <"">
+				>
+				["at0219"] = <
+					text = <"Dimensions">
 					description = <"">
 				>
 			>
