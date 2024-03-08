@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0dad23ddd8e50e3305461bca68591bad">
+		["MD5-CAM-1.0.1"] = <"ff7eb794cbea3ecd4c47a1953d9c3085">
 		["build_uid"] = <"6a34cf1c-4ec4-3ace-bd53-43e692bca705">
 	>
 
@@ -77,10 +77,6 @@ definition
 							DV_CODED_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0032] occurrences matches {0..*} matches {    -- ?Tumour panel
-						include
-							archetype_id/value matches {/.*/}
-					}
 					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Nuclear grade
 						value matches {
 							DV_CODED_TEXT matches {
@@ -104,6 +100,11 @@ definition
 					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Comment
 						value matches {
 							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Pagetoid spread
+						value matches {
+							DV_BOOLEAN matches {*}
 						}
 					}
 				}
@@ -175,10 +176,6 @@ ontology
 					text = <"Contiguous to invasive tumour">
 					description = <"Carcinoma in situ adjacent to an invasive tumour">
 				>
-				["at0032"] = <
-					text = <"?Tumour panel">
-					description = <"">
-				>
 				["at0033"] = <
 					text = <"Nuclear grade">
 					description = <"">
@@ -194,6 +191,10 @@ ontology
 				["at0036"] = <
 					text = <"Grade 3">
 					description = <"High">
+				>
+				["at0037"] = <
+					text = <"Pagetoid spread">
+					description = <"This element is to be used to ascertain the presence of pagetoid spread of DCIS (ductal carcinoma in situ) to the nipple.">
 				>
 			>
 		>
