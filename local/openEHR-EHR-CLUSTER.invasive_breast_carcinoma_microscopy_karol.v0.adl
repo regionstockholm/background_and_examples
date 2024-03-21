@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"14e3a2176aafeb7f6969af3fbf2cc6a3">
+		["MD5-CAM-1.0.1"] = <"bff0a97709ba3cdfdb4af45fd2a48721">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -243,18 +243,6 @@ definition
 				include
 					archetype_id/value matches {/.*/}
 			}
-			allow_archetype CLUSTER[at0224] occurrences matches {0..*} matches {    -- CIS details
-				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.breast_carcinoma_in_situ\.v0/}
-			}
-			allow_archetype CLUSTER[at0087] occurrences matches {0..1} matches {    -- Sentinel nodes
-				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.lymph_node_metastases(-[a-zA-Z0-9_]+)*\.v1/}
-			}
-			allow_archetype CLUSTER[at0088] occurrences matches {0..1} matches {    -- Axillary nodes
-				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.lymph_node_metastases(-[a-zA-Z0-9_]+)*\.v1/}
-			}
 		}
 	}
 
@@ -325,14 +313,6 @@ ontology
 				["at0052"] = <
 					text = <"Score 3">
 					description = <"Size > 2.5 red blood cell diameters; Pleomorphic vesicular nuclei; One or more prominent nucleoli; Frequent mitotic figures commonly present.">
-				>
-				["at0087"] = <
-					text = <"Sentinel nodes">
-					description = <"Details of the involvement of tumour in sentinel lymph nodes.">
-				>
-				["at0088"] = <
-					text = <"Axillary nodes">
-					description = <"Details of the involvement of tumour in axillary lymph nodes.">
 				>
 				["at0175"] = <
 					text = <"Mitotic frequency score">
@@ -444,10 +424,6 @@ ontology
 				>
 				["at0223"] = <
 					text = <"Comment">
-					description = <"">
-				>
-				["at0224"] = <
-					text = <"CIS details">
 					description = <"">
 				>
 				["at0225"] = <
