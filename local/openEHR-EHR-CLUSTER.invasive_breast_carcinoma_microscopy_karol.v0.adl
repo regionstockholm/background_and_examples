@@ -36,13 +36,35 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"12e94c2992045f2acd71ddf79dabb906">
+		["MD5-CAM-1.0.1"] = <"14e3a2176aafeb7f6969af3fbf2cc6a3">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Invasive breast carcinoma microscopy
 		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0225] occurrences matches {0..1} matches {    -- Focality
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0226] occurrences matches {0..1} matches {    -- Comment in focality
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0210] occurrences matches {0..1} matches {    -- Number of identified invasive tumours
+				value matches {
+					DV_COUNT matches {*}
+					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0227] occurrences matches {0..1} matches {    -- Comment on number of invasive tumours
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 			CLUSTER[at0196] occurrences matches {0..1} matches {    -- Extent
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0207] occurrences matches {0..1} matches {    -- Assessable
@@ -75,16 +97,6 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0210] occurrences matches {0..1} matches {    -- Number of identified invasive tumours
-				value matches {
-					DV_COUNT matches {*}
-				}
-			}
-			ELEMENT[at0211] occurrences matches {0..1} matches {    -- Comment of number of invasive tumours
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
 			CLUSTER[at0200] occurrences matches {1..*} matches {    -- Individual tumour
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0199] occurrences matches {0..1} matches {    -- Morphology
@@ -95,6 +107,17 @@ definition
 					ELEMENT[at0222] occurrences matches {0..1} matches {    -- Comment of morphological type
 						value matches {
 							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0228] occurrences matches {0..1} matches {    -- Description of finding
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0229] occurrences matches {0..1} matches {    -- Radically removed
+						value matches {
+							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
 					CLUSTER[at0221] occurrences matches {0..1} matches {    -- Mitosis count
@@ -375,10 +398,6 @@ ontology
 					text = <"Number of identified invasive tumours">
 					description = <"">
 				>
-				["at0211"] = <
-					text = <"Comment of number of invasive tumours">
-					description = <"">
-				>
 				["at0212"] = <
 					text = <"Lymphatic vessels">
 					description = <"">
@@ -429,6 +448,26 @@ ontology
 				>
 				["at0224"] = <
 					text = <"CIS details">
+					description = <"">
+				>
+				["at0225"] = <
+					text = <"Focality">
+					description = <"">
+				>
+				["at0226"] = <
+					text = <"Comment in focality">
+					description = <"">
+				>
+				["at0227"] = <
+					text = <"Comment on number of invasive tumours">
+					description = <"">
+				>
+				["at0228"] = <
+					text = <"Description of finding">
+					description = <"">
+				>
+				["at0229"] = <
+					text = <"Radically removed">
 					description = <"">
 				>
 			>
