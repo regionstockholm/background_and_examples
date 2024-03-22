@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3d2094d5874edf812eb494ef9cbf86ef">
+		["MD5-CAM-1.0.1"] = <"739077e239ce5fca3e57caeaf82e148b">
 		["build_uid"] = <"145e0801-ff86-35e3-9d9f-27b7b4feb9f4">
 	>
 
@@ -48,12 +48,17 @@ definition
 					DV_COUNT matches {*}
 				}
 			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Capsule invasion
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Number of lymph nodes with isolated tumor cells (ITCs)
 				value matches {
-					DV_CODED_TEXT matches {*}
+					DV_COUNT matches {*}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Type of invasion
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Maximum metastasis size
+				value matches {
+					DV_QUANTITY matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Extranodular invasion
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -91,11 +96,15 @@ ontology
 					description = <"">
 				>
 				["at0005"] = <
-					text = <"Capsule invasion">
+					text = <"Extranodular invasion">
 					description = <"">
 				>
-				["at0006"] = <
-					text = <"Type of invasion">
+				["at0007"] = <
+					text = <"Number of lymph nodes with isolated tumor cells (ITCs)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Maximum metastasis size">
 					description = <"">
 				>
 			>
