@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"155d0496f5a727722c65e931c934f91d">
+		["MD5-CAM-1.0.1"] = <"c209a423c5fdb56f69c1c3f20b3af499">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -133,6 +133,52 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					CLUSTER[at0201] occurrences matches {0..2} matches {    -- Vascular invasion
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0208] occurrences matches {0..1} matches {    -- Present
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0205] occurrences matches {0..1} matches {    -- Structure invaded
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0212,    -- Lymphatic vessels
+											at0213]    -- Venous
+										}
+									}
+								}
+							}
+							ELEMENT[at0206] occurrences matches {0..1} matches {    -- Comment
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+					CLUSTER[at0214] occurrences matches {0..1} matches {    -- Invasion outside breast parenchyma
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0215] occurrences matches {0..1} matches {    -- Skin
+								value matches {
+									DV_CODED_TEXT matches {*}
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0216] occurrences matches {0..1} matches {    -- Chest wall
+								value matches {
+									DV_CODED_TEXT matches {*}
+									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0223] occurrences matches {0..1} matches {    -- Comment
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
 					CLUSTER[at0221] occurrences matches {0..1} matches {    -- Mitosis count
 						items cardinality matches {1..*; unordered} matches {
 							ELEMENT[at0014] occurrences matches {0..1} matches {    -- Mitosis count
@@ -200,53 +246,11 @@ definition
 							}
 						}
 					}
-					CLUSTER[at0201] occurrences matches {0..2} matches {    -- Vascular invasion
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0208] occurrences matches {0..1} matches {    -- Present
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0205] occurrences matches {0..1} matches {    -- Structure invaded
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0212,    -- Lymphatic vessels
-											at0213]    -- Venous
-										}
-									}
-								}
-							}
-							ELEMENT[at0206] occurrences matches {0..1} matches {    -- Comment
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-						}
-					}
-					CLUSTER[at0214] occurrences matches {0..1} matches {    -- Invasion outside breast parenchyma
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0215] occurrences matches {0..1} matches {    -- Skin
-								value matches {
-									DV_CODED_TEXT matches {*}
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0216] occurrences matches {0..1} matches {    -- Chest wall
-								value matches {
-									DV_CODED_TEXT matches {*}
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0223] occurrences matches {0..1} matches {    -- Comment
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-						}
-					}
 				}
+			}
+			allow_archetype CLUSTER[at0234] occurrences matches {0..*} matches {    -- Adjacent carcinoma in situ details
+				include
+					archetype_id/value matches {/.*/}
 			}
 			allow_archetype CLUSTER[at0209] occurrences matches {0..*} matches {    -- Additional details
 				include
@@ -461,6 +465,10 @@ ontology
 				>
 				["at0233"] = <
 					text = <"Comment on tumour size">
+					description = <"">
+				>
+				["at0234"] = <
+					text = <"Adjacent carcinoma in situ details">
 					description = <"">
 				>
 			>
