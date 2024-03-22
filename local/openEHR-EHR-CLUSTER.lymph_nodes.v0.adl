@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"739077e239ce5fca3e57caeaf82e148b">
+		["MD5-CAM-1.0.1"] = <"6f4d9f2dfab25f181438e7dbcbcfa0bc">
 		["build_uid"] = <"145e0801-ff86-35e3-9d9f-27b7b4feb9f4">
 	>
 
@@ -34,6 +34,11 @@ definition
 	CLUSTER[at0000] matches {    -- Lymph nodes
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Type of sample
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Region/area
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -105,6 +110,10 @@ ontology
 				>
 				["at0008"] = <
 					text = <"Maximum metastasis size">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Region/area">
 					description = <"">
 				>
 			>
