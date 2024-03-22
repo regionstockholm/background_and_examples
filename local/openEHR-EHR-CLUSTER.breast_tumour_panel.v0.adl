@@ -26,14 +26,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5f5591fbaa8a1a0b929016b6a3bdcbd7">
+		["MD5-CAM-1.0.1"] = <"db3ff831b1c39c557ea189af074da467">
 		["build_uid"] = <"8506684f-e02f-3065-a41d-f77b647d67da">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Breast tumour panel
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Oestrogen receptor
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Oestrogen receptor status
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -64,12 +64,22 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Biopsy analysed
+			ELEMENT[at0026] occurrences matches {0..1} matches {    -- Biopsy analysed
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Progesterone receptor
+			ELEMENT[at0022] occurrences matches {0..1} matches {    -- Date of biopsy
+				value matches {
+					DV_DATE matches {*}
+				}
+			}
+			ELEMENT[at0024] occurrences matches {0..1} matches {    -- Comment on oestrogen receptor
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Progesterone receptor status
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -98,6 +108,26 @@ definition
 							>
 						}
 					}
+				}
+			}
+			ELEMENT[at0021] occurrences matches {0..1} matches {    -- Biopsy analysed
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Date of biopsy
+				value matches {
+					DV_DATE matches {*}
+				}
+			}
+			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Biopsy analysed
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Comment on progesterone receptor
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0012] occurrences matches {0..1} matches {    -- HER2 neu receptor
@@ -154,7 +184,7 @@ ontology
 					description = <"breast immunohistochemistry">
 				>
 				["at0010"] = <
-					text = <"Oestrogen receptor">
+					text = <"Oestrogen receptor status">
 					description = <"">
 				>
 				["at0012"] = <
@@ -166,7 +196,7 @@ ontology
 					description = <"">
 				>
 				["at0015"] = <
-					text = <"Progesterone receptor">
+					text = <"Progesterone receptor status">
 					description = <"">
 				>
 				["at0016"] = <
@@ -186,6 +216,30 @@ ontology
 					description = <"">
 				>
 				["at0020"] = <
+					text = <"Biopsy analysed">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Biopsy analysed">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Date of biopsy">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Date of biopsy">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Comment on oestrogen receptor">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Comment on progesterone receptor">
+					description = <"">
+				>
+				["at0026"] = <
 					text = <"Biopsy analysed">
 					description = <"">
 				>
