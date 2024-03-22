@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"f3acaaa9693a9cc9a2f61f6ce338e78c">
+		["MD5-CAM-1.0.1"] = <"da9b44f8421ab4cb7a3e03faa4d4bf97">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -250,27 +250,36 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
+							ELEMENT[at0238] occurrences matches {0..1} matches {    -- Comment
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 						}
 					}
-				}
-			}
-			ELEMENT[at0236] occurrences matches {0..1} matches {    -- Comment on TILs
-				value matches {
-					DV_TEXT matches {*}
+					ELEMENT[at0235] occurrences matches {0..1} matches {    -- Tumour infiltrating lymphocytes (TILs)
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0236] occurrences matches {0..1} matches {    -- Comment on TILs
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0234] occurrences matches {0..*} matches {    -- Adjacent carcinoma in situ details
+						include
+							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0239] occurrences matches {0..*} matches {    -- Tumour panel
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 			allow_archetype CLUSTER[at0209] occurrences matches {0..*} matches {    -- Additional details
 				include
 					archetype_id/value matches {/.*/}
-			}
-			allow_archetype CLUSTER[at0234] occurrences matches {0..*} matches {    -- Adjacent carcinoma in situ details
-				include
-					archetype_id/value matches {/.*/}
-			}
-			ELEMENT[at0235] occurrences matches {0..1} matches {    -- Tumour infiltrating lymphocytes (TILs)
-				value matches {
-					DV_CODED_TEXT matches {*}
-				}
 			}
 		}
 	}
@@ -497,6 +506,14 @@ ontology
 				>
 				["at0237"] = <
 					text = <"Not assessable">
+					description = <"">
+				>
+				["at0238"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0239"] = <
+					text = <"Tumour panel">
 					description = <"">
 				>
 			>
