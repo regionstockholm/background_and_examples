@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.4",
+      "sem_ver" : "0.2.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "fa9750940f44d4de843436dbb883aee6",
+      "MD5-CAM-1.0.1" : "8cd15dfe30cd3dc6765eb397038ad57b",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -2044,15 +2044,6 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
-              "nodeId" : "at0009.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-breast_carcinoma_in_situ-002.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
               "nodeId" : "at0009.3",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -3650,7 +3641,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7cb705ed63b094ab2579659c87028bd5"
+        "PARENT:MD5-CAM-1.0.1" : "951ef37b0c0134a27de4f1ecc8cd0a70"
       },
       "details" : {
         "en" : {
@@ -7064,7 +7055,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5787b91a4fa5b45988c3ac1ce670b073"
+        "PARENT:MD5-CAM-1.0.1" : "f0984d0f627592a815967276a4df174d"
       },
       "details" : {
         "en" : {
@@ -7135,78 +7126,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5787b91a4fa5b45988c3ac1ce670b073"
-      },
-      "details" : {
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.breast_carcinoma_in_situ.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-breast_carcinoma_in_situ-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Contiguous breast carcinoma in situ",
-            "description" : "Ductal carcinoma in situ DCIS"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "6a34cf1c-4ec4-3ace-bd53-43e692bca705",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "1f4822e6-dfe7-447a-ad8d-23ccf6e9f5fe",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5787b91a4fa5b45988c3ac1ce670b073"
+        "PARENT:MD5-CAM-1.0.1" : "f0984d0f627592a815967276a4df174d"
       },
       "details" : {
         "en" : {
@@ -9274,7 +9194,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "739077e239ce5fca3e57caeaf82e148b"
+        "PARENT:MD5-CAM-1.0.1" : "6f4d9f2dfab25f181438e7dbcbcfa0bc"
       },
       "details" : {
         "en" : {
@@ -12060,9 +11980,22 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2a6d1b43f781ddf89469a5b672eb7cce"
+        "PARENT:MD5-CAM-1.0.1" : "4c3fc6463ff138fe571d21de43e52d28"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.breast_tumour_panel.v0",
     "differential" : true,
@@ -12111,9 +12044,22 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "5787b91a4fa5b45988c3ac1ce670b073"
+        "PARENT:MD5-CAM-1.0.1" : "f0984d0f627592a815967276a4df174d"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.breast_carcinoma_in_situ.v0",
     "differential" : true,
