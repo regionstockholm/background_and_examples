@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5787b91a4fa5b45988c3ac1ce670b073">
+		["MD5-CAM-1.0.1"] = <"f0984d0f627592a815967276a4df174d">
 		["build_uid"] = <"6a34cf1c-4ec4-3ace-bd53-43e692bca705">
 	>
 
@@ -36,6 +36,7 @@ definition
 			ELEMENT[at0005] occurrences matches {0..1} matches {    -- CIS present
 				value matches {
 					DV_BOOLEAN matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0028] occurrences matches {0..1} matches {    -- Situation?
