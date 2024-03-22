@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.2",
+      "sem_ver" : "0.2.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4a16eba44884b710bcadf906e41ecbbb",
+      "MD5-CAM-1.0.1" : "3e357ebc961225b01c53fdd9e5615e0c",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -801,15 +801,6 @@
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
                       "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_pathology_exam-002.v0",
-                      "referenceType" : "archetypeOverlay"
-                    }, {
-                      "@type" : "C_ARCHETYPE_ROOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at0097.3",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ],
-                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_pathology_exam-003.v0",
                       "referenceType" : "archetypeOverlay"
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
@@ -1789,194 +1780,6 @@
           "members" : [ "at0021" ]
         }
       }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "c8a22f97-a622-4f8b-aa5c-178d2bcc37bb",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Aurelie Tomczak",
-        "organisation" : "Institute of Pathology, University Hospital Heidelberg",
-        "email" : "au.tomczak@yahoo.com "
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Silje Ljosland Bakke",
-        "organisation" : "Nasjonal IKT HF"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "74ee0608-418f-43db-8cd4-555f73acea04",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F537F96BF4102BD332807BA2111BDBD8"
-      },
-      "details" : {
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "purpose" : "Zur Darstellung von Befunden und Interpretationen der pathologisch-anatomischen Begutachtung (Histopathologie) an Gewebe und Körperflüssigkeiten.",
-          "keywords" : [ "Histopathologie, Zytologie, Pathologie, anatomische Pathologie, intraoperative Untersuchung, mikroskopische Untersuchung, makroskopische Untersuchung, Immunhistochemie" ],
-          "use" : "Zur Darstellung der pathologisch-anatomischen Begutachtungsergebnisse (Histopathologie), einschließlich intraoperativer, mikroskopischer und makroskopischer Gewebeuntersuchungen. An einigen Stellen können die Ausdrücke \"Histopathologie\" und \"Zytologie\" anstelle von \"anatomischer Pathologie\" verwendet werden.\r\n\r\nDieser Archetyp wurde speziell für den SLOT \"Befunde\" innerhalb des Archetyps OBSERVATION.Laborergebnis angelegt. Gegebenenfalls kann dieser auch innerhalb anderer ENTRY Archetypklassen angewendet werden.\r\n\r\nDetallierte strukturierte Befunde werden in Child Cluster Archetypen erfasst.",
-          "misuse" : "Nicht geeignet zur Darstellung von nichthistopathologischen Untersuchungsergebnissen, wie zum Beispiel biochemischen oder hämatologischen Untersuchungen. \r\n\r\nNicht zur Darstellung eines Autopsieberichts zu verwenden, auch wenn die durchgeführten Untersuchungen an einigen Proben bei der Autopsie anhand dieses Archetypen abbildbar wären.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere funn og tolkninger ved patologiundersøkelser utført på vev, celler og kroppsvæsker.",
-          "keywords" : [ "histopatologi, anatomisk patologi, cytologi" ],
-          "use" : "Brukes til å registrere alle patologifunn, mikroskopiske og makroskopiske undersøkelser av vev.\r\n\r\nArketypen er laget spesifikt for å brukes i SLOTet \"Undersøkelsesresultat\" i arketypen OBSERVATION.laboratory_test_result, men kan også brukes innen andre ENTRY-arketyper der det er passende.\r\n\r\nDetaljerte strukturerte funn kan registreres i spesifikke CLUSTER-arketyper som nøstes under denne.",
-          "misuse" : "Brukes ikke til å registrere funn som ikke kommer fra patologiundersøkelser, f.eks. klinisk biokjemi eller mikrobiologi.\r\n\r\nBrukes ikke for å registrere en obduksjon, selv om funn ved undersøkelser av spesifikke prøver som tas under en obduksjon kan representeres ved hjelp av denne arketypen.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record the findings and interpretation of anatomical pathology tests performed on tissues, cells and body fluids.",
-          "keywords" : [ "histopathology, cytology, pathology" ],
-          "use" : "Use to record any anatomical pathology test result, including microscopic and macroscopic examinations of tissues, cells or body fluids. In some locations the terms \"histopathology\" and \"cytology\" may be used in place of \"anatomical pathology\".\r\n\r\nThis archetype is designed specifically to be used in the \"Test result\" SLOT within the OBSERVATION.laboratory_test_result archetype, but may also be used within other ENTRY class archetypes where appropriate.",
-          "misuse" : "Not to be used for reporting other types of laboratory test results, for example biochemistry or haematology.\r\n\r\nNot to be used to record an autopsy report, although tests on some specimens that are collected during an autopsy may be represented using this archetype.",
-          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_pathology_exam.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-anatomical_pathology_exam-003.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0005.2",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0005.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "DCIS",
-            "description" : "Findings and interpretation of an anatomical pathology examination performed on tissues and body fluids."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Detached DCIS",
-            "description" : "Details of an individual anatomical pathology finding, often related to a specific anatomical location or specimen."
-          },
-          "at0005.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.2",
-            "text" : "DCIS associated to tumour",
-            "description" : "Details of an individual anatomical pathology finding, often related to a specific anatomical location or specimen."
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Patologiundersøkelse (3)",
-            "description" : "Funn og tolkninger av patologiundersøkelser utført på vev, celler og kroppsvæsker."
-          },
-          "at0005.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Patologifunn (2)",
-            "description" : "Detaljer om et individuelt patologifunn, ofte relatert til en spesifikk anatomisk lokalisering eller prøvemateriale."
-          }
-        },
-        "de" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Pathologisch-anatomische Begutachtung (3)",
-            "description" : "Befunde und Interpretationen von pathologisch-anatomischen Begutachtungen (Histopathologie) an Gewebe und Körperflüssigkeiten."
-          },
-          "at0005.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Pathologisch-anatomischer Befund (2)",
-            "description" : "Details zu einem einzelnen pathologisch-anatomischen Befund, oft im Bezug zu einer spezifischen anatomischen Lokalisation oder Probe."
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
     },
     "adlVersion" : "1.4",
     "buildUid" : "c8a22f97-a622-4f8b-aa5c-178d2bcc37bb",
@@ -3914,6 +3717,15 @@
               "attributes" : [ ],
               "attributeTuples" : [ ],
               "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-breast_tumour_panel-001.v0",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0234.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-breast_carcinoma_in_situ-004.v0",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -12116,6 +11928,152 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "8506684f-e02f-3065-a41d-f77b647d67da",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "8e02c943-25c1-46d2-88df-ffb35270e1da",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "5787b91a4fa5b45988c3ac1ce670b073"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.breast_carcinoma_in_situ.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-breast_carcinoma_in_situ-004.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "defaultValue" : {
+                "value" : true,
+                "@type" : "DV_BOOLEAN"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_BOOLEAN",
+                  "rmTypeName" : "BOOLEAN",
+                  "constraint" : [ true ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0028.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "code_string" : "at0031",
+                  "@type" : "CODE_PHRASE"
+                },
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.3" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0030", "at0031" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0031" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0031" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "6a34cf1c-4ec4-3ace-bd53-43e692bca705",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
