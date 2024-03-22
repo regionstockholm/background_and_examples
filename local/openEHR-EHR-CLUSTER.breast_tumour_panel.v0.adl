@@ -26,14 +26,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2a6d1b43f781ddf89469a5b672eb7cce">
+		["MD5-CAM-1.0.1"] = <"4c3fc6463ff138fe571d21de43e52d28">
 		["build_uid"] = <"8506684f-e02f-3065-a41d-f77b647d67da">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Breast tumour panel
 		items cardinality matches {1..*; unordered} matches {
-			CLUSTER[at0027] occurrences matches {0..1} matches {    -- ER
+			CLUSTER[at0027] occurrences matches {0..1} matches {    -- Oestrogen receptor (ER)
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Oestrogen receptor status
 						value matches {
@@ -83,7 +83,7 @@ definition
 					}
 				}
 			}
-			CLUSTER[at0028] occurrences matches {0..1} matches {    -- PR
+			CLUSTER[at0028] occurrences matches {0..1} matches {    -- Progesterone receptor (PR)
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Progesterone receptor status
 						value matches {
@@ -311,11 +311,11 @@ ontology
 					description = <"">
 				>
 				["at0027"] = <
-					text = <"ER">
+					text = <"Oestrogen receptor (ER)">
 					description = <"">
 				>
 				["at0028"] = <
-					text = <"PR">
+					text = <"Progesterone receptor (PR)">
 					description = <"">
 				>
 				["at0029"] = <
