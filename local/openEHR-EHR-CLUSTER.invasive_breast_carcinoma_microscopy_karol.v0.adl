@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"9ddded0d942d1fa9b4fcc895a2004a18">
+		["MD5-CAM-1.0.1"] = <"155d0496f5a727722c65e931c934f91d">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -123,6 +123,15 @@ definition
 					allow_archetype CLUSTER[at0232] occurrences matches {0..*} matches {    -- Location
 						include
 							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0219] occurrences matches {0..*} matches {    -- Dimensions
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0233] occurrences matches {0..1} matches {    -- Comment on tumour size
+						value matches {
+							DV_TEXT matches {*}
+						}
 					}
 					CLUSTER[at0221] occurrences matches {0..1} matches {    -- Mitosis count
 						items cardinality matches {1..*; unordered} matches {
@@ -236,10 +245,6 @@ definition
 								}
 							}
 						}
-					}
-					allow_archetype CLUSTER[at0219] occurrences matches {0..*} matches {    -- Dimensions
-						include
-							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -452,6 +457,10 @@ ontology
 				>
 				["at0232"] = <
 					text = <"Location">
+					description = <"">
+				>
+				["at0233"] = <
+					text = <"Comment on tumour size">
 					description = <"">
 				>
 			>
