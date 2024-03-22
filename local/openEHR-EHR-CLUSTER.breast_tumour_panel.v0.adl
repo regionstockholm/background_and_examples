@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6be23900255c2c51dc55983c8f106276">
+		["MD5-CAM-1.0.1"] = <"2a6d1b43f781ddf89469a5b672eb7cce">
 		["build_uid"] = <"8506684f-e02f-3065-a41d-f77b647d67da">
 	>
 
@@ -182,6 +182,11 @@ definition
 					ELEMENT[at0036] occurrences matches {0..1} matches {    -- HER 2/CEP 17 ratio (ISH)
 						value matches {
 							DV_PROPORTION matches {*}
+						}
+					}
+					ELEMENT[at0039] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -351,6 +356,10 @@ ontology
 				>
 				["at0038"] = <
 					text = <"Date of biopsy">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Comment">
 					description = <"">
 				>
 			>
