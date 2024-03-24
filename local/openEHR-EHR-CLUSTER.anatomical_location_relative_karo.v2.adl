@@ -155,20 +155,6 @@ Na situação em que o CLUSTER.anatomical_location só pode ser usado para nomea
 			misuse = <"Não utilizar para especificar ocorrências de características anatômicas de lateralidade.
 Não utilizar para especificar um local simples de locais do corpo já nominados, tais como, femur esquerdo ou a fossa medial do nariz. Utilize neste caso o CLUSTER.anatomical_location.">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"تسجيل المكان التشريحي بالتفصيل">
-			keywords = <"الموقع","المكان","تشريحي">
-			copyright = <"© openEHR Foundation">
-			misuse = <"لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن">
-		>
-		["sl"] = <
-			language = <[ISO_639-1::sl]>
-			purpose = <"*To record details about anatomical location.(en)">
-			keywords = <"*location(en)","*site(en)","*anatomical(en)">
-			copyright = <"© openEHR Foundation">
-			misuse = <"*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To identify and record structured details about a single physical site on, or within, the human body in terms of its relationship to other macroscopic anatomical landmarks.">
@@ -194,6 +180,20 @@ Not to be used to specify a simple location of a named physical site in the body
 
 Not to be used to represent location of anatomical features at the microscopic level, for example in reporting histopathology. Use a CLUSTER archetype for histopathology nested within the OBSERVATION.laboratory_test_result archetype for this purpose.">
 		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"*To record details about anatomical location.(en)">
+			keywords = <"*location(en)","*site(en)","*anatomical(en)">
+			copyright = <"© openEHR Foundation">
+			misuse = <"*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"تسجيل المكان التشريحي بالتفصيل">
+			keywords = <"الموقع","المكان","تشريحي">
+			copyright = <"© openEHR Foundation">
+			misuse = <"لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -203,7 +203,7 @@ Not to be used to represent location of anatomical features at the microscopic l
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"453df1b2ed0bf8a0ea9f74693a1cc048">
+		["MD5-CAM-1.0.1"] = <"6c8177d6286f4b8dc5963f3c02baac8f">
 		["build_uid"] = <"eb7a5f25-e231-45e8-b8bc-f07cea047d06">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"2.1.1">
@@ -217,6 +217,11 @@ definition
 					ELEMENT[at0021] matches {    -- Landmark name
 						value matches {
 							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0070] occurrences matches {0..1} matches {    -- Assessable
+						value matches {
+							DV_CODED_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0062] occurrences matches {0..1} matches {    -- Laterality
@@ -278,6 +283,11 @@ definition
 									at0067]    -- Rostral to
 								}
 							}
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0071] occurrences matches {0..1} matches {    -- Comment
+						value matches {
 							DV_TEXT matches {*}
 						}
 					}
@@ -413,6 +423,14 @@ ontology
 					text = <"*Right(en)">
 					description = <"*Right side of the body.(en)">
 				>
+				["at0070"] = <
+					text = <"*Assessable (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*Comment (en)">
+					description = <"">
+				>
 			>
 		>
 		["sl"] = <
@@ -530,6 +548,14 @@ ontology
 					text = <"*Right(en)">
 					description = <"*Right side of the body.(en)">
 				>
+				["at0070"] = <
+					text = <"*Assessable (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*Comment (en)">
+					description = <"">
+				>
 			>
 		>
 		["en"] = <
@@ -646,6 +672,14 @@ ontology
 				["at0069"] = <
 					text = <"Right">
 					description = <"Right side of the body.">
+				>
+				["at0070"] = <
+					text = <"Assessable">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Comment">
+					description = <"">
 				>
 			>
 		>
@@ -766,6 +800,14 @@ Kombinasjoner valgt innenfor hvert av de 8 parene er i prinsippet gyldige, selv 
 					text = <"Høyre">
 					description = <"Høyre side av kroppen.">
 				>
+				["at0070"] = <
+					text = <"*Assessable (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*Comment (en)">
+					description = <"">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -882,6 +924,14 @@ Kombinasjoner valgt innenfor hvert av de 8 parene er i prinsippet gyldige, selv 
 				["at0069"] = <
 					text = <"*Right(en)">
 					description = <"*Right side of the body.(en)">
+				>
+				["at0070"] = <
+					text = <"*Assessable (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*Comment (en)">
+					description = <"">
 				>
 			>
 		>
@@ -1010,6 +1060,14 @@ Kombinationer som valts inom vart och ett av de 8 paren är i princip giltiga, �
 					text = <"Höger">
 					description = <"Höger sida av kroppen">
 				>
+				["at0070"] = <
+					text = <"*Assessable (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*Comment (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -1128,6 +1186,14 @@ Kombinationer som valts inom vart och ett av de 8 paren är i princip giltiga, �
 				["at0069"] = <
 					text = <"Rechts">
 					description = <"Rechte Körperseite.">
+				>
+				["at0070"] = <
+					text = <"*Assessable (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*Comment (en)">
+					description = <"">
 				>
 			>
 		>
