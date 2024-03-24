@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7a9170aff95668b2147716e9c9fc49bf">
+		["MD5-CAM-1.0.1"] = <"d0abcc0c2dc14a2e634bb33277f38e1b">
 		["build_uid"] = <"145e0801-ff86-35e3-9d9f-27b7b4feb9f4">
 	>
 
@@ -39,7 +39,7 @@ definition
 						defining_code matches {
 							[local::
 							at0010,    -- Sentinel node
-							at0011,    -- Axillary lymphadenectomy
+							at0011,    -- Lymphadenectomy
 							at0012]    -- Other nodes
 						}
 					}
@@ -128,7 +128,7 @@ ontology
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"Axillary lymphadenectomy">
+					text = <"Lymphadenectomy">
 					description = <"">
 				>
 				["at0012"] = <
