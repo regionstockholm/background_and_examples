@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.3.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "dae9734794789c6fd2453dde12f74f03",
+      "MD5-CAM-1.0.1" : "73c52a9a5a77a45e1e6510f7071c513f",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -178,7 +178,35 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "EVENT_CONTEXT",
-        "attributes" : [ ],
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0002.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0005.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
         "attributeTuples" : [ ]
       } ]
     }, {
@@ -246,7 +274,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Breast cancer Pathology report",
+          "text" : "Breast Cancer Pathology report",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         }
       },
@@ -317,6 +345,18 @@
           "code" : "at0000.1.1",
           "text" : "TEST Pathology report",
           "description" : "Documento para comunicar informações sobre o resultado de um teste ou avaliação."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Identificador do relatório",
+          "description" : "Informação de identificação sobre o relatório."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
         }
       },
       "de" : {
@@ -349,6 +389,18 @@
           "code" : "at0000.1.1",
           "text" : "TEST Pathology report",
           "description" : "Das Dokument wird verwendet, um Informationen über das Ergebnis eines Tests oder einer Bewertung zu übermitteln."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Bericht ID",
+          "description" : "Identifizierungsmerkmal des Berichts."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Der Status des gesamten Berichts. Hinweis: Dies ist nicht der Status einer Berichtskomponente."
         }
       },
       "ko" : {
@@ -396,6 +448,18 @@
           "code" : "at0000",
           "text" : "Raportti",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Raportti ID",
+          "description" : "Raportin tunnistetiedot"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Koko raportin tila. Huomaa: Tämä ei ole minkään raporttiosien tila."
         }
       },
       "it" : {
@@ -435,6 +499,18 @@
           "code" : "at0000",
           "text" : "Rapporto",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "ID del rapporto",
+          "description" : "Informazioni di identificazione del rapporto"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Stato",
+          "description" : "Lo stato dell'intero rapporto. Nota: Questo non è lo stato di alcuna delle componenti del rapporto."
         }
       },
       "nl" : {
@@ -474,6 +550,18 @@
           "code" : "at0000",
           "text" : "Rapportage",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Rapportage ID",
+          "description" : "Identificerende informatie over deze rapportage."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "De status van de rapportage. Let op, dit is niet de status van een van de onderdelen van de rapportage."
         }
       }
     },
