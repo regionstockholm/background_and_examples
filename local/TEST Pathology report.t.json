@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.6",
+      "sem_ver" : "0.3.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b790f7db232fdc34369e547d082eaf28",
+      "MD5-CAM-1.0.1" : "d92a714e2d3454538e14c09eb0f5b79a",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -246,7 +246,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "TEST Breast cancer Pathology report",
+          "text" : "Breast cancer Pathology report",
           "description" : "Document to communicate information to others about the result of a test or assessment."
         }
       },
@@ -9585,16 +9585,7 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0009.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
       } ],
