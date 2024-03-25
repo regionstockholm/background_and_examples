@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4c3fc6463ff138fe571d21de43e52d28">
+		["MD5-CAM-1.0.1"] = <"cf5d5d96b798f495632ca8cfe4673413">
 		["build_uid"] = <"8506684f-e02f-3065-a41d-f77b647d67da">
 	>
 
@@ -193,7 +193,7 @@ definition
 			}
 			CLUSTER[at0030] occurrences matches {0..1} matches {    -- Ki 67
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Ki 67
+					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Ki 67 global
 						value matches {
 							C_DV_QUANTITY <
 								property = <[openehr::380]>
@@ -219,9 +219,19 @@ definition
 							}
 						}
 					}
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Ki 67 status
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
 					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Biopsy analysed
 						value matches {
 							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Date of biopsy
+						value matches {
+							DV_DATE matches {*}
 						}
 					}
 					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Comment on Ki 67
@@ -266,7 +276,7 @@ ontology
 					description = <"">
 				>
 				["at0016"] = <
-					text = <"Ki 67">
+					text = <"Ki 67 global">
 					description = <"">
 				>
 				["at0017"] = <
@@ -360,6 +370,14 @@ ontology
 				>
 				["at0039"] = <
 					text = <"Comment">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Ki 67 status">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Date of biopsy">
 					description = <"">
 				>
 			>
