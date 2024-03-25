@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"951ef37b0c0134a27de4f1ecc8cd0a70">
+		["MD5-CAM-1.0.1"] = <"fa23e947fcdd80a21006155837186a35">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -145,13 +145,14 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
-							ELEMENT[at0205] occurrences matches {0..1} matches {    -- Structure invaded
+							ELEMENT[at0205] occurrences matches {0..2} matches {    -- Structure invaded
 								value matches {
 									DV_CODED_TEXT matches {
 										defining_code matches {
 											[local::
 											at0212,    -- Lymphatic vessels
-											at0213]    -- Venous
+											at0213,    -- Venous
+											at0241]    -- Lymphovascular
 										}
 									}
 								}
@@ -514,6 +515,10 @@ ontology
 				>
 				["at0240"] = <
 					text = <"Description of invasive tumour">
+					description = <"">
+				>
+				["at0241"] = <
+					text = <"Lymphovascular">
 					description = <"">
 				>
 			>
