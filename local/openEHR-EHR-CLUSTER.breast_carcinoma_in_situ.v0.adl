@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"adab2c2a810637d5fb5a2cdc504286b8">
+		["MD5-CAM-1.0.1"] = <"1e1d2b8147a1470ec6868998e8fa350e">
 		["build_uid"] = <"6a34cf1c-4ec4-3ace-bd53-43e692bca705">
 	>
 
@@ -69,6 +69,11 @@ definition
 							DV_CODED_TEXT matches {*}
 						}
 					}
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Comment on morphologic type
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
 					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Microinvasion
 						value matches {
 							DV_CODED_TEXT matches {*}
@@ -96,23 +101,28 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Pagetoid spread
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Pagetoid spread (Invasion of skin of mamilla)
 						value matches {
 							DV_CODED_TEXT matches {*}
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- Dimensions
+					allow_archetype CLUSTER[at0020] occurrences matches {0..*} matches {    -- Localisation
 						include
 							archetype_id/value matches {/.*/}
 					}
-					allow_archetype CLUSTER[at0020] occurrences matches {0..*} matches {    -- Sample
+					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- Dimensions
 						include
 							archetype_id/value matches {/.*/}
 					}
 					allow_archetype CLUSTER[at0039] occurrences matches {0..*} matches {    -- Margins
 						include
 							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Description of findings
+						value matches {
+							DV_TEXT matches {*}
+						}
 					}
 					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Comment
 						value matches {
@@ -165,7 +175,7 @@ ontology
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"Sample">
+					text = <"Localisation">
 					description = <"">
 				>
 				["at0027"] = <
@@ -205,7 +215,7 @@ ontology
 					description = <"High">
 				>
 				["at0037"] = <
-					text = <"Pagetoid spread">
+					text = <"Pagetoid spread (Invasion of skin of mamilla)">
 					description = <"This element is to be used to ascertain the presence of pagetoid spread of DCIS (ductal carcinoma in situ) to the nipple.">
 				>
 				["at0038"] = <
@@ -214,6 +224,14 @@ ontology
 				>
 				["at0039"] = <
 					text = <"Margins">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Comment on morphologic type">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Description of findings">
 					description = <"">
 				>
 			>
