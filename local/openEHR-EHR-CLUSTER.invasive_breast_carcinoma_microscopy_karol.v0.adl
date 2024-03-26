@@ -36,250 +36,187 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"e3228f7359a3856bb82a03eb850a3571">
+		["MD5-CAM-1.0.1"] = <"c82abf100220674dd094d88910af3fba">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Invasive breast carcinoma microscopy
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0225] occurrences matches {0..1} matches {    -- Focality
+			ELEMENT[at0199] occurrences matches {0..1} matches {    -- Morphology
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0226] occurrences matches {0..1} matches {    -- Comment in focality
+			ELEMENT[at0222] occurrences matches {0..1} matches {    -- Comment of morphological type
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0210] occurrences matches {0..1} matches {    -- Number of identified invasive tumours
+			ELEMENT[at0229] occurrences matches {0..1} matches {    -- Radically removed
 				value matches {
-					DV_COUNT matches {*}
+					DV_TEXT matches {*}
 					DV_CODED_TEXT matches {*}
-					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0227] occurrences matches {0..1} matches {    -- Comment on number of invasive tumours
+			allow_archetype CLUSTER[at0232] occurrences matches {0..*} matches {    -- Location
+				include
+					archetype_id/value matches {/.*/}
+			}
+			allow_archetype CLUSTER[at0219] occurrences matches {0..*} matches {    -- Dimensions
+				include
+					archetype_id/value matches {/.*/}
+			}
+			allow_archetype CLUSTER[at0242] occurrences matches {0..*} matches {    -- Margins
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0233] occurrences matches {0..1} matches {    -- Comment on tumour size
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0240] occurrences matches {0..1} matches {    -- Description of invasive tumour
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			CLUSTER[at0196] occurrences matches {0..1} matches {    -- Extent
+			CLUSTER[at0201] occurrences matches {0..2} matches {    -- Vascular invasion
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0207] occurrences matches {0..1} matches {    -- Assessable
+					ELEMENT[at0208] occurrences matches {0..1} matches {    -- Present
 						value matches {
-							DV_CODED_TEXT matches {*}
-							DV_BOOLEAN matches {*}
+							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0194] occurrences matches {0..1} matches {    -- Total lesion extent
+					ELEMENT[at0205] occurrences matches {0..2} matches {    -- Structure invaded
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0212,    -- Lymphatic vessels
+									at0213,    -- Venous
+									at0241]    -- Lymphovascular
+								}
+							}
+						}
+					}
+					ELEMENT[at0206] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+			CLUSTER[at0214] occurrences matches {0..1} matches {    -- Invasion outside breast parenchyma
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0215] occurrences matches {0..1} matches {    -- Skin
+						value matches {
+							DV_CODED_TEXT matches {*}
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0216] occurrences matches {0..1} matches {    -- Chest wall
+						value matches {
+							DV_CODED_TEXT matches {*}
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0223] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+			CLUSTER[at0221] occurrences matches {0..1} matches {    -- Mitosis count
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Mitosis count
 						value matches {
 							C_DV_QUANTITY <
-								property = <[openehr::122]>
+								
 								list = <
 									["1"] = <
-										units = <"mm">
+										units = <"1">
+										magnitude = <|>=0.0|>
+									>
+									["2"] = <
+										units = <"[HPF]">
 									>
 								>
 							>
 						}
 					}
-					ELEMENT[at0198] occurrences matches {0..1} matches {    -- Total lesion extent comment
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0218] occurrences matches {0..1} matches {    -- Size of largest invasive tumour
+					ELEMENT[at0220] occurrences matches {0..1} matches {    -- HPF field diametre
 						value matches {
 							DV_QUANTITY matches {*}
 						}
 					}
 				}
 			}
-			CLUSTER[at0200] occurrences matches {1..*} matches {    -- Individual tumour
+			CLUSTER[at0020] occurrences matches {0..1} matches {    -- Nottingham Grade
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0199] occurrences matches {0..1} matches {    -- Morphology
+					ELEMENT[at0175] occurrences matches {0..1} matches {    -- Mitotic frequency score
+						value matches {
+							1|[local::at0176],
+							2|[local::at0177],
+							3|[local::at0178]
+						}
+					}
+					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Nuclear score
+						value matches {
+							1|[local::at0050],
+							2|[local::at0051],
+							3|[local::at0052]
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Tubular formation score
+						value matches {
+							1|[local::at0044],
+							2|[local::at0045],
+							3|[local::at0046]
+						}
+					}
+					ELEMENT[at0217] occurrences matches {0..1} matches {    -- Score
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
+					ELEMENT[at0018] occurrences matches {0..1} matches {    -- Histologic grade
+						value matches {
+							1|[local::at0047],
+							2|[local::at0048],
+							3|[local::at0049]
+						}
+					}
+					ELEMENT[at0237] occurrences matches {0..1} matches {    -- Not assessable
 						value matches {
 							DV_CODED_TEXT matches {*}
+							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0222] occurrences matches {0..1} matches {    -- Comment of morphological type
+					ELEMENT[at0238] occurrences matches {0..1} matches {    -- Comment
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0228] occurrences matches {0..1} matches {    -- Description of finding
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0229] occurrences matches {0..1} matches {    -- Radically removed
-						value matches {
-							DV_TEXT matches {*}
-							DV_CODED_TEXT matches {*}
-						}
-					}
-					allow_archetype CLUSTER[at0232] occurrences matches {0..*} matches {    -- Location
-						include
-							archetype_id/value matches {/.*/}
-					}
-					allow_archetype CLUSTER[at0219] occurrences matches {0..*} matches {    -- Dimensions
-						include
-							archetype_id/value matches {/.*/}
-					}
-					allow_archetype CLUSTER[at0242] occurrences matches {0..*} matches {    -- Margins
-						include
-							archetype_id/value matches {/.*/}
-					}
-					ELEMENT[at0233] occurrences matches {0..1} matches {    -- Comment on tumour size
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					CLUSTER[at0201] occurrences matches {0..2} matches {    -- Vascular invasion
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0208] occurrences matches {0..1} matches {    -- Present
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0205] occurrences matches {0..2} matches {    -- Structure invaded
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0212,    -- Lymphatic vessels
-											at0213,    -- Venous
-											at0241]    -- Lymphovascular
-										}
-									}
-								}
-							}
-							ELEMENT[at0206] occurrences matches {0..1} matches {    -- Comment
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-						}
-					}
-					CLUSTER[at0214] occurrences matches {0..1} matches {    -- Invasion outside breast parenchyma
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0215] occurrences matches {0..1} matches {    -- Skin
-								value matches {
-									DV_CODED_TEXT matches {*}
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0216] occurrences matches {0..1} matches {    -- Chest wall
-								value matches {
-									DV_CODED_TEXT matches {*}
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0223] occurrences matches {0..1} matches {    -- Comment
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-						}
-					}
-					CLUSTER[at0221] occurrences matches {0..1} matches {    -- Mitosis count
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0014] occurrences matches {0..1} matches {    -- Mitosis count
-								value matches {
-									C_DV_QUANTITY <
-										
-										list = <
-											["1"] = <
-												units = <"1">
-												magnitude = <|>=0.0|>
-											>
-											["2"] = <
-												units = <"[HPF]">
-											>
-										>
-									>
-								}
-							}
-							ELEMENT[at0220] occurrences matches {0..1} matches {    -- HPF field diametre
-								value matches {
-									DV_QUANTITY matches {*}
-								}
-							}
-						}
-					}
-					CLUSTER[at0020] occurrences matches {0..1} matches {    -- Nottingham Grade
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0175] occurrences matches {0..1} matches {    -- Mitotic frequency score
-								value matches {
-									1|[local::at0176],
-									2|[local::at0177],
-									3|[local::at0178]
-								}
-							}
-							ELEMENT[at0016] occurrences matches {0..1} matches {    -- Nuclear score
-								value matches {
-									1|[local::at0050],
-									2|[local::at0051],
-									3|[local::at0052]
-								}
-							}
-							ELEMENT[at0017] occurrences matches {0..1} matches {    -- Tubular formation score
-								value matches {
-									1|[local::at0044],
-									2|[local::at0045],
-									3|[local::at0046]
-								}
-							}
-							ELEMENT[at0217] occurrences matches {0..1} matches {    -- Score
-								value matches {
-									DV_COUNT matches {*}
-								}
-							}
-							ELEMENT[at0018] occurrences matches {0..1} matches {    -- Histologic grade
-								value matches {
-									1|[local::at0047],
-									2|[local::at0048],
-									3|[local::at0049]
-								}
-							}
-							ELEMENT[at0237] occurrences matches {0..1} matches {    -- Not assessable
-								value matches {
-									DV_CODED_TEXT matches {*}
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0238] occurrences matches {0..1} matches {    -- Comment
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-						}
-					}
-					ELEMENT[at0235] occurrences matches {0..1} matches {    -- Tumour infiltrating lymphocytes (TILs)
-						value matches {
-							DV_CODED_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0236] occurrences matches {0..1} matches {    -- Comment on TILs
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					allow_archetype CLUSTER[at0234] occurrences matches {0..*} matches {    -- Adjacent carcinoma in situ details
-						include
-							archetype_id/value matches {/.*/}
-					}
-					allow_archetype CLUSTER[at0239] occurrences matches {0..*} matches {    -- Tumour receptor panel
-						include
-							archetype_id/value matches {/.*/}
-					}
+				}
+			}
+			ELEMENT[at0235] occurrences matches {0..1} matches {    -- Tumour infiltrating lymphocytes (TILs)
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0236] occurrences matches {0..1} matches {    -- Comment on TILs
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0234] occurrences matches {0..*} matches {    -- Adjacent carcinoma in situ details
+				include
+					archetype_id/value matches {/.*/}
+			}
+			allow_archetype CLUSTER[at0239] occurrences matches {0..*} matches {    -- Tumour receptor panel
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0228] occurrences matches {0..1} matches {    -- Description of finding
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 			allow_archetype CLUSTER[at0209] occurrences matches {0..*} matches {    -- Additional details
@@ -369,24 +306,8 @@ ontology
 					text = <"Score 3">
 					description = <"High mitotic frequency.">
 				>
-				["at0194"] = <
-					text = <"Total lesion extent">
-					description = <"">
-				>
-				["at0196"] = <
-					text = <"Extent">
-					description = <"">
-				>
-				["at0198"] = <
-					text = <"Total lesion extent comment">
-					description = <"">
-				>
 				["at0199"] = <
 					text = <"Morphology">
-					description = <"">
-				>
-				["at0200"] = <
-					text = <"Individual tumour">
 					description = <"">
 				>
 				["at0201"] = <
@@ -401,20 +322,12 @@ ontology
 					text = <"Comment">
 					description = <"">
 				>
-				["at0207"] = <
-					text = <"Assessable">
-					description = <"">
-				>
 				["at0208"] = <
 					text = <"Present">
 					description = <"">
 				>
 				["at0209"] = <
 					text = <"Additional details">
-					description = <"">
-				>
-				["at0210"] = <
-					text = <"Number of identified invasive tumours">
 					description = <"">
 				>
 				["at0212"] = <
@@ -441,10 +354,6 @@ ontology
 					text = <"Score">
 					description = <"">
 				>
-				["at0218"] = <
-					text = <"Size of largest invasive tumour">
-					description = <"">
-				>
 				["at0219"] = <
 					text = <"Dimensions">
 					description = <"">
@@ -463,18 +372,6 @@ ontology
 				>
 				["at0223"] = <
 					text = <"Comment">
-					description = <"">
-				>
-				["at0225"] = <
-					text = <"Focality">
-					description = <"">
-				>
-				["at0226"] = <
-					text = <"Comment in focality">
-					description = <"">
-				>
-				["at0227"] = <
-					text = <"Comment on number of invasive tumours">
 					description = <"">
 				>
 				["at0228"] = <
@@ -515,10 +412,6 @@ ontology
 				>
 				["at0239"] = <
 					text = <"Tumour receptor panel">
-					description = <"">
-				>
-				["at0240"] = <
-					text = <"Description of invasive tumour">
 					description = <"">
 				>
 				["at0241"] = <
