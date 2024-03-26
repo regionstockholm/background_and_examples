@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.0",
+      "sem_ver" : "0.4.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5441db796c1c486f861d41f67107d45d",
+      "MD5-CAM-1.0.1" : "58de0e559d5a85145450fed88c2765b4",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -13509,697 +13509,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "0620ccb9-48d1-44da-bee3-00f71bc078ab",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "cf5d5d96b798f495632ca8cfe4673413"
-      },
-      "details" : {
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.breast_tumour_panel.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-breast_tumour_panel-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0030",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0016.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_QUANTITY",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "property",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "occurrences" : "0..1",
-                      "terminologyId" : {
-                        "value" : "openehr"
-                      },
-                      "constraint" : [ "380" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ {
-                    "@type" : "C_ATTRIBUTE_TUPLE",
-                    "members" : [ {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "units",
-                      "children" : [ ]
-                    }, {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "magnitude",
-                      "children" : [ ]
-                    }, {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "precision",
-                      "children" : [ ]
-                    } ],
-                    "tuples" : [ {
-                      "@type" : "C_PRIMITIVE_TUPLE",
-                      "members" : [ {
-                        "@type" : "C_STRING",
-                        "rmTypeName" : "STRING",
-                        "constraint" : [ "%" ]
-                      }, {
-                        "@type" : "C_REAL",
-                        "rmTypeName" : "REAL",
-                        "constraint" : [ {
-                          "lower" : 0.0,
-                          "upper" : 100.0,
-                          "lowerIncluded" : true,
-                          "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
-                        } ]
-                      }, {
-                        "@type" : "C_INTEGER",
-                        "rmTypeName" : "INTEGER",
-                        "constraint" : [ {
-                          "lower" : 0,
-                          "upper" : 0,
-                          "lowerIncluded" : true,
-                          "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
-                        } ]
-                      } ]
-                    } ]
-                  } ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "8506684f-e02f-3065-a41d-f77b647d67da",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "8e02c943-25c1-46d2-88df-ffb35270e1da",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "adab2c2a810637d5fb5a2cdc504286b8"
-      },
-      "details" : {
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.breast_carcinoma_in_situ.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-breast_carcinoma_in_situ-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0005.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "defaultValue" : {
-                "value" : true,
-                "@type" : "DV_BOOLEAN"
-              },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_BOOLEAN",
-                  "rmTypeName" : "BOOLEAN",
-                  "constraint" : [ true ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0028.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "defaultValue" : {
-                "defining_code" : {
-                  "code_string" : "at0031",
-                  "@type" : "CODE_PHRASE"
-                },
-                "@type" : "DV_CODED_TEXT"
-              },
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.3" ],
-                  "selectedTerminologies" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0006.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0030", "at0031" ]
-        },
-        "ac0.2" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.2",
-          "members" : [ "at0031" ]
-        },
-        "ac0.3" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.3",
-          "members" : [ "at0031" ]
-        }
-      }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "6a34cf1c-4ec4-3ace-bd53-43e692bca705",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "e4b21eed-31aa-4d17-b9c5-c6807c34d3b8",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "c82abf100220674dd094d88910af3fba"
-      },
-      "details" : {
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record detailed findings about breast cancer found on microscopic examination.",
-          "keywords" : [ "breast", "histopathology", "cancer", "laboratory", "lab", "pathology", "histology", "malignancy" ],
-          "use" : "To record detailed findings about microscopic examination of tissue related to breast cancer. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
-          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
-          "copyright" : "copyright (c) 2010 openEHR foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.invasive_breast_carcinoma_microscopy_karol.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-invasive_breast_carcinoma_microscopy_karol-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "items",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0225.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0210.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_COUNT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
-          "nodeId" : "at0240.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0200",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0201.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..1",
-                  "nodeId" : "at0205.1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "defaultValue" : {
-                        "defining_code" : {
-                          "code_string" : "at0241",
-                          "@type" : "CODE_PHRASE"
-                        },
-                        "@type" : "DV_CODED_TEXT"
-                      },
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "local"
-                          },
-                          "constraint" : [ "ac0.14" ],
-                          "selectedTerminologies" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0201.2",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..1",
-                  "nodeId" : "at0205.2",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "defaultValue" : {
-                        "defining_code" : {
-                          "code_string" : "at0213",
-                          "@type" : "CODE_PHRASE"
-                        },
-                        "@type" : "DV_CODED_TEXT"
-                      },
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "local"
-                          },
-                          "constraint" : [ "ac0.13" ],
-                          "selectedTerminologies" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0201.3",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "items",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..1",
-                  "nodeId" : "at0205.3",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "defaultValue" : {
-                        "defining_code" : {
-                          "code_string" : "at0212",
-                          "@type" : "CODE_PHRASE"
-                        },
-                        "@type" : "DV_CODED_TEXT"
-                      },
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "local"
-                          },
-                          "constraint" : [ "ac0.12" ],
-                          "selectedTerminologies" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..0",
-              "nodeId" : "at0221.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0239.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-breast_tumour_panel-002.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
-              "nodeId" : "at0234.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-breast_carcinoma_in_situ-002.v0",
-              "referenceType" : "archetypeOverlay"
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0201.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0201.1",
-            "text" : "Lymphovascular invasion",
-            "description" : ""
-          },
-          "at0201.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0201.2",
-            "text" : "Venous invasion",
-            "description" : ""
-          },
-          "at0201.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0201.3",
-            "text" : "Lymphatic invasion",
-            "description" : ""
-          },
-          "ac0.12" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.12",
-            "description" : ""
-          },
-          "ac0.13" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.13",
-            "description" : ""
-          },
-          "ac0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.14",
-            "description" : ""
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : {
-        "ac0.1" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.1",
-          "members" : [ "at0212", "at0213", "at0241" ]
-        },
-        "ac0.2" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.2",
-          "members" : [ "at0212", "at0213", "at0241" ]
-        },
-        "ac0.3" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.3",
-          "members" : [ "at0212", "at0213", "at0241" ]
-        },
-        "ac0.4" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.4",
-          "members" : [ "at0212", "at0213", "at0241" ]
-        },
-        "ac0.5" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.5",
-          "members" : [ "at0212", "at0213", "at0241" ]
-        },
-        "ac0.6" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.6",
-          "members" : [ "at0212", "at0241" ]
-        },
-        "ac0.7" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.7",
-          "members" : [ "at0241" ]
-        },
-        "ac0.8" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.8",
-          "members" : [ "at0212", "at0213" ]
-        },
-        "ac0.9" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.9",
-          "members" : [ "at0213" ]
-        },
-        "ac0.10" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.10",
-          "members" : [ "at0212", "at0241" ]
-        },
-        "ac0.11" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.11",
-          "members" : [ "at0212" ]
-        },
-        "ac0.12" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.12",
-          "members" : [ "at0212" ]
-        },
-        "ac0.13" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.13",
-          "members" : [ "at0213" ]
-        },
-        "ac0.14" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.14",
-          "members" : [ "at0241" ]
-        }
-      }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "48454e1f-bc4a-3fc8-9650-3746abb2f851",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "6330275e-181c-4d96-84e8-81b92fa03636",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -15825,15 +15134,6 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
-              "nodeId" : "at0009.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-invasive_breast_carcinoma_microscopy_karol-002.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
               "nodeId" : "at0009.3",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -15967,7 +15267,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "61eb78fb52b199622543b49b7cc3a24e"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record detailed findings about breast cancer found on microscopic examination.",
+          "keywords" : [ "breast", "histopathology", "cancer", "laboratory", "lab", "pathology", "histology", "malignancy" ],
+          "use" : "To record detailed findings about microscopic examination of tissue related to breast cancer. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
+          "copyright" : "copyright (c) 2010 openEHR foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.microscopy_findings_karol.v0",
     "differential" : true,
@@ -15986,14 +15303,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "at0226" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0226",
-            "text" : "Comment in focality",
-            "description" : ""
-          }
-        }
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -16025,7 +15335,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "c82abf100220674dd094d88910af3fba"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record detailed findings about breast cancer found on microscopic examination.",
+          "keywords" : [ "breast", "histopathology", "cancer", "laboratory", "lab", "pathology", "histology", "malignancy" ],
+          "use" : "To record detailed findings about microscopic examination of tissue related to breast cancer. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
+          "copyright" : "copyright (c) 2010 openEHR foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.invasive_breast_carcinoma_microscopy_karol.v0",
     "differential" : true,
@@ -16041,6 +15368,13 @@
         "@type" : "C_ATTRIBUTE",
         "rmAttributeName" : "items",
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0221.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
           "occurrences" : "0..1",
@@ -16058,6 +15392,15 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-specimen_measurements-004.v1",
           "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0234.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-breast_carcinoma_in_situ-004.v0",
+          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -16070,7 +15413,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Invasive breast carcinoma microscopy (2)",
+            "text" : "Invasive breast carcinoma",
             "description" : "Microscopic anatomic pathology findings related to breast cancer."
           }
         }
@@ -16081,6 +15424,164 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "48454e1f-bc4a-3fc8-9650-3746abb2f851",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "cda73598-a152-4400-8c8e-e66914bee8a1",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "adab2c2a810637d5fb5a2cdc504286b8"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.breast_carcinoma_in_situ.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-breast_carcinoma_in_situ-004.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0005.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_BOOLEAN",
+              "defaultValue" : {
+                "value" : true,
+                "@type" : "DV_BOOLEAN"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0028.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "defaultValue" : {
+                "defining_code" : {
+                  "code_string" : "at0031",
+                  "@type" : "CODE_PHRASE"
+                },
+                "@type" : "DV_CODED_TEXT"
+              },
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.3" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0027",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0030", "at0031" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0031" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0031" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "6a34cf1c-4ec4-3ace-bd53-43e692bca705",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
