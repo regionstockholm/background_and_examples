@@ -36,7 +36,7 @@ Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDi
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm
 ">
-		["MD5-CAM-1.0.1"] = <"cbeeaccd111ae6a2528919d5f0d08c4c">
+		["MD5-CAM-1.0.1"] = <"5e9ce70adfb9f834421d3d66b227a0d9">
 		["build_uid"] = <"48454e1f-bc4a-3fc8-9650-3746abb2f851">
 	>
 
@@ -73,11 +73,6 @@ definition
 				}
 			}
 			ELEMENT[at0244] occurrences matches {0..1} matches {    -- Comment on number of identified CIS
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0240] occurrences matches {0..1} matches {    -- Description
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -167,10 +162,6 @@ ontology
 				>
 				["at0227"] = <
 					text = <"Comment on number of invasive tumours">
-					description = <"">
-				>
-				["at0240"] = <
-					text = <"Description">
 					description = <"">
 				>
 				["at0243"] = <
