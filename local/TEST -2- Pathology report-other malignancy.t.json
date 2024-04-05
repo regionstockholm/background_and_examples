@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.6.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0e956faa032544bfb79b054edd11903d",
+      "MD5-CAM-1.0.1" : "abce6f57958af0e8ff1e3d397f14b884",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1267,7 +1267,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F537F96BF4102BD332807BA2111BDBD8"
+        "PARENT:MD5-CAM-1.0.1" : "e34e66a83af067b8a0197b8b749b5ffd"
       },
       "details" : {
         "de" : {
@@ -1523,7 +1523,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F537F96BF4102BD332807BA2111BDBD8"
+        "PARENT:MD5-CAM-1.0.1" : "e34e66a83af067b8a0197b8b749b5ffd"
       },
       "details" : {
         "de" : {
@@ -1645,7 +1645,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
                   "defaultValue" : {
                     "defining_code" : {
                       "terminology_id" : {
@@ -3359,7 +3358,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F537F96BF4102BD332807BA2111BDBD8"
+        "PARENT:MD5-CAM-1.0.1" : "e34e66a83af067b8a0197b8b749b5ffd"
       },
       "details" : {
         "de" : {
@@ -3480,7 +3479,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -3701,7 +3699,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F537F96BF4102BD332807BA2111BDBD8"
+        "PARENT:MD5-CAM-1.0.1" : "e34e66a83af067b8a0197b8b749b5ffd"
       },
       "details" : {
         "de" : {
@@ -3822,7 +3820,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
