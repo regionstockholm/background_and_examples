@@ -80,7 +80,7 @@ Not to be used to record an autopsy report, although tests on some specimens tha
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"F537F96BF4102BD332807BA2111BDBD8">
+		["MD5-CAM-1.0.1"] = <"e34e66a83af067b8a0197b8b749b5ffd">
 		["build_uid"] = <"c8a22f97-a622-4f8b-aa5c-178d2bcc37bb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -102,9 +102,10 @@ definition
 			}
 			CLUSTER[at0005] occurrences matches {0..*} matches {    -- Anatomical pathology finding
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Finding label
+					ELEMENT[at0023] occurrences matches {0..*} matches {    -- Finding label
 						value matches {
 							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Finding description
