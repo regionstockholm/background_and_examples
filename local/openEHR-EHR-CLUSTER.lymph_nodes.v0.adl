@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d0abcc0c2dc14a2e634bb33277f38e1b">
+		["MD5-CAM-1.0.1"] = <"6e1ade6bebe6bca05b3faed6cd989bef">
 		["build_uid"] = <"145e0801-ff86-35e3-9d9f-27b7b4feb9f4">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Lymph nodes
+	CLUSTER[at0000] matches {    -- Lymph node microscopy
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Type of sample
 				value matches {
@@ -80,6 +80,10 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
+			allow_archetype CLUSTER[at0013] occurrences matches {0..*} matches {    -- Additional details
+				include
+					archetype_id/value matches {/.*/}
+			}
 		}
 	}
 
@@ -88,7 +92,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Lymph nodes">
+					text = <"Lymph node microscopy">
 					description = <"Lymph nodes">
 				>
 				["at0001"] = <
@@ -133,6 +137,10 @@ ontology
 				>
 				["at0012"] = <
 					text = <"Other nodes">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Additional details">
 					description = <"">
 				>
 			>
