@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.3",
+      "sem_ver" : "0.6.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c3ac87151e30a5e5b4596e377d443214",
+      "MD5-CAM-1.0.1" : "854f1b35a14e0eace1eff9cd13babb35",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -11390,7 +11390,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Detached CIS resection margins",
+            "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
+          }
+        },
         "ar-sy" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -15828,7 +15835,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Solitary CIS resection margins",
+            "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
+          }
+        },
         "ar-sy" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
