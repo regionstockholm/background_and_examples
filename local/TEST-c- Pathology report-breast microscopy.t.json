@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.2",
+      "sem_ver" : "0.6.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e078f8bcebcfce3e2118d983ce65e88c",
+      "MD5-CAM-1.0.1" : "c3ac87151e30a5e5b4596e377d443214",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -5352,6 +5352,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.10",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Margin location",
+            "description" : "A physical site on or within the human body that is described in terms of its relationship to other body parts."
           }
         },
         "nb" : {
@@ -5905,7 +5911,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Invasive carcinoma resection margins",
+            "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
+          }
+        },
         "ar-sy" : { },
         "de" : { }
       },
