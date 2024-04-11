@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.2",
+      "sem_ver" : "0.6.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e27364b5e4a6e139f324b9b743710d4c",
+      "MD5-CAM-1.0.1" : "363b1e14e7f82487fc91fb0273e7a23b",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1715,7 +1715,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "d0abcc0c2dc14a2e634bb33277f38e1b"
+        "PARENT:MD5-CAM-1.0.1" : "6e1ade6bebe6bca05b3faed6cd989bef"
       },
       "details" : {
         "en" : {
@@ -1784,16 +1784,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0009.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
       } ],
@@ -2276,7 +2267,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Lymph nodes microscopic examination",
+            "text" : "Lymph nodes histopathology",
             "description" : "Findings and interpretation of an anatomical pathology examination performed on tissues and body fluids."
           },
           "ac0.6" : {
@@ -2970,7 +2961,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "d0abcc0c2dc14a2e634bb33277f38e1b"
+        "PARENT:MD5-CAM-1.0.1" : "6e1ade6bebe6bca05b3faed6cd989bef"
       },
       "details" : {
         "en" : {
@@ -3135,7 +3126,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "d0abcc0c2dc14a2e634bb33277f38e1b"
+        "PARENT:MD5-CAM-1.0.1" : "6e1ade6bebe6bca05b3faed6cd989bef"
       },
       "details" : {
         "en" : {
