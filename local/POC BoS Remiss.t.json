@@ -1,0 +1,525 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "81651e7f-fdb7-41f0-a4f8-9a88cf3ca483",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-09-06"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "1.0.0-rc.2",
+      "build_uid" : "6076b262-e929-4f19-b3b6-9d631ef69b4d",
+      "MD5-CAM-1.0.1" : "f3ad7395fcef9227c159075f2fa4f38e",
+      "PARENT:MD5-CAM-1.0.1" : "B8AD0C7EB492491CE6F7968C1AFFB40C"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.request.v1",
+  "differential" : false,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_request.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "occurrences" : "1..1",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "category",
+      "existence" : "1..1",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "DV_CODED_TEXT",
+        "occurrences" : "1..1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "defining_code",
+          "existence" : "1..1",
+          "children" : [ {
+            "@type" : "C_TERMINOLOGY_CODE",
+            "rmTypeName" : "CODE_PHRASE",
+            "occurrences" : "1..1",
+            "terminologyId" : {
+              "value" : "openehr"
+            },
+            "constraint" : [ "433" ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "occurrences" : "1..1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "existence" : "0..1",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "occurrences" : "1..1",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "existence" : "0..1",
+              "cardinality" : {
+                "@type" : "CARDINALITY",
+                "interval" : "0..*",
+                "ordered" : false,
+                "unique" : false
+              },
+              "children" : [ {
+                "@type" : "ARCHETYPE_SLOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..*",
+                "nodeId" : "at0042",
+                "includes" : [ {
+                  "@type" : "ASSERTION",
+                  "stringExpression" : "archetype_id/value matches {/.*/}",
+                  "expression" : {
+                    "@type" : "BINARY_OPERATOR",
+                    "type" : "BOOLEAN",
+                    "operator" : "matches",
+                    "leftOperand" : {
+                      "@type" : "MODEL_REFERENCE",
+                      "type" : "STRING",
+                      "precedenceOverriden" : false,
+                      "referenceType" : "Attribute",
+                      "path" : "archetype_id/value"
+                    },
+                    "rightOperand" : {
+                      "@type" : "CONSTRAINT",
+                      "type" : "STRING",
+                      "precedenceOverriden" : false,
+                      "referenceType" : "Constraint",
+                      "item" : {
+                        "@type" : "C_STRING",
+                        "constraint" : [ "/.*/" ]
+                      }
+                    },
+                    "precedenceOverriden" : false
+                  },
+                  "variables" : [ ]
+                } ],
+                "excludes" : [ ],
+                "closed" : false
+              }, {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..1",
+                "nodeId" : "at0042.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "Care unit v1",
+                "referenceType" : "templateId"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "INSTRUCTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "POC BoS Remissinformation",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ACTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.8",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "Laboratory service tracker",
+        "referenceType" : "templateId"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "POC_BoS_Request",
+          "description" : "Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Request for service",
+          "description" : "Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0042" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Extension",
+          "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
+          "comment" : "For example: Local hospital departmental information or additional metadata to align with FHIR or CIMI equivalents."
+        },
+        "at0042.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Extension",
+          "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
+          "comment" : "For example: Local hospital departmental information or additional metadata to align with FHIR or CIMI equivalents."
+        }
+      },
+      "ar-sy" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "POC BoS Remiss",
+          "description" : "*Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care.(en)"
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "*Request for service(en)",
+          "description" : "*Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care.(en)"
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "*Tree(en)",
+          "description" : "*@ internal @(en)"
+        },
+        "at0042" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "*For example: Local hospital departmental information or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        },
+        "at0042.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "*For example: Local hospital departmental information or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "POC BoS Remiss",
+          "description" : "Dokument som sendes fra en helsetjenesteyter til en annen, med hensikt om å forespørre om råd, en tjeneste eller overføring av ansvar."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Tjenesteforespørsel",
+          "description" : "Dokument som sendes fra en helsetjenesteyter til en annen, med hensikt om å forespørre om råd, en tjeneste eller overføring av ansvar."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0042" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som er nødvendig for å registrere lokalt innhold/kontekst, eller for å sammenstille med andre referansemodeller/formalismer.",
+          "comment" : "F.eks lokale informasjonskrav eller ekstra metadata for å tilpasse med FHIR eller CIMI ekvivalenter."
+        },
+        "at0042.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som er nødvendig for å registrere lokalt innhold/kontekst, eller for å sammenstille med andre referansemodeller/formalismer.",
+          "comment" : "F.eks lokale informasjonskrav eller ekstra metadata for å tilpasse med FHIR eller CIMI ekvivalenter."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "POC BoS Remiss",
+          "description" : "Document verstuurd van de ene behandelende zorgaanbieder of organisatie naar een andere, met als doel het vragen van advies, een dienst of overdracht van zorg."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Verzoek voor een dienst",
+          "description" : "Document verstuurd van de ene behandelende zorgaanbieder of organisatie naar een andere, met als doel het vragen van advies, een dienst of overdracht van zorg."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0042" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Extensie",
+          "description" : "Aanvullende informatie vereist om de lokale context te vatten of om te verbinden met andere referentie modellen/formalismen.",
+          "comment" : "Bijvoorbeeld: Informatie van lokale ziekenhuis afdelingen of aanvullende metagegevens verbinden met FHIR of CIMI equivalenten."
+        },
+        "at0042.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Extensie",
+          "description" : "Aanvullende informatie vereist om de lokale context te vatten of om te verbinden met andere referentie modellen/formalismen.",
+          "comment" : "Bijvoorbeeld: Informatie van lokale ziekenhuis afdelingen of aanvullende metagegevens verbinden met FHIR of CIMI equivalenten."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "POC_BoS_Remiss",
+          "description" : "Dokument som skickas från en vårdgivare eller organisation till en annan, i syfte att be om råd, begära en tjänst eller att begära vårdöverföring."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Tjänstebegäran",
+          "description" : "Dokument som skickas från en vårdgivare eller organisation till en annan, i syfte att be om råd, begära en tjänst eller att begära vårdöverföring."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0042" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för att infoga tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0042.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för att infoga tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "POC BoS Remiss",
+          "description" : "Das Dokument, das von einem behandelnden Gesundheitsdienstleister oder einer behandelnden Organisation an einen anderen gesendet wird, um Beratung, eine Dienstleistung oder Übertragung der Versorgung anzufordern."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Leistungsanforderung",
+          "description" : "Das Dokument, das von einem behandelnden Gesundheitsdienstleister oder einer behandelnden Organisation an einen anderen gesendet wird, um Beratung, eine Dienstleistung oder Übertragung der Versorgung anzufordern."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0042" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Erweiterung",
+          "description" : "Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.",
+          "comment" : "Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen oder CIMI-Modelle."
+        },
+        "at0042.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "Erweiterung",
+          "description" : "Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.",
+          "comment" : "Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen oder CIMI-Modelle."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "c2877fa3-8071-346b-8d34-6b9da3fe5286",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "POC BoS Remiss",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
