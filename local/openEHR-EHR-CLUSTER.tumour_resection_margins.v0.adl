@@ -39,19 +39,19 @@ description
 			keywords = <"Malignität","Rand/Ränder","Tumor(e)","Krebs","Resektion","Histopathologie","Biopsie(n)">
 			use = <"Wird hauptsächlich innerhalb eines histopathologischen Archetypen verwendet.">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.">
-			keywords = <"الخباثة","الحواف/الهوامش","الورم","السرطان","القطع","الهيستوباثولوجيا","الخزعة">
-			copyright = <"© openEHR Foundation">
-			use = <"يستخدم عادة في نموذج الهيستوباثولجيا">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.">
 			keywords = <"malignancy","margins","tumour","cancer","resection","histopathology","biopsy">
 			copyright = <"© openEHR Foundation">
 			use = <"Normally used within a histopathology archetype.">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.">
+			keywords = <"الخباثة","الحواف/الهوامش","الورم","السرطان","القطع","الهيستوباثولوجيا","الخزعة">
+			copyright = <"© openEHR Foundation">
+			use = <"يستخدم عادة في نموذج الهيستوباثولجيا">
 		>
 	>
 	other_details = <
@@ -61,7 +61,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7323F700EC9DD50E535E654F4D7D7D30">
+		["MD5-CAM-1.0.1"] = <"2d3a087a49836daa3d5a905334588995">
 		["build_uid"] = <"ce6a67fd-d831-4730-8db6-c5663597405e">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -89,6 +89,13 @@ definition
 							at0016]    -- Indeterminate
 						}
 					}
+				}
+			}
+			ELEMENT[at0022] occurrences matches {0..1} matches {    -- Radically removed
+				value matches {
+					DV_BOOLEAN matches {*}
+					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
 				}
 			}
 			CLUSTER[at0006] occurrences matches {0..*} matches {    -- Tumour present
@@ -209,6 +216,10 @@ ontology
 					description = <"Name of the tumour for which the 'Distance from resection margin' applies.">
 					comment = <"For example: 'Invasive tumour' or 'Cancer in situ'.">
 				>
+				["at0022"] = <
+					text = <"Radically removed">
+					description = <"">
+				>
 			>
 		>
 		["ar-sy"] = <
@@ -275,6 +286,10 @@ ontology
 					description = <"*Name of the tumour for which the 'Distance from resection margin' applies. (en)">
 					comment = <"*For example: 'Invasive tumour' or 'Cancer in situ'. (en)">
 				>
+				["at0022"] = <
+					text = <"*Radically removed (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -340,6 +355,10 @@ ontology
 					text = <"Tumorbezeichnung">
 					description = <"Bezeichnung des Tumors, für den der \"Abstand vom Resektionsrand\" gilt.">
 					comment = <"Beispiel: \"Invasiver Tumor\" oder \"In-Situ-Karzinom\".">
+				>
+				["at0022"] = <
+					text = <"*Radically removed (en)">
+					description = <"">
 				>
 			>
 		>
