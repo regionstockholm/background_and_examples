@@ -1,0 +1,189 @@
+archetype (adl_version=1.4; uid=ee6e8864-7694-462e-bcd7-039fb4fc3bcb)
+	openEHR-EHR-CLUSTER.molecular_analysis.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2024-04-15">
+		["name"] = <"Marlene Pérez Colman">
+		["organisation"] = <"Digital Health and Care Wales">
+		["email"] = <"marlene.perezcolman@wales.nhs.uk">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d0b40fd9e7f93ce64031ffee992d7002">
+		["build_uid"] = <"09a1dd6b-9b22-3612-9c2c-d33e29318032">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Molecular analysis
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Test performed
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0014,    -- Prosigna
+							at0015,    -- Oncotype
+							at0016,    -- Other
+							at0017]    -- Not performed
+						}
+					}
+					DV_TEXT matches {*}
+				}
+			}
+			CLUSTER[at0001] occurrences matches {0..1} matches {    -- Prosigna
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0003] occurrences matches {0..1} matches {    -- Molecular subtype
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0004,    -- Luminal A
+									at0005,    -- Luminal B
+									at0006,    -- HER2-berikad
+									at0007]    -- Basal like
+								}
+							}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Risk of recurrence (ROR)
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Risk group
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0010,    -- Low
+									at0011,    -- Medium
+									at0012]    -- High
+								}
+							}
+						}
+					}
+				}
+			}
+			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Oncotype recurrence score (RS)
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0020] occurrences matches {0..1} matches {    -- ???Triple negative
+				value matches {
+					DV_CODED_TEXT matches {*}
+					DV_BOOLEAN matches {*}
+				}
+			}
+			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Molecular analysis">
+					description = <"Molecular analysis">
+				>
+				["at0001"] = <
+					text = <"Prosigna">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Molecular subtype">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Luminal A">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Luminal B">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"HER2-berikad">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Basal like">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Risk of recurrence (ROR)">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Risk group">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Low">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Medium">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"High">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Test performed">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Prosigna">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Oncotype">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Other">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Not performed">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Oncotype recurrence score (RS)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"???Triple negative">
+					description = <"">
+				>
+			>
+		>
+	>
