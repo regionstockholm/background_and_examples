@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d0b40fd9e7f93ce64031ffee992d7002">
+		["MD5-CAM-1.0.1"] = <"eb8e7e0f218cf269250e650abb7df6c7">
 		["build_uid"] = <"09a1dd6b-9b22-3612-9c2c-d33e29318032">
 	>
 
@@ -84,12 +84,6 @@ definition
 			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Oncotype recurrence score (RS)
 				value matches {
 					DV_CODED_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0020] occurrences matches {0..1} matches {    -- ???Triple negative
-				value matches {
-					DV_CODED_TEXT matches {*}
-					DV_BOOLEAN matches {*}
 				}
 			}
 			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Comment
@@ -178,10 +172,6 @@ ontology
 				>
 				["at0019"] = <
 					text = <"Comment">
-					description = <"">
-				>
-				["at0020"] = <
-					text = <"???Triple negative">
 					description = <"">
 				>
 			>
