@@ -26,21 +26,20 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"eb8e7e0f218cf269250e650abb7df6c7">
+		["MD5-CAM-1.0.1"] = <"757389ff5bf908f466dda96c0b51fad5">
 		["build_uid"] = <"09a1dd6b-9b22-3612-9c2c-d33e29318032">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Molecular analysis
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Test performed
+			ELEMENT[at0013] occurrences matches {0..*} matches {    -- Test performed
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
 							at0014,    -- Prosigna
 							at0015,    -- Oncotype
-							at0016,    -- Other
 							at0017]    -- Not performed
 						}
 					}
@@ -156,10 +155,6 @@ ontology
 				>
 				["at0015"] = <
 					text = <"Oncotype">
-					description = <"">
-				>
-				["at0016"] = <
-					text = <"Other">
 					description = <"">
 				>
 				["at0017"] = <
