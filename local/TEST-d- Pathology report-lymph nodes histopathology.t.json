@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.4",
+      "sem_ver" : "0.6.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "32289453f3a9b15a19d9682b6ea5c331",
+      "MD5-CAM-1.0.1" : "0cb27e0733fe735f1180a1c516530a93",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -794,7 +794,7 @@
                     }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
+                      "occurrences" : "0..*",
                       "nodeId" : "at0065.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -3236,7 +3236,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Axillary lymphadenectomy",
+            "text" : "Other nodes",
             "description" : "Lymph nodes"
           },
           "ac0.3" : {
