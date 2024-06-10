@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"757389ff5bf908f466dda96c0b51fad5">
+		["MD5-CAM-1.0.1"] = <"0611462f8038bd0a10c92c43f21f42a3">
 		["build_uid"] = <"09a1dd6b-9b22-3612-9c2c-d33e29318032">
 	>
 
@@ -40,7 +40,8 @@ definition
 							[local::
 							at0014,    -- Prosigna
 							at0015,    -- Oncotype
-							at0017]    -- Not performed
+							at0017,    -- Not performed
+							at0020]    -- Other
 						}
 					}
 					DV_TEXT matches {*}
@@ -167,6 +168,10 @@ ontology
 				>
 				["at0019"] = <
 					text = <"Comment">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Other">
 					description = <"">
 				>
 			>
