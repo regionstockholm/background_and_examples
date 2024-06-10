@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.2",
+      "sem_ver" : "0.7.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "64382947374f524454ef4ff139646538",
+      "MD5-CAM-1.0.1" : "4f53322cc07750fd490051c3d6f22467",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -5777,7 +5777,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0022.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -23837,7 +23836,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "cf5d5d96b798f495632ca8cfe4673413"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.breast_tumour_panel.v0",
     "differential" : true,
@@ -23888,7 +23900,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "757389ff5bf908f466dda96c0b51fad5"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.molecular_analysis.v0",
     "differential" : true,
