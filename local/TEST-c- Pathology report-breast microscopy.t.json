@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.5",
+      "sem_ver" : "0.7.6",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "8da1f29c597116ff09321115a797d471",
+      "MD5-CAM-1.0.1" : "c8b49b26a7a401d7e67ef2ab9507e1f5",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -1525,32 +1525,32 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "Breast_collection_method"
                   },
                   "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
+                  "selectedTerminologies" : [ "Breast_collection_method" ],
                   "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "Breast_collection_method",
                     "code" : "1",
                     "value" : "Modifierad radikal mastektomi"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "Breast_collection_method",
                     "code" : "2",
                     "value" : "Enkel mastektomi"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "Breast_collection_method",
                     "code" : "3",
                     "value" : "Sektorresektion"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "Breast_collection_method",
                     "code" : "4",
                     "value" : "Lumpektomi"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "Breast_collection_method",
                     "code" : "5",
                     "value" : "Utvidgad excision"
                   }, {
-                    "terminologyId" : "local_terms",
+                    "terminologyId" : "Breast_collection_method",
                     "code" : "6",
                     "value" : "Reduktion"
                   } ]
@@ -6751,10 +6751,45 @@
               "rmTypeName" : "DV_COUNT",
               "attributes" : [ ],
               "attributeTuples" : [ ]
-            }, {
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0243.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
+              "rmTypeName" : "DV_COUNT",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0196",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0207.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
