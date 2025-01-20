@@ -108,6 +108,16 @@ Será finalmente utilizado dentro de um arquétipo de resultado laboratorial par
 			keywords = <"espécime","laboratório","amostra","coleta">
 			use = <"Geralmente utilizado dentro de OBSERVATION. laboratory_test.v1 e outros arquétipos tipo Instruction ou Action relacionados.">
 		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"لتسجيل تفاصيل حول عينة بالمعمل. 
+يستخدم غالبا في سياقات مختلفة, مثلا: في داخل نموذج (تعليمات) ليصف العينة التي ينبغي أخذها, أو يصف العينة المرافقة لطلب معملي. 
+و قد يحدث ذلك في داخل نموذج (فعل), مثال: وصف العينات التي تم أخذها كجزء من إجراء طبي جراحي. 
+و سيستخدم أخيرا في داخل نموذج نتيجة اختبار المعمل ليصف العينة التي يتم تقديم عينة حولها.">
+			keywords = <"النموذج/العينة","المعمل/المختبر","العينة","التجميع">
+			copyright = <"© openEHR Foundation">
+			use = <"يستخدم عادةً في داخل نموذج (ملاحظة. معمل) و النماذج الأخرى تعليمات و فعل المتعلقة بالمعمل.">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record details about a physical sample collected from, or related to, an individual for the purpose of investigation, examination or analysis.">
@@ -134,16 +144,6 @@ This archetype has been designed to be used with the Specimen container archetyp
 Please note: The term 'collection' used in this archetype always refers to the activity of obtaining a specimen from an individual. It is not intended to represent the transport of the specimen from the individual to the testing laboratory.">
 			misuse = <"Not intended to be used for recording information about specimens that are not related to a specific individual. For example routine water samples from a waterworks, or spot samples from food production facilities.">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"لتسجيل تفاصيل حول عينة بالمعمل. 
-يستخدم غالبا في سياقات مختلفة, مثلا: في داخل نموذج (تعليمات) ليصف العينة التي ينبغي أخذها, أو يصف العينة المرافقة لطلب معملي. 
-و قد يحدث ذلك في داخل نموذج (فعل), مثال: وصف العينات التي تم أخذها كجزء من إجراء طبي جراحي. 
-و سيستخدم أخيرا في داخل نموذج نتيجة اختبار المعمل ليصف العينة التي يتم تقديم عينة حولها.">
-			keywords = <"النموذج/العينة","المعمل/المختبر","العينة","التجميع">
-			copyright = <"© openEHR Foundation">
-			use = <"يستخدم عادةً في داخل نموذج (ملاحظة. معمل) و النماذج الأخرى تعليمات و فعل المتعلقة بالمعمل.">
-		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
@@ -154,7 +154,7 @@ Laboratory Technical Framework, Volume 3: Content, Revision 10 [Internet]. USA: 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"387596AF709CE27D623064209E998D45">
+		["MD5-CAM-1.0.1"] = <"65f7e25cb67ee389992dcb3655890a85">
 		["build_uid"] = <"e06d3380-4a6b-4e72-b663-45bbfbc1a4e2">
 		["revision"] = <"1.0.1">
 	>
