@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.2",
-      "build_uid" : "98eaddf2-f001-401c-8872-f74da49adefc",
-      "MD5-CAM-1.0.1" : "a354215ac0e8301e3d8faca1c051d336",
+      "sem_ver" : "0.8.3",
+      "build_uid" : "226a76bc-b85c-4036-b2c3-81aae374c1a4",
+      "MD5-CAM-1.0.1" : "1bae91a1f880121bc2bffcce200c88e2",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -5801,7 +5801,7 @@
                       "code_string" : "1",
                       "@type" : "CODE_PHRASE"
                     },
-                    "value" : "Invasive tumour finding",
+                    "value" : "Invasive breast carcinoma finding",
                     "@type" : "DV_CODED_TEXT"
                   },
                   "attributes" : [ ],
@@ -6184,7 +6184,7 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Invasive breast tumour",
+            "text" : "Invasive breast carcinoma",
             "description" : "Details of an individual anatomical pathology finding, often related to a specific anatomical location or specimen."
           },
           "ac0.2" : {
@@ -6202,7 +6202,7 @@
           "at0005.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.3",
-            "text" : "Another malignant finding",
+            "text" : "Other malignant finding",
             "description" : "Details of an individual anatomical pathology finding, often related to a specific anatomical location or specimen."
           },
           "at0023.3" : {
@@ -6451,7 +6451,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "c1be8824d4bd8435a6ccb05e7a1b4b6f"
+        "PARENT:MD5-CAM-1.0.1" : "01584568ce8de0ca28220df579fac939"
       },
       "details" : {
         "en" : {
@@ -6900,7 +6900,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Invasive breast carcinoma",
+            "text" : "Invasive breast tumour",
             "description" : "Microscopic anatomic pathology findings related to breast cancer."
           },
           "at0201.1" : {
