@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.10",
+      "sem_ver" : "0.7.11",
       "build_uid" : "94795204-237c-4edb-9675-4d8ee9aab82e",
-      "MD5-CAM-1.0.1" : "36cd9785e85ab8c9985e15005533cd81",
+      "MD5-CAM-1.0.1" : "ab566aad4c17d041653a1308c465c38b",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -785,7 +785,17 @@
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0098.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -6054,6 +6064,85 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0005.5",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0023.5",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "SCT"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SCT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SCT",
+                        "code" : "30389008",
+                        "value" : "Normal tissue"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0008.5",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0010.7",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0010.8",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0006.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -6134,6 +6223,30 @@
             "code" : "at0010.6",
             "text" : "Tumour radically removed",
             "description" : "Single word, phrase of brief description representing the interpretation of the anatomical pathology finding. A coded term is preferred."
+          },
+          "at0005.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.5",
+            "text" : "Normal tissue",
+            "description" : "Details of an individual anatomical pathology finding, often related to a specific anatomical location or specimen."
+          },
+          "at0023.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.4",
+            "text" : "Morphologic type",
+            "description" : "A text label for the specific finding."
+          },
+          "at0008.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.4",
+            "text" : "Comment on morphologic type",
+            "description" : "A narrative description of the anatomical pathology finding."
+          },
+          "at0010.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.6",
+            "text" : "Tumour radically removed",
+            "description" : "Single word, phrase of brief description representing the interpretation of the anatomical pathology finding. A coded term is preferred."
           }
         },
         "nb" : {
@@ -6178,6 +6291,18 @@
             "code" : "at0010",
             "text" : "Tolkning (2)",
             "description" : "Enkeltord, frase eller kort beskrivelse som representerer tolkningen av patologifunnet. Koding med en terminologi foretrekkes."
+          },
+          "at0005.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Patologifunn (5)",
+            "description" : "Detaljer om et individuelt patologifunn, ofte relatert til en spesifikk anatomisk lokalisering eller prøvemateriale."
+          },
+          "at0010.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Tolkning (2)",
+            "description" : "Enkeltord, frase eller kort beskrivelse som representerer tolkningen av patologifunnet. Koding med en terminologi foretrekkes."
           }
         },
         "de" : {
@@ -6218,6 +6343,18 @@
             "description" : "Ein Wort oder ein kurzer Satz, der eine Interpretation des pathologisch-anatomischen Befundes beschreibt. Eine kodierte Erfassung wird bevorzugt."
           },
           "at0010.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Pathologische Interpretation (2)",
+            "description" : "Ein Wort oder ein kurzer Satz, der eine Interpretation des pathologisch-anatomischen Befundes beschreibt. Eine kodierte Erfassung wird bevorzugt."
+          },
+          "at0005.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Pathologisch-anatomischer Befund (5)",
+            "description" : "Details zu einem einzelnen pathologisch-anatomischen Befund, oft im Bezug zu einer spezifischen anatomischen Lokalisation oder Probe."
+          },
+          "at0010.8" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0010",
             "text" : "Pathologische Interpretation (2)",
