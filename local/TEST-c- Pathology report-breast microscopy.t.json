@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.7.11",
       "build_uid" : "94795204-237c-4edb-9675-4d8ee9aab82e",
-      "MD5-CAM-1.0.1" : "ab566aad4c17d041653a1308c465c38b",
+      "MD5-CAM-1.0.1" : "f620929b4e2fbbe218f6c665ddc0a7dc",
       "PARENT:MD5-CAM-1.0.1" : "2A64B8463AA11FF22EA7977CDF0E9959"
     },
     "details" : {
@@ -6087,6 +6087,7 @@
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "SCT"
                       },
@@ -6095,7 +6096,11 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SCT",
                         "code" : "30389008",
-                        "value" : "Normal tissue"
+                        "value" : "Normal tissue morphology"
+                      }, {
+                        "terminologyId" : "SCT",
+                        "code" : "168128004",
+                        "value" : "Nil seen on microscopy"
                       } ]
                     } ]
                   } ],
