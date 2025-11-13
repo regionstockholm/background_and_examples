@@ -1,0 +1,166 @@
+archetype (adl_version=1.4; uid=1f125418-710e-4248-af24-8774e95321c7)
+	openEHR-EHR-OBSERVATION.dlco.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-04-23">
+		["name"] = <"Oscar Karlsson">
+		["organisation"] = <"Karolinska University Hospital ">
+		["email"] = <"Oscar.karlsson@regionstockholm.se">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"f1df7f4c790d98cc528b27984d1eb82c">
+		["build_uid"] = <"6641d078-361a-33c9-88ed-12677592a0a6">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- dlco
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- DLCO (mL/min/mmHg)
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::755]>
+												list = <
+													["1"] = <
+														units = <"[arb'U]">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- DLCO (%)
+										value matches {
+											DV_PROPORTION matches {
+												numerator matches {|>=0.0|}
+												type matches {2}
+											}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Corrected DLCO (mL/min/mmHg)
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"dlco">
+					description = <"Measurement results showing how well gases, such as oxygen, pass from the lungs (alveoli) into the blood. It complements spirometry by assessing gas exchange.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"DLCO (mL/min/mmHg)">
+					description = <"Measurement of the lung’s diffusing capacity, expressed as the volume of gas transferred to the blood per minute per unit of pressure.">
+				>
+				["at0005"] = <
+					text = <"DLCO (%)">
+					description = <"Represents the diffusing capacity expressed as a percentage of the predicted normal value based on factors such as age, sex, and body size.">
+				>
+				["at0006"] = <
+					text = <"Corrected DLCO (mL/min/mmHg)">
+					description = <"Represents the lung’s diffusing capacity, adjusted for factors such as hemoglobin levels, to provide a more accurate measure of gas transfer efficiency.">
+				>
+				["at0008"] = <
+					text = <"Comment">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"DLCO">
+					description = <"*Measurement results showing how well gases, such as oxygen, pass from the lungs (alveoli) into the blood. It complements spirometry by assessing gas exchange. (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"DLCO (mL/min/mmHg)">
+					description = <"Mätning av lungornas diffusionskapacitet, uttryckt som volym gas som överförs till blodet per minut och per tryckenhet.">
+				>
+				["at0005"] = <
+					text = <"DLCO (%)">
+					description = <"Representerar diffusionskapaciteten uttryckt i procent av det förväntade normalvärdet baserat på faktorer såsom ålder, kön och kroppsstorlek.">
+				>
+				["at0006"] = <
+					text = <"Justerad DLCO (mL/min/mmHg)">
+					description = <"Representerar lungornas diffusionskapacitet, justerad för faktorer såsom hemoglobinnivåer, för att ge en mer exakt värde av gasöverföringens effektivitet.">
+				>
+				["at0008"] = <
+					text = <"Kommentar">
+					description = <"">
+				>
+			>
+		>
+	>
