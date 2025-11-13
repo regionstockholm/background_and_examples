@@ -1,0 +1,214 @@
+archetype (adl_version=1.4; uid=d641fe53-5f56-4fe9-86fd-6af0e5d3536f)
+	openEHR-EHR-OBSERVATION.stair_climbing_test.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2025-04-09">
+		["name"] = <"Oscar Karlsson">
+		["organisation"] = <"Karolinska University Hospital ">
+		["email"] = <"Oscar.karlsson@regionstockholm.se">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"2ac1b0048969364def68127e47816592">
+		["build_uid"] = <"329484cb-8f6e-3758-8320-8f518cf50c4a">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Stair climbing test
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Result
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005,    -- Passed
+													at0006,    -- *Ej godkänt (sv)
+													at0007]    -- *Ej genomfört (sv)
+												}
+											}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Distance
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::122]>
+												list = <
+													["1"] = <
+														units = <"m">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Reason for failing the test
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Reson not performed
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Saturation
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::507]>
+												list = <
+													["1"] = <
+														units = <"%">
+													>
+												>
+											>
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Stair climbing test">
+					description = <"The stair-climbing test is a symptom-limited exercise assessment used to evaluate a patient’s cardiopulmonary fitness before major lung resection. Patients climb stairs to a maximal height, and the achieved height correlates with postoperative risks. Lower performance on the test is associated with increased cardiopulmonary complications, higher mortality, and greater healthcare costs. This simple test aids in preoperative risk stratification for lung cancer surgery.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Result">
+					description = <"Structured value set describing whether the test was passed or not.">
+				>
+				["at0005"] = <
+					text = <"Passed">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*Ej godkänt (sv)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"*Ej genomfört (sv)">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Distance">
+					description = <"Number of meters walked if the test was not passed.">
+				>
+				["at0009"] = <
+					text = <"Reason for failing the test">
+					description = <"Reason for prematurely stopping the test.">
+				>
+				["at0010"] = <
+					text = <"Reson not performed">
+					description = <"Reason for not performing the test.">
+				>
+				["at0011"] = <
+					text = <"Saturation">
+					description = <"Percentage of oxygen-saturated hemoglobin in the blood, indicating how well oxygen is being carried to body tissues.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Trapptest">
+					description = <"Trapptestet är ett symptombegränsat träningstest (testet avbryts när patienten känner symptom) som används för att bedöma patientens hjärt- och lungkapacitet inför större lungoperationer. Patienter klättrar upp för en trappa till maximal höjd, och den uppnådda höjden korrelerar med risken för komplikationer efter operationen. Sämre resultat på testet är kopplat till ökad risk för kardiopulmonella komplikationer, högre dödlighet och ökade vårdkostnader. Detta enkla test hjälper till vid riskbedömning inför lungcanceroperation.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Resultat">
+					description = <"Strukturerad information som beskriver om testet genomfördes med godkänt resultat eller inte.">
+				>
+				["at0005"] = <
+					text = <"Godkänt">
+					description = <"Klarar att gå 22 meter i trappa">
+				>
+				["at0006"] = <
+					text = <"Ej godkänt">
+					description = <"Klarar inte att gå 22 meter i trappa">
+				>
+				["at0007"] = <
+					text = <"Ej genomfört">
+					description = <"Trapptestet genomfördes ej">
+				>
+				["at0008"] = <
+					text = <"Distans">
+					description = <"Antal meter som testpersonen gick. (Aktuellt om testet inte godkändes)">
+				>
+				["at0009"] = <
+					text = <"Orsak ej godkänt">
+					description = <"Orsak till att testet avbröts.">
+				>
+				["at0010"] = <
+					text = <"Orsak ej genomfört">
+					description = <"Orsak till att testet inte genomfördes.">
+				>
+				["at0011"] = <
+					text = <"Saturation">
+					description = <"Procentandel av hemoglobin i blodet som är mättat med syre, vilket visar hur väl syret transporteras till kroppens vävnader.">
+				>
+			>
+		>
+	>
